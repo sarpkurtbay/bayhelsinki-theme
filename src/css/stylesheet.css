@@ -1,0 +1,53 @@
+
+@custom-media --mq-medium (max-width: 800px);
+
+:root {
+    --primary-background-color: #ffffff;
+    --heading-font-family: "Nord";
+
+    --body-font-family: "Apercu";
+    --text-on-white: black;
+}
+
+
+
+body {
+    font-family: var(--body-font-family);
+    font-size: 16px;
+    background-color: var(--primary-background-color);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font-family);
+    font-weight: 400;
+}
+
+@media (--mq-medium) {
+    :root {
+        --primary-background-color: grey;
+    }
+}
+
+/* $primary-color: red;
+$heading-font: "Nord";
+$body-font: "Apercu";
+
+$body-size: 16px;
+
+$primary-background-color: white;
+$text-on-white: black;
+
+body {
+    font-family: $body-font;
+    background-color: $primary-background-color;
+    color: $text-on-white;
+    font-size: $body-size;
+}
+
+h1, h2, h3 {
+    font-family: $heading-font;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+} */
+
