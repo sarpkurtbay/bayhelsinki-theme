@@ -1,0 +1,74 @@
+// Nord
+@font-face {
+    font-family: "Nord";
+    src:    url('fonts/Nord_Regular-webfont.woff2') format('woff2'),
+            url('fonts/Nord_Regular-webfont.woff') format('woff'), 
+            url('fonts/Nord_Regular.ttf') format('truetype'), 
+            url('fonts/Nord_Regular.otf') format('opentype');
+}
+  
+// Apercu Regular
+@font-face {
+    font-family: "Apercu";
+    src:    url('fonts/Apercu_Regular-webfont.woff2') format('woff2'), 
+            url('fonts/Apercu_Regular-webfont.woff') format('woff'),
+            url('fonts/Apercu_Regular-webfont.ttf') format('truetype'), 
+            url('fonts/Apercu_Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+// Apercu Italic
+// missing Truetype file
+@font-face {
+  font-family: "Apercu";
+  src:      url('fonts/Apercu_Italic-webfont.woff2') format('woff2'), 
+            url('fonts/Apercu_Italic-webfont.woff') format('woff'),
+            url('fonts/Apercu_Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+// Apercu Medium
+@font-face {
+  font-family: "Apercu";
+  src:      url('fonts/Apercu_Medium-webfont.woff2') format('woff2'), 
+            url('fonts/Apercu_Medium-webfont.woff') format('woff'),
+            url('fonts/Apercu_Medium-webfont.ttf') format('truetype'),
+            url('fonts/Apercu_Medium.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+// Apercu Medium Italic
+@font-face {
+  font-family: "Apercu";
+  src:      url('fonts/Apercu_Medium_Italic-webfont.woff2') format('woff2'), 
+            url('fonts/Apercu_Medium_Italic-webfont.woff') format('woff'),
+            url('fonts/Apercu_Medium_Italic-webfont.ttf') format('truetype'), 
+            url('fonts/Apercu_Medium_Italic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+// Apercu Bold
+// missing the Truetype file
+@font-face {
+  font-family: "Apercu";
+  src:      url('fonts/Apercu_Bold-webfont.woff2') format('woff2'), 
+            url('fonts/Apercu_Bold-webfont.woff') format('woff'),
+            url('fonts/Apercu_Bold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+// Apercu Bold Italic
+// missing the Truetype file
+@font-face {
+  font-family: "Apercu";
+  src:      url('fonts/Apercu_Bold_Italic-webfont.woff2') format('woff2'), 
+            url('fonts/Apercu_Bold_Italic-webfont.woff') format('woff'),
+            url('fonts/Apercu_Bold_Italic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
