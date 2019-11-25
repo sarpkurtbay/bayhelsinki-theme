@@ -1,0 +1,617 @@
+:root {
+  --schedule-side-padding: 2rem;
+  --schedule-vertical-padding: 1.5rem;
+}
+
+
+/* // General Page Styling */
+
+section.booking-classes {
+  padding: 0 var(--side-padding);
+}
+
+section.booking-classes div.large-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+div.schedule-container {
+  width: auto;
+  display: inline-block;
+}
+
+div.sidebar-container {
+  /* z-index: 20; */
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 130px;
+  display: block;
+  margin-left: var(--gap-spacing);
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+div.upcoming-events-container {
+  display: inline-block;
+  width: 250px;
+  height: 400px;
+  position: relative;
+  margin-bottom: var(--gap-spacing);
+  border: 1px solid #202020;
+}
+
+div.upcoming-events-container span {
+  position: absolute;
+  top: var(--gap-spacing);
+  left: var(--gap-spacing);
+  text-transform: uppercase;
+  font-family: var(--title-font-family);
+  font-size: var(--h4-font-size);
+  letter-spacing: var(--h4-letter-spacing);
+  line-height: 1;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #202020;
+  color: transparent;
+}
+
+button.cta {
+  font-family: var(--title-font-family);
+  font-size: var(--body-font-size);
+  letter-spacing: var(--body-letter-spacing);
+  text-transform: uppercase;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px 16px 7px 16px;
+  color: var(--primary-cta-color);
+  background-color: var(--primary-background-color);
+  border: 1px solid var(--primary-cta-color);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+div.upcoming-events-container button.cta {
+  position: absolute;
+  bottom: var(--gap-spacing);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button.cta:hover {
+  background-color: var(--primary-cta-color);
+  color: var(--font-color-on-dark);
+}
+
+button:focus {
+  outline: none;
+}
+
+
+
+a.page-link {
+  display: block;
+  text-decoration: none;
+  color: var(--font-color-on-white);
+  font-family: var(--title-font-family);
+  font-size: var(--body-font-size);
+  letter-spacing: var(--body-letter-spacing);
+  text-transform: uppercase;
+  line-height: 1.5;
+  cursor: pointer;
+  margin-bottom: 6px;
+  transition: opacity 0.15s;
+}
+
+a.faded-link {
+  opacity: 0.2;
+}
+
+a.faded-link:hover {
+  opacity: 1;
+}
+
+/* Mindbody Tags */
+
+.bw-widget,
+.bw-widget__header,
+.bw-header__title,
+.bw-header__account-link,
+.bw-filters__selects select,
+.bw-fullcal-button,
+.bw-calendar__heading,
+.bw-calendar__day,
+.bw-widget__date,
+.bw-session,
+.bw-session__basics,
+.bw-session__time,
+.bw-session__group1,
+.bw-session__group2,
+.bw-session__name,
+.bw-session__type,
+.bw-session__staff,
+.bw-session__full-title,
+.bw-widget__signup-now,
+.bw-widget__cta,
+.main-cta-button,
+a.page-links,
+.bw-session__availability,
+.bw-fullcal-button {
+  font-family: var(--title-font-family) !important;
+  font-size: var(--h5-font-size) !important;
+  text-transform: uppercase !important;
+  letter-spacing: var(--h5-letter-spacing) !important;
+  color: #202020 !important;
+  vertical-align: bottom !important;
+  background-color: white !important;
+}
+
+.bw-header__title,
+.bw-calendar__day {
+font-weight: 400 !important;
+}
+
+
+
+
+
+.bw-session__details,
+.bw-session__description,
+.bw-session__description p {
+  font-family: var(--body-font-family) !important;
+  font-size: var(--small-body-font-size) !important;
+  text-transform: none !important;
+  letter-spacing: var(--small-body-letter-spacing) !important;
+  line-height: var(--small-body-line-height) !important;
+}
+
+.bw-widget__header {
+  border: #202020 solid 1px !important;
+  border-bottom: none !important;
+}
+
+.bw-calendar-container {
+  border-top: #202020 solid 1px !important;
+  border: #202020 solid 1px !important;
+}
+
+.bw-fullcal-button {
+  margin-top: var(--schedule-vertical-padding) !important;
+}
+
+.bw-widget__day {
+  margin-top: 60px !important;
+}
+
+.bw-widget__date {
+  color: #202020 !important;
+  padding: var(--schedule-vertical-padding) var(--schedule-side-padding) !important;
+  border-top: none !important;
+  border-bottom: 1px solid #202020 !important;
+  font-size: var(--h3-font-size) !important;
+}
+
+.bw-filters__selects {
+  margin-top: 0 !important;
+  border-top: none;
+}
+
+.bw-filters__selects select {
+  border-right: 1px solid #202020;
+  border-left: 1px solid #202020;
+  border-top: 1px solid #202020;
+  border-bottom: none;
+}
+
+.bw-filters__selects select:focus {
+  outline: none;
+}
+
+
+/* .bw-filters__selects select:last-child {
+  border-right: 1px solid #202020 !important;
+} */
+
+.bw-session,
+.bw-widget--medium .bw-session {
+  border-bottom: 1px solid #202020 !important;
+  padding: 0 !important;
+  border-right: 1px solid #202020 !important;
+  border-left: 1px solid #202020 !important;
+}
+
+/* .bw-widget--medium .bw-session {
+  padding: var(--schedule-vertical-padding) var(--schedule-side-padding);
+} */
+
+/* .bw-widget--small .bw-session {
+  padding: 6px var(--schedule-side-padding) 16px ;
+} */
+
+
+.bw-session__basics {
+  padding: var(--schedule-vertical-padding) var(--schedule-side-padding) !important;
+  align-items: flex-start;
+  display: flex;
+  position: relative !important;
+}
+
+.bw-session__staff,
+.bw-session__sub {
+  display: block;
+  font-size: var(--small-body-font-size) !important;
+  color: #666666;
+  overflow-wrap: break-word !important;
+  height: 40px !important;
+  font-style: normal !important;
+}
+
+.bw-session__availability {
+  font-size: 9px !important;
+  letter-spacing: 1px !important;
+  position: absolute;
+  right: var(--schedule-side-padding) !important;
+  bottom: 10%;
+  color: #ff00ff !important;
+}
+
+.bw-widget__cart_button button {
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  vertical-align: bottom !important;
+  line-height: 1 !important;
+  /* padding: 13px 18px 9px !important; */
+  padding: 1rem 1.25rem 0.8rem 1.25rem !important;
+  border-radius: 50px !important;
+  border: 1px solid #202020 !important;
+  color: #202020 !important;
+}
+
+.bw-widget__cart_button button:hover {
+  background-color: #202020 !important;
+  color: #ffffff !important;
+}
+
+.bw-session__basics > .bw-widget__cart_button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: var(--schedule-side-padding);
+}
+
+
+.bw-session__group1 .bw-session__meta .bw-session__level{
+  font-size: var(--small-body-font-size) !important;
+}
+
+
+.bw-session__detail-link {
+  margin-top: 0;
+  width: 83% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  z-index: 0 !important;
+  /* background-color: blue !important; */
+}
+
+
+.hc-pignose-calendar-wrapper {
+  border-right: 1px solid #202020 !important;
+  border-left: 1px solid #202020 !important;
+  border-bottom: 1px solid #202020 !important;
+  /* border-radius: 15px !important; */
+}
+
+.bw-calendar-container {
+  padding: var(--schedule-vertical-padding) 0 !important;
+}
+
+
+.bw-session__basics > .bw-session__info {
+  width: 30vw !important;
+}
+
+.bw-session__canceled {
+  right: var(--schedule-side-padding);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+.bw-calendar__day.bw-calendar__day--current span {
+  width: 25px;
+  height: 25px;
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+.bw-session__expanded {
+  margin-top: 0;
+  padding: 0px var(--schedule-side-padding) var(--schedule-vertical-padding);
+}
+.bw-filters__controls,
+.bw-session__detail-link svg,
+.bw-session__detail-link span,
+.filter_time_of_day {
+  display: none !important;
+}
+
+/* .bw-session__full-title {
+  display: none !important;
+} */
+
+.bw-session__description p + p,
+.bw-session__description p + p{
+  margin-top: 15px;
+}
+
+
+/* REMOVES SIDEBAR */
+
+@media (max-width: 1200px) {
+
+  .bw-session__basics > .bw-session__info {
+    max-width: 60vw !important;
+  }
+}
+
+/* ADJUSTS THE WIDTH OF SCREEN THAT WORKS AS A BUTTON TO OPEN CLASS DETAILS (CANNOT OVERLAP THE BOOK BUTTON) */
+@media (max-width: 860px) {
+  .bw-session__detail-link {
+    width: 82% !important;
+  }
+
+  .bw-session__group1,
+  .bw-session__group2,
+  .bw-session__time {
+  width: 100% !important; 
+  }
+
+
+  .bw-session__basics > .bw-session__info {
+    max-width: 70vw !important;
+  }
+
+}
+
+@media (max-width: 840px) {
+  .bw-session__detail-link {
+    width: 81% !important;
+  }
+}
+
+
+
+@media (max-width: 783px) {
+
+  .bw-session__detail-link {
+    width: 79% !important;
+  }
+
+}
+
+@media (max-width: 720px) {
+  .bw-session__detail-link {
+    width: 77% !important;
+  }
+
+  .bw-session__basics > .bw-session__info {
+    max-width: 70vw !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .bw-session__detail-link {
+    width: 80% !important;
+  }
+
+  .bw-session__info {
+    max-width: 60vw !important;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .overlay-fade {
+    display: none !important;
+  }
+
+  section.booking-classes {
+    padding: 0;
+  }
+
+  div.large-container {
+    max-width: 100vw;
+  }
+
+  span.bw-header__title {
+    display: none;
+  }
+
+  button.bw-header__filter-link {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    border-right: none !important;
+  }
+
+  /* .bw-session__info {
+    margin-right: 0px !important;
+  } */
+
+  /* .bw-session__expanded .bw-widget__signup-now {
+    display: block !important;
+  } */
+
+  .bw-widget__header,
+  .bw-calendar-container,
+  .bw-session,
+  .bw-filters__selects select {
+    border-right: none !important;
+    border-left: none !important;
+  }
+  
+
+  .bw-session__detail-link {
+    width: 77% !important;
+  }
+
+}
+
+@media (max-width: 500px) {
+  :root {
+    --schedule-side-padding: 1rem;
+    --schedule-vertical-padding: 1rem;
+  }
+
+  .bw-session__detail-link {
+    width: 75% !important;
+  }
+
+  .bw-session__basics > .bw-session__info {
+    max-width: 60vw !important;
+  }
+
+  .bw-session__basics {
+    padding: var(--schedule-vertical-padding) var(--schedule-side-padding) 0 !important;
+  }
+
+  .bw-session__staff, .bw-session__sub {
+    display: inline-block;
+  }
+}
+
+
+@media (max-width: 465px) {
+
+  .bw-session__detail-link {
+    width: 73% !important;
+  }
+}
+
+
+@media (max-width: 450px) {
+
+
+  /* body font size */
+
+  .bw-widget,
+  .bw-widget__header,
+  .bw-header__title,
+  .bw-header__account-link,
+  .bw-filters__selects select,
+  .bw-fullcal-button,
+  .bw-calendar__heading,
+  .bw-calendar__day,
+  .bw-fullcal-button  {
+    font-size: var(--body-font-size) !important;
+    line-height: var(--body-line-height) !important;
+  }
+
+  /* small body size */
+
+  .bw-session,
+  .bw-session__basics,
+  .bw-session__group1,
+  .bw-session__group2,
+  .bw-session__name,
+  .bw-session__type,
+  .bw-session__full-title,
+  .bw-widget__signup-now,
+  .bw-widget__cta,
+  .main-cta-button,
+  a.page-links {
+    font-size: var(--small-body-font-size) !important;
+  }
+
+  .bw-session__time,
+  .bw-session__details,
+  .bw-session__description,
+  .bw-session__description p {
+    font-size: var(--small-body-font-size) !important;
+    line-height: var(--body-line-height) !important;
+  }
+
+  .bw-widget__cart_button button {
+    padding: 12px 16px 8px !important;
+    border-radius: 50px !important;
+    font-size: 15px !important;
+  }
+
+  
+  /* .bw-session__name >.bw-session__type {
+    display: none !important;
+  } */
+
+  .bw-session__name,
+  .bw-session__type {
+    font-size: 15px !important;
+  }
+}
+
+
+
+@media (max-width: 385px) {
+
+  .bw-session__detail-link {
+    width: 74% !important;
+  }
+
+  .bw-session__basics > .bw-session__info {
+    max-width: 65vw !important;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .bw-session__detail-link {
+    width: 72% !important;
+  }
+}
+
+@media (max-width: 355px) {
+
+  div.bw-session__basics {
+    width: 100% !important;
+  }
+
+  .bw-session__basics > .bw-session__info {
+    max-width: 60vw !important;
+  }
+}
+
+
+/* MQ 325 */
+
+/* @media (max-width: 325px) {
+
+  .bw-widget__header,
+  .bw-calendar-container,
+  .bw-session {
+    border-right: none !important;
+    border-left: none !important;
+  }
+
+  .bw-widget__cart_button button {
+    letter-spacing: 1px !important;
+    line-height: 1 !important;
+    padding-top: 10px !important;
+    border-radius: 25px !important;
+    border: 1px solid #202020 !important;
+    color: #202020 !important;
+    padding: 12px 14px 10px 14px !important;
+  }
+
+  .bw-session__availability .hc_waitlist {
+    right: 0px !important;
+    font-size: 9px !important;
+  }
+
+} */

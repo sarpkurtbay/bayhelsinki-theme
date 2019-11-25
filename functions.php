@@ -43,9 +43,20 @@ if ( ! function_exists( 'bayhelsinki_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 
 		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'bayhelsinki' ),
-		) );
+		register_nav_menus( 
+			array(
+				'studio-header-menu' => esc_html__( 'Studio Header Menu', 'bayhelsinki' ),
+				'store-header-menu' => esc_html__( 'Store Header Menu', 'bayhelsinki'),
+				'studio-footer-menu-column-1' => esc_html__( 'Studio Footer Menu Column 1', 'bayhelsinki'),
+				'studio-footer-menu-column-2' => esc_html__( 'Studio Footer Menu Column 2', 'bayhelsinki'),
+				'studio-footer-menu-column-3' => esc_html__( 'Studio Footer Menu Column 3', 'bayhelsinki')
+			)
+		);
+
+		// function register_my_menu() {
+		// 	register_nav_menu('header-menu',__( 'Header Menu' ));
+		//   }
+		//   add_action( 'init', 'register_my_menu' );
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -124,6 +135,11 @@ function bayhelsinki_scripts() {
 	wp_enqueue_style( 'bayhelsinki-stylesheet', get_template_directory_uri() . '/dist/stylesheet.css' );
 
 	wp_enqueue_script( 'bayhelsinki-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'bayhelsinki-class-passes', get_template_directory_uri() . '/js/class-passes.js', array(), true );
+	wp_enqueue_script( 'bayhelsinki-marquee', get_template_directory_uri() . '/js/marquee.js', array(), true );
+	wp_enqueue_script( 'bayhelsinki-slideshow', get_template_directory_uri() . '/js/slideshow.js', array(), true );
+
+	// wp_enqueue_script('jQuery-script', get_template_directory_uri() .'/js/my-custom-script.js', array('jquery'), null, true);
 
 	wp_enqueue_script( 'bayhelsinki-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -166,3 +182,66 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+// ADDED - removes extra paragraph tags wrappng acf outputs
+remove_filter ('acf_the_content', 'wpautop');
+
+
+// // BUTTON STYLES TO VISUAL EDITOR
+// // source: https://www.wpbeginner.com/wp-tutorials/how-to-add-custom-styles-to-wordpress-visual-editor/
+
+// function wpb_mce_buttons_2($buttons) {
+//     array_unshift($buttons, 'styleselect');
+//     return $buttons;
+// }
+// add_filter('mce_buttons_2', 'wpb_mce_buttons_2');
+
+
+
+// /*
+// * Callback function to filter the MCE settings
+// */
+ 
+// function my_mce_before_init_insert_formats( $init_array ) {  
+ 
+// 	// Define the style_formats array
+	 
+// 		$style_formats = array(  
+// 	/*
+// 	* Each array child is a format with it's own settings
+// 	* Notice that each array has title, block, classes, and wrapper arguments
+// 	* Title is the label which will be visible in Formats menu
+// 	* Block defines whether it is a span, div, selector, or inline style
+// 	* Classes allows you to define CSS classes
+// 	* Wrapper whether or not to add a new block-level element around any selected elements
+// 	*/
+// 			array(  
+// 				'title' => 'Content Block',  
+// 				'block' => 'span',  
+// 				'classes' => 'content-block',
+// 				'wrapper' => true,
+				 
+// 			),  
+// 			array(  
+// 				'title' => 'Blue Button',  
+// 				'block' => 'span',  
+// 				'classes' => 'blue-button',
+// 				'wrapper' => true,
+// 			),
+// 			array(  
+// 				'title' => 'Red Button',  
+// 				'block' => 'span',  
+// 				'classes' => 'red-button',
+// 				'wrapper' => true,
+// 			),
+// 		);  
+// 		// Insert the array, JSON ENCODED, into 'style_formats'
+// 		$init_array['style_formats'] = json_encode( $style_formats );  
+		 
+// 		return $init_array;  
+	   
+// 	} 
+// 	// Attach callback to 'tiny_mce_before_init' 
+// 	add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' ); 
+
+// THIS DIDNT WORK FOR SOME REASON

@@ -268,3 +268,9 @@ if ( ! function_exists( 'bayhelsinki_woocommerce_header_cart' ) ) {
 		<?php
 	}
 }
+
+remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+
+add_filter( 'single_product_archive_thumbnail_size', function( $size ) {
+	return 'full';
+  } );

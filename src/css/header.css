@@ -1,0 +1,360 @@
+/* HEADER */
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: var(--header-height);
+    z-index: 100;
+}
+
+header.studio-header {
+    background-color: var(--primary-background-color);
+}
+
+.studio-header-large.container {
+    width: 1250px;
+}
+
+nav.studio-header-large {
+    position: relative;
+    padding: 20px 0;
+}
+
+nav.studio-header-large ul.header-menu li a {
+    color: var(--text-on-light);
+}
+
+nav.studio-header-large li.studio-header-menu-link,
+nav.studio-header-large li.store-header-menu-link {
+    width: 150px;
+    text-align: center;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+
+.sub-menu .menu-item {
+    width: 120px;
+}
+
+
+
+
+header.store-header {
+    background-color: var(--secondary-background-color);
+}
+
+div.store-header-inner-container nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white !important;
+}
+
+div.store-header-inner-container ul.header-menu li a {
+    color: var(--text-on-dark);
+}
+
+
+div.store-header-inner-container ul.store-header-menu,
+nav.studio-header-large ul.studio-header-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+div.store-header-inner-container ul.header-menu li a {
+    color: var(--text-on-dark);
+    margin-left: 80px;
+}
+
+
+/* HEADER OVERLAY */
+/* 
+div.overlay-fade {
+    display: none;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    width: 100vw;
+    height: 80px;
+    z-index: 3;
+    position: fixed;
+    margin-top: -20px;
+} */
+
+
+
+
+
+/* RESPONSIVE HEADER & DROP DOWN MENU */
+/* RESPONSIVE HEADER & DROP DOWN MENU */
+/* RESPONSIVE HEADER & DROP DOWN MENU */
+/* RESPONSIVE HEADER & DROP DOWN MENU */
+
+/* HEADER BOTH SCREEN SIZES */
+
+/* HEADER BOTH SCREEN SIZES - SUBMENU */
+
+header h1.header-logo-title {
+    color: black;
+    letter-spacing: 14px;
+    font-size: 40px;
+    background-color: transparent;
+}
+
+header h1.header-logo-title img{
+    width: 40px;
+    display: block;
+    animation: header-logo-pulse 5s infinite;
+}
+
+
+header h1.header-logo-title {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle-header-nav {
+    display: none;
+}
+
+
+
+ul.sub-menu {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* padding: 0.5em 1em 0.5em 1em; */
+    background-color: var(--primary-background-color);
+    border: 1px solid black;
+}
+
+
+.studio-header-large ul.sub-menu li {
+   padding: 0.5rem 1.5rem;
+   border-bottom: 1px solid black;
+}
+
+ul.sub-menu li:last-of-type {
+   border: none;
+   margin-bottom: none;
+}
+
+
+
+/* LARGER SCREENS */
+
+/* LARGER SCREENS - WHEN HOVERING ON LINK WITH SUBMENU, SHOW SUBMENU */
+.studio-header-large ul.studio-header-menu li a:hover + ul.sub-menu,
+.sub-menu:hover  {
+   display: block;
+}
+
+
+
+
+/* SMALLER SCREENS ( WITH < 1200px )*/
+
+/* div.studio-header-inner-container-responsive { 
+    position: relative;
+    display: none;
+    margin: 0 auto;
+    padding: 20px var(--side-padding) 0 var(--side-padding);
+    background-color: var(--primary-background-color);
+} */
+
+/* SMALLER SCREENS - DROP DOWN MENU */
+
+div.drop-down-menu {
+    position: absolute;
+    top: var(--header-height);
+    display: none;
+    background-color: var(--primary-background-color);
+}
+
+    /* HIDES LARGE LETTERS FROM NAVIGATION WHEN ON SMALLER SCREENS */
+    div.drop-down-menu .large-letter{
+        display: none;
+    }
+
+    
+    div.drop-down-menu ul.studio-header-menu {
+        list-style: none;
+    }
+
+    div.drop-down-menu li.studio-header-menu-link {
+        width: 100vw;
+        text-align: center;
+    }
+
+div.drop-down-menu  ul.header-menu li a {
+    background-color: var(--primary-background-color);
+    color: var(--text-on-light);
+    font-size: var(--h4-font-size);
+    letter-spacing: var(--h4-letter-spacing);
+    width: 100vw;
+    padding: 1.5rem 0;
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+div.drop-down-menu  ul.header-menu {
+    border-top: 1px solid black;
+}
+
+
+
+/* ICON FOR NAV ITEMS WITH CHILDREN */
+
+/* TELLS THE ICON (HAS SUB MENU) TO STOP IN THE MIDDLE OF THE MENU ITEM ON SMALLER SCREENS */
+
+div.drop-down-menu ul.header-menu li a {
+    position: relative;
+}
+
+/* THE ICON THAT SHOWS THAT THERE IS A SUBMENU */
+
+.menu-item-has-children > a::before {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: var(--side-padding);
+    transform: translate(50%, -50%);
+    border: 10px solid transparent;
+    border-left-color: black; 
+}
+
+/* THE SUB MENU THAT OPENS WHEN YOU CLICK MAIN NAV ITEMS (ON SMALLER SCREENS) */
+div.drop-down-menu  ul.studio-header-menu ul.sub-menu {
+    display: none;
+    left: 0;
+    width: 100vw;
+    transform: translateX(0);
+    padding: 0;
+    background-color: var(--primary-background-color);
+    /* z-index: 1000; IS THIS NECESSARY */
+    /* background-color: red; */
+}
+
+/* REMOVES SOME KIND OF DEFAULT PADDING AROUND THE SUBMENU ITEMS */
+div.drop-down-menu  ul.studio-header-menu ul.sub-menu li {
+   padding: 0;
+}
+
+/* SHOWS THE SUBMENU (USED WITH EVENT LISTENERS) */
+div.drop-down-menu ul.studio-header-menu ul.sub-menu.open,
+div.drop-down-menu.open {
+    display: block;
+}
+
+
+div.drop-down-menu  ul.studio-header-menu > li.absolute {
+    position: absolute;
+    top: -1px;
+    /* z-index: 1000; TESTING IF THIS IS NEEDED*/
+}
+
+/* TO MAKE THE CLICKED NAV ITEM GO ON TOP OF THE PAGE*/
+div.drop-down-menu .studio-header-menu {
+    position: relative;
+} 
+
+
+div.drop-down-menu {
+    display: none;
+}
+
+/* MOVES THE MAIN DROP DOWN MENU OUT OF THE WAY WHEN SUB MENU IS DISPLAYED */
+div.drop-down-menu-hidden {
+    transform: translateX(-100%);
+}
+
+
+/* SHOWS THE MAIN NAV ITEM THAT WAS CLICKED ON TOP OF THE SUB MENU */
+.show-selected-menu-item {
+    transform: translateX(100%);
+    border-top: 1px solid black;
+}
+
+
+/* div.drop-down-menu li.studio-header-menu-link:first-of-type {
+    border-top: solid black 1px;
+} TESTING IF NECESSARY */
+
+/* DISPLAYS THE CLICKED NAV ITEM DIFFERENTLY ON TOP OF SUB MENU THEN OTHER ITEMS */
+div.drop-down-menu  ul.header-menu li.show-selected-menu-item > a {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--font-color-on-white);
+    color: transparent;
+}
+
+/* SHOWS THE "BACK ICON" ON TOP OF SUB MENU */
+.show-selected-menu-item.menu-item-has-children > a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: auto;
+    transform: translate(50%, -50%) rotate(180deg);
+    border: 15px solid transparent;
+    border-left-color: black; 
+}
+
+
+
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+
+
+@media (max-width: 1200px) {
+
+    .menu-item-has-children>a::before {
+        display: block;
+    }
+    
+    /* div.studio-header-inner-container-responsive {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+     */
+     
+    header h1.header-logo-title,
+    .toggle-header-nav { 
+        display: block;
+    }
+
+    a.toggle-header-nav img {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: var(--side-padding);
+        transform: translateY(-50%);
+        width: 35px;
+        color: black;
+    }
+
+    /* HIDE THE NAVIGATION SHOWN ON LARGER SCREENS */
+    nav.studio-header-large {
+        display: none;
+    }
+
+    ul.sub-menu {
+        border: none;
+    }
+   
+   /* ul.sub-menu li {
+       border-bottom: none;
+   } */
+
+   /* MQ (MAX WITH 1200px) */
+} 

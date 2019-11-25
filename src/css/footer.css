@@ -1,0 +1,159 @@
+footer {
+    font-family: var(--title-font-family);
+    text-transform: uppercase;
+    font-size: var(--h4-font-size);
+    letter-spacing: var(--h4-letter-spacing);
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    z-index: 20000;
+    background-color: var(--primary-background-color);
+}
+
+.footer-container {
+    width: 100vw;
+}
+
+.footer-content {
+    padding: 5rem var(--side-padding);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    max-width: 1300px;
+    width: auto;
+}
+
+.footer-navigation nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-menu-column {
+    margin-right: 3rem;
+}
+
+.studio-footer-menu-link, footer .contact-information p {
+    line-height: 1.5;
+}
+
+.address span {
+    font-size: 13px;
+    letter-spacing: 1px;
+    vertical-align: text-top;
+}
+
+.footer-detail-bar-content {
+    display: none;
+    font-size: 13px;
+    padding: 2.5rem var(--side-padding);
+    width: auto;
+    height: auto;
+    border-top: 1px solid black;
+}
+
+.footer-detail-bar-content a {
+    margin-right: 3rem;
+}
+
+label[for=bb_email] {
+    display: block;
+    font-size: var(--h4-font-size);
+    letter-spacing: var(--h4-letter-spacing);
+    padding: 0.25rem 1rem;
+  }
+  
+  .combined-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 2.5rem;
+    border: solid black 1px;
+  }
+  
+  .combined-box input {
+    font-family: var(--body-font-family);
+    letter-spacing: none;
+    font-size: var(--body-font-size);
+    width: 250px;
+    border: none;
+  }
+  
+  button#bb_submit {
+    font-family: var(--title-font-family);
+    letter-spacing: var(--h5-letter-spacing);
+    font-size: var(--h5-font-size);
+    text-transform: uppercase;
+    border-left: 1px solid var(--secondary-background-color);
+  }
+  .combined-box input, button#bb_submit {
+    color: black;
+    padding: 0 1rem;
+    font-size: var(--body-font-size);
+    line-height: 1;
+  }
+
+/* label[for=bb_email] {
+    display: block;
+    font-size: 18px;
+    padding: 0rem 1rem 0.25rem;
+    font-family: "Nord";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+    .combined-box input {
+      display: inline-block;
+      font-size: 15px;
+      padding: 1rem 1rem;
+      margin: 0;
+      border: none;
+      min-width: 300px;
+      font-family: var(--body-font-family);
+      line-height: 1;
+    }
+
+
+    button#bb_submit {
+      display: inline-block;
+      text-align: center;
+      font-size: 15px;
+      margin: 0;
+      border: none;
+      background-color: white;
+      padding: 0 1rem;
+      height: 100%;
+      padding: 0.75rem 1rem;
+      margin-left: -3px;
+      cursor: pointer;
+      font-family: "Nord";
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-left: 1px solid #202020;
+  }
+
+  */
+
+  button#bb_submit:hover {
+      background-color: #202020;
+      color: white;
+  }
+  
+  input:focus {
+    outline-offset: 0;
+    outline: none;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+
+
+
+
+  @media (max-width: 500px) {
+    .footer-detail-bar-content {
+        display: block
+    }  
+  }
