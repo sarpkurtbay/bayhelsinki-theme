@@ -69,9 +69,10 @@
   --title-font-family: "Nord";
   --body-font-family: "Apercu";
 
-  --h1-font-size: 46px;
+  /* --h1-font-size: 46px; */
+  --h1-font-size: 48px;
   --h1-line-height: 1;
-  --h1-letter-spacing: 2px;
+  --h1-letter-spacing: 5px;
 
   --h2-font-size: 36px;
   /* Previously 44px until 26th of August */
@@ -169,10 +170,10 @@ h1 {
   font-size: var(--h1-font-size);
   line-height: var(--h1-line-height);
   letter-spacing: var(--h1-letter-spacing);
-  /* -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: var(--font-color-on-white); */
-  color: #202020;
-  background-color: gold;
+  -webkit-text-stroke-width: 1.3px;
+  -webkit-text-stroke-color: var(--font-color-on-white);
+  color: transparent;
+  /* background-color: gold; */
   /* background-color: #FFE70F; */
   padding: 0px 5px 2px 2px;
   margin-bottom: 45px;

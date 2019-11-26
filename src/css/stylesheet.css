@@ -231,11 +231,12 @@ div.article-thumbnails {
 
 .mobile-cta-button {
     position: fixed;
-    bottom: 1rem;
+    bottom: 0.5rem;
     left: 50%;
     transform: translateX(-50%);
     background-color: white;
-    padding: 3rem;
+    padding: 1rem 3rem;
+    border-radius: 50px;
 }
 
 
@@ -445,17 +446,16 @@ div.faq-preview {
 
 
 .reg-button {
-    /* font-family: var(--title-font-family);
+    font-family: var(--title-font-family);
     font-size: var(--h5-font-size);
     letter-spacing: var(--h5-letter-spacing);
     text-transform: uppercase;
     border: 1px solid var(--secondary-background-color);
-    padding: 0.5rem 1.5rem 0.4rem 1.5rem;
     transition: var(--button-transition-time);
     margin-bottom: var(--small-gap-spacing);
     display: inline-block;
     height: auto;
-    border-radius: 50px; */
+    border-radius: 50px;
 }
 
 .cta-button {
@@ -538,7 +538,7 @@ div.faq-preview {
         --main-spacing: 6rem;
         --gap-spacing: 2rem;
         --small-gap-spacing: 1rem;
-        --header-height: 100px;
+        --header-height: 75px;
         --side-padding: 6rem;
     }
 
