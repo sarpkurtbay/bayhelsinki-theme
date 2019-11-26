@@ -2,6 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function() { 
 
+    document.addEventListener("touchstart", function(){}, true);
 
     // MENU TOGGLE 
 
