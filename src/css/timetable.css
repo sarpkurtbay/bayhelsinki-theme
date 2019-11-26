@@ -232,6 +232,7 @@ font-weight: 400 !important;
 } */
 
 
+
 .bw-session__basics {
   padding: var(--schedule-vertical-padding) var(--schedule-side-padding) !important;
   align-items: flex-start;
@@ -255,7 +256,7 @@ font-weight: 400 !important;
   position: absolute;
   right: var(--schedule-side-padding) !important;
   bottom: 10%;
-  color: #ff00ff !important;
+  color: #202020 !important;
 }
 
 .bw-widget__cart_button button {
@@ -287,9 +288,6 @@ font-weight: 400 !important;
   font-size: var(--small-body-font-size) !important;
 }
 
-.bw-session__group1 {
-  margin: 0.75rem 0;
-}
 
 
 .bw-session__detail-link {
@@ -365,12 +363,21 @@ font-weight: 400 !important;
   .bw-session__basics > .bw-session__info {
     max-width: 60vw !important;
   }
+
 }
 
 /* ADJUSTS THE WIDTH OF SCREEN THAT WORKS AS A BUTTON TO OPEN CLASS DETAILS (CANNOT OVERLAP THE BOOK BUTTON) */
 @media (max-width: 860px) {
   .bw-session__detail-link {
     width: 82% !important;
+  }
+
+  .bw-widget--medium .bw-session__group2 {
+    float: none;
+  }
+
+  .bw-session__group1 {
+    margin: 0.5rem 0;
   }
 
   .bw-session__group1,
@@ -472,7 +479,7 @@ font-weight: 400 !important;
 @media (max-width: 500px) {
   :root {
     --schedule-side-padding: 1.25rem;
-    --schedule-vertical-padding: 1.75rem;
+    --schedule-vertical-padding: 1.25rem;
   }
 
   .bw-session__detail-link {

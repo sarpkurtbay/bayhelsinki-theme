@@ -95,7 +95,7 @@ get_header();
 
 <section class="class-passes">
     <div class="title-section">
-        <h1 class="section-title">Class Passes</h1>
+        <h1 class="section-title">Pricing</h1>
     </div>
     <div class="double-button-container container grid">
         <div class="double-button">
@@ -455,7 +455,7 @@ get_header();
         <?php endif; ?>
 
 </section>
-<a href="#" class="mobile-cta-button reg-button">Book Classes</a>
+<a href="/schedule" class="mobile-cta-button reg-button">Book Classes</a>
 
 
 
