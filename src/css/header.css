@@ -202,7 +202,8 @@ div.drop-down-menu  ul.header-menu li a {
     font-size: var(--h4-font-size);
     letter-spacing: var(--h4-letter-spacing);
     width: 100vw;
-    padding: 1.25rem 0;
+    line-height: 1;
+    padding: 1.33rem 0;
     display: block;
     border-bottom: 1px solid black;
 }
