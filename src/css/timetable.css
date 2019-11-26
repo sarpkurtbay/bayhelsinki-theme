@@ -287,6 +287,10 @@ font-weight: 400 !important;
   font-size: var(--small-body-font-size) !important;
 }
 
+.bw-session__group1 {
+  margin: 0.75rem 0;
+}
+
 
 .bw-session__detail-link {
   margin-top: 0;
@@ -483,8 +487,11 @@ font-weight: 400 !important;
     padding: var(--schedule-vertical-padding) var(--schedule-side-padding) 0 !important;
   }
 
-  .bw-session__staff, .bw-session__sub {
+  .bw-session__staff {
     display: inline-block;
+  }
+  .bw-session__sub {
+    display: inline;
   }
 }
 
@@ -542,7 +549,7 @@ font-weight: 400 !important;
   .bw-widget__cart_button button {
     padding: 14px 16px 11px !important;
     border-radius: 50px !important;
-    font-size: 15px !important;
+    font-size: var(--body-font-size) !important;
   }
 
   
@@ -552,7 +559,7 @@ font-weight: 400 !important;
 
   .bw-session__name,
   .bw-session__type {
-    font-size: 15px !important;
+    font-size: var(--body-font-size) !important;
   }
 }
 
