@@ -86,7 +86,7 @@ body { font-family: sans-serif; }
 :root {
     --primary-background-color: #ffffff;
     --secondary-background-color: #202020;
-    --text-on-light: #6200ff;
+    --text-on-light: #202020;
     --text-on-dark: #ffffff;
     --large-spacing: 12rem;
     --main-spacing: 6rem;
