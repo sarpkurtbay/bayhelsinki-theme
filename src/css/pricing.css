@@ -112,8 +112,9 @@ div.pricing-option-hover{
     height: auto;
 }
 
-.pricing-option:hover, .pricing-option:focus
-div.pricing-option-hover {
+.pricing-option:hover div.pricing-option-hover, 
+.pricing-option:focus div.pricing-option-hover,
+.pricing-option:active div.pricing-option-hover {
     opacity: 1;
 }
 
