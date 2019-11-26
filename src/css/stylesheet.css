@@ -231,11 +231,12 @@ div.article-thumbnails {
 
 .mobile-cta-button {
     position: fixed;
-    bottom: 0.5rem;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: white;
-    padding: 1rem 3rem;
+    background-color: #202020;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
     border-radius: 50px;
 }
 
