@@ -229,14 +229,14 @@ div.article-thumbnails {
 }
 
 
-.mobile-cta-button {
+.reg-button.mobile-cta-button {
     position: fixed;
-    bottom: 20px;
+    bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #202020;
     color: #ffffff;
-    padding: 0.75rem 1.5rem;
+    padding: 1.25rem 2.5rem;
     border-radius: 50px;
 }
 
