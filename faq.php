@@ -13,7 +13,7 @@ get_header();
     <h1 class="section-title">FAQ</h1>
 </div>
 
-    <?php $page_id = '123'; ?>
+    <?php $page_id = get_queried_object_id(); ?>
     
     <?php if( have_rows('section', $page_id) ): ?>
 
