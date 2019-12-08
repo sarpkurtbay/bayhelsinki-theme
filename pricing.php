@@ -423,17 +423,16 @@ get_header();
         </div>
     <!-- </div> -->
 
-</section>
-
-<section class="faq-preview-button">
-    <div class="faq-preview-button">
-        <button class="reg-button center">
+    <div class="tc w-100">
+        <button class="button button--faq-preview button--small button--inlineBlock button--dark-outline">
             Show Frequently Asked Questions
         </button>
+
+        <span class="f1">hello</span>
     </div>
 
-    </section>
-    <section class="faq-preview">
+</section>
+<section class="faq-preview">
 
     <?php $page_id = '29'; ?>
                 <?php if( have_rows('question_and_answer', $page_id) ): ?>

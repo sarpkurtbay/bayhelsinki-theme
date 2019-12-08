@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // MENU TOGGLE 
 
     menuToggle = document.querySelector("a.toggle-header-nav")
+
     dropDownMenu = document.querySelector("div.drop-down-menu")
 
     menuToggle.addEventListener("click", function() {
@@ -19,6 +20,26 @@ document.addEventListener("DOMContentLoaded", function() {
         //     slideDownMenu.style.display = "none";
         //   }
     })
+
+
+    // faq previw window 
+    faqPreviewButton = document.querySelector(".button--faq-preview") 
+    faqPreviewSection = document.querySelector("section.faq-preview")
+
+    faqPreviewButton.addEventListener("click", function() {
+
+        faqPreviewSection.classList.toggle("open")
+        // if (slideDownMenu.style.display === "none") {
+        //     slideDownMenu.style.display = "block";
+
+        //   } else {
+        //     slideDownMenu.style.display = "none";
+        //   }
+    })
+
+
+
+
 
     menuItemsResponsive = document.querySelectorAll("div.drop-down-menu  ul.studio-header-menu > li")
     menuItemsResponsive.forEach(menuItemResponsive => {
@@ -44,11 +65,34 @@ document.addEventListener("DOMContentLoaded", function() {
         // })
     });
 
+    // FOOTER NEWSLETTER
+
+    newsletterCoverButton = document.querySelector(".studio-footer-newsletter-cover a")
+    newsletterCover = document.querySelector(".studio-footer-newsletter-cover")
+
+        emailListButton.addEventListener("click", function() {
+            newsletterCover.style.display = "none";
+        })
+
+
+
+
 });
 
 
 
+document.addEventListener("DOMContentLoaded", function() { 
 
+    newsletterCoverButton = document.querySelector(".studio-footer-newsletter-cover button")
+    newsletterCover = document.querySelector(".studio-footer-newsletter-cover")
+    newsletterContent = document.querySelector(".studio-footer-newsletter-content")
+
+            newsletterCoverButton.addEventListener("click", function() {
+            newsletterCover.style.transform = "translateY(-100%)";
+        })
+
+
+});
 
 
 
@@ -168,3 +212,5 @@ document.addEventListener("DOMContentLoaded", function() {
 //     jQuery('.holder').css('left', '-100vw')
 
 // }, 1000)
+
+

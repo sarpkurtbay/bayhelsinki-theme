@@ -251,8 +251,6 @@ div.article-thumbnail {
     height: 250px;
     padding: var(--gap-spacing);
     position: relative;
-    /* margin-bottom: var(--gap-spacing);
-    margin-right: var(--gap-spacing); */
 }
 
 div.article-thumbnail-header {
@@ -287,8 +285,8 @@ div.article-thumbnail h5 {
     margin-left: auto;
 }
 
-.container--mw900 {
-    max-width: 1100px;
+.container--mw1170 {
+    max-width: 1170px;
     width: 100%;
 }
 
@@ -329,7 +327,6 @@ div.article-thumbnail h5 {
 
 .container--faqSectionContent {
     margin-top: -1px;
-    /* border-top: 1px solid #202020; */
     border-left: 1px solid #202020;
     border-right: 1px solid #202020;
     border-bottom: 1px solid #202020;
@@ -351,16 +348,11 @@ div.article-thumbnail h5 {
     padding: 0 4rem 2.5rem;
     display: flex;
     justify-content: space-between;
-    /* margin-bottom: 1.5em; */
 }
 
 .container--questionAndAnswer:first-of-type {
     padding-top: 2.5rem;
 }
-
-/* .container--questionAndAnswer:last-of-type {
-    padding-bottom: 3.5rem;
-} */
 
 
 
@@ -376,20 +368,11 @@ section.faq {
 
 
 
-/* FAQ PREVIEW */
-/* FAQ PREVIEW */
-/* FAQ PREVIEW */
-/* FAQ PREVIEW */
-
-section.faq-preview {
-    background-color: #f4f4f4;
-    padding: var(--main-spacing);
-}
-
-div.faq-preview {
+.container--full-width-center {
+    width: 100%;
+    display: block;
     text-align: center;
 }
-
 
 
 
@@ -402,15 +385,23 @@ div.faq-preview {
     text-transform: uppercase;
     transition: var(--button-transition-time);
     height: auto;
+    transition: 0.2s ease;
 }
 
 /* BUTTON SIZES */
+
+
+
+.button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
 
 .button--small {
     padding: 0.6rem 1.25rem 0.4rem 1.25rem;
 }
 .button--medium {
-    padding: 1rem 1.25rem 0.8rem 1.25rem !important;
+    padding: 1rem 1.5rem 0.8rem 1.5rem !important;
 }
 .button--large {
     padding: 1rem 2rem 0.85rem 2rem;
@@ -437,14 +428,34 @@ div.faq-preview {
     border-radius: 50px;
     border: 1px solid var(--secondary-background-color);
 }
+.button--white-outline,
+.button--white-outline:visited {
+    color: var(--text-on-dark);
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid var(--primary-background-color);
+}
 
-.button--dark {
+.button--dark-outline {
+    background-color: transparent;
+    color: var(--text-on-light);
+    border-radius: 50px;
+    border: 1px solid var(--secondary-background-color);
+}
+
+.button--dark-outline:hover {
     background-color: var(--secondary-background-color);
     color: var(--text-on-dark);
     border-radius: 50px;
     border: 1px solid var(--secondary-background-color);
 }
 
+
+.button--white-outline:hover {
+    background-color: var(--primary-background-color);
+    color: var(--text-on-light);
+    border: 1px solid var(--primary-background-color);
+}
 
 .reg-button {
     font-family: var(--title-font-family);
@@ -624,9 +635,8 @@ footer {
     overflow: hidden;
     transform: translateX(-50%);
     width: 200%;
-    border-top: 1px solid var(--text-on-light);
-    border-bottom: 1px solid var(--text-on-light);
-    background-color: var(--primary-background-color);
+    border-top: 1px solid;
+    border-bottom: 1px solid;
     padding: 1em;
  }
  
@@ -642,7 +652,7 @@ footer {
  .marquee {
     font-family: var(--title-font-family);
     font-size: var(--h4-font-size);
-    letter-spacing: var(--h1-letter-spacing);
+    letter-spacing: var(--h4-letter-spacing);
     text-transform: uppercase;
     display: block;
     animation: marquee 12s linear infinite;
@@ -801,4 +811,58 @@ footer {
 
 .mb-clear {
     margin-bottom: 0;
+}
+
+
+
+
+
+
+/* INSTRUCTOR PROFILE */
+
+.page-container--w1170 {
+    width: 1170px
+}
+
+
+.page-container--w100vw {
+    width: 100vw;
+}
+.page-container-pt8 {
+    padding-top: 8rem;
+}
+
+.instructor-profile {
+    display: flex;
+    position: relative;
+}
+
+.instructor-profile__image {
+    width: 50%;
+    height: 70vh;
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 10rem;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 4rem;
+
+}
+
+h2.instructor-profile__image__title {
+    position: absolute;
+    padding: 3rem;
+    margin: 0;
+    bottom: 0;
+    z-index: 10;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: none;
+    color: #ffffff;
+    mix-blend-mode: difference;
+
+}
+
+.instructor-profile__introduction {
+    width: 43%;
+    padding: 4rem 7rem;
 }

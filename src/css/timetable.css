@@ -74,6 +74,10 @@ button.cta {
   transition: background-color 0.3s;
 }
 
+button.cta:hover {
+  transform: translateY(2px) !important;
+}
+
 div.upcoming-events-container button.cta {
   position: absolute;
   bottom: var(--gap-spacing);
@@ -269,12 +273,17 @@ font-weight: 400 !important;
   border-radius: 50px !important;
   border: 1px solid #202020 !important;
   color: #202020 !important;
+  transition: 0.2s ease transform !important;
 }
 
 .bw-widget__cart_button button:hover {
   background-color: #202020 !important;
   color: #ffffff !important;
+  transform: translateY(-1px) !important; 
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
+
+
 
 .bw-session__basics > .bw-widget__cart_button {
   position: absolute;
@@ -558,6 +567,11 @@ font-weight: 400 !important;
     border-radius: 50px !important;
     font-size: var(--body-font-size) !important;
   }
+
+  .bw-widget__cart_button button:hover {
+    transform: translateY(2px) !important;
+  }
+
 
   
   /* .bw-session__name >.bw-session__type {

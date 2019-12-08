@@ -8,362 +8,243 @@ header {
     width: 100vw;
     height: var(--header-height);
     z-index: 100;
+    padding: 0 20px;
 }
 
-header.studio-header {
+.studio-header {
     /* background-color: var(--primary-background-color);
     box-shadow: 0 2px 5px rgba(32,32,32,.1); */
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.85) 17.19%, rgba(255, 255, 255, 0.7) 36.98%, rgba(255, 255, 255, 0.5) 57.81%, rgba(255, 255, 255, 0) 100%);
 }
 
-.studio-header-large.container {
-    width: 1250px;
+.studio-header__nav {
+    max-width: 1200px;
+    margin: 1rem auto 0;
 }
 
-nav.studio-header-large {
-    position: relative;
-    padding: 20px 0;
+.studio-header__nav__ul {
+    display: flex;
+    flex-direction: row;
+    /* background-color:yellow; */
+    justify-content: space-between;
+    height: 70px;
 }
 
-nav.studio-header-large ul.header-menu li a {
-    color: var(--text-on-light);
+
+.studio-header__nav__ul__li--page-link {
+    margin-top: 2rem;
+    height: 2rem;
 }
 
-nav.studio-header-large li.studio-header-menu-link,
-nav.studio-header-large li.store-header-menu-link {
+.studio-header_mobile-bar {
+    display: none;
+}
+
+
+.studio-header__nav__ul__li__span--large-letter.left {
+    margin: 0 30px 0 0;
+}
+.studio-header__nav__ul__li__span--large-letter.center {
+    margin: 0 30px;
+}
+.studio-header__nav__ul__li__span--large-letter.right {
+    margin: 0 0 0 30px;
+}
+
+
+.studio-header__nav__ul__li__a {
+    font-family: var(--title-font-family);
+    font-size: var(--h4-font-size);
+    letter-spacing: var(--h4-letter-spacing);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--font-color-on-white);
     width: 150px;
     text-align: center;
     margin-top: 1.5rem;
     position: relative;
 }
 
-
-.sub-menu .menu-item {
-    width: 120px;
-}
-
-
-
-
-header.store-header {
-    background-color: var(--secondary-background-color);
-}
-
-div.store-header-inner-container nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    color: white !important;
-}
-
-div.store-header-inner-container ul.header-menu li a {
+.studio-header_cta-button {
+    font-family: var(--title-font-family);
+    font-size: var(--h4-font-size);
+    letter-spacing: var(--h4-letter-spacing);
+    text-transform: uppercase;
+    text-decoration: none;
     color: var(--text-on-dark);
 }
 
-
-div.store-header-inner-container ul.store-header-menu,
-nav.studio-header-large ul.studio-header-menu {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
+h1.header-logo-title {
+    margin-bottom: 0;
 }
 
-div.store-header-inner-container ul.header-menu li a {
-    color: var(--text-on-dark);
-    margin-left: 80px;
+.studio-header-large.container {
+    /* width: 1250px; */
 }
 
 
-/* HEADER OVERLAY */
-/* 
-div.overlay-fade {
-    display: none;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-    width: 100vw;
-    height: 80px;
-    z-index: 3;
+
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+
+.studio-header_mobile-bar {
     position: fixed;
-    margin-top: -20px;
-} */
-
-
-
-
-
-/* RESPONSIVE HEADER & DROP DOWN MENU */
-/* RESPONSIVE HEADER & DROP DOWN MENU */
-/* RESPONSIVE HEADER & DROP DOWN MENU */
-/* RESPONSIVE HEADER & DROP DOWN MENU */
-
-/* HEADER BOTH SCREEN SIZES */
-
-/* HEADER BOTH SCREEN SIZES - SUBMENU */
-
-header h1.header-logo-title {
-    color: black;
-    letter-spacing: 14px;
-    font-size: 40px;
-    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    justify-content: space-between;
+    padding: 1rem var(--side-padding);
+    align-items: center;
 }
 
-header h1.header-logo-title img{
+@media (max-width: 1200px) {
+
+    .studio-header_mobile-bar {
+        display: none;
+    }
+
+    /* .studio-header-nav__full {
+        display: none;
+        opacity: 0;
+    } */
+
+    header.studio-header {
+        /* background-color: var(--primary-background-color);
+        box-shadow: 0 2px 2px rgba(32,32,32,.2);  */
+
+        width: 100%;
+      padding-right: calc(var(--side-padding)/2);
+      padding-left: calc(var(--side-padding)/2);
+    }
+
+
+    .menu-item-has-children>a::before {
+        /* display: block; */
+    }
+
+    header h1.header-logo-title,
+    .toggle-header-nav { 
+        display: inline-block;
+    }
+
+    a.toggle-header-nav svg {
+        height: 30px;
+        margin-top: 5px;
+    }
+
+    a.toggle-header-nav svg .rect {
+        display: inline-block;
+        right: var(--side-padding);
+        width: 30px;
+        fill: #fff;
+    }
+
+} 
+
+
+
+.header-logo-title svg {
     width: 30px;
     display: block;
     animation: header-logo-pulse 5s infinite;
 }
 
-
-header h1.header-logo-title {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.toggle-header-nav {
-    display: none;
-}
-
-
-
-ul.sub-menu {
-    display: none;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    /* padding: 0.5em 1em 0.5em 1em; */
-    background-color: var(--primary-background-color);
-    border: 1px solid black;
-}
-
-
-.studio-header-large ul.sub-menu li {
-   padding: 0.5rem 1.5rem;
-   border-bottom: 1px solid black;
-}
-
-ul.sub-menu li:last-of-type {
-   border: none;
-   margin-bottom: none;
-}
-
-
-
-/* LARGER SCREENS */
-
-/* LARGER SCREENS - WHEN HOVERING ON LINK WITH SUBMENU, SHOW SUBMENU */
-.studio-header-large ul.studio-header-menu li a:hover + ul.sub-menu,
-.sub-menu:hover  {
-   display: block;
-}
-
-
-
-
-/* SMALLER SCREENS ( WITH < 1200px )*/
-
-/* div.studio-header-inner-container-responsive { 
-    position: relative;
-    display: none;
-    margin: 0 auto;
-    padding: 20px var(--side-padding) 0 var(--side-padding);
-    background-color: var(--primary-background-color);
-} */
-
-/* SMALLER SCREENS - DROP DOWN MENU */
-
-div.drop-down-menu {
-    position: absolute;
-    top: var(--header-height);
-    display: none;
-    background-color: var(--primary-background-color);
-}
-
-    /* HIDES LARGE LETTERS FROM NAVIGATION WHEN ON SMALLER SCREENS */
-    div.drop-down-menu .large-letter{
-        display: none;
-    }
-
-    
-    div.drop-down-menu ul.studio-header-menu {
-        list-style: none;
-    }
-
-    div.drop-down-menu li.studio-header-menu-link {
-        width: 100vw;
-        text-align: center;
-    }
-
-div.drop-down-menu  ul.header-menu li a {
-    background-color: var(--primary-background-color);
-    color: var(--text-on-light);
-    font-size: var(--h4-font-size);
-    letter-spacing: var(--h4-letter-spacing);
-    width: 100vw;
-    line-height: 1;
-    padding: 1.33rem 0;
-    display: block;
-    border-bottom: 1px solid black;
-}
-
-div.drop-down-menu  ul.header-menu {
-    border-top: 1px solid black;
-}
-
-
-
-/* ICON FOR NAV ITEMS WITH CHILDREN */
-
-/* TELLS THE ICON (HAS SUB MENU) TO STOP IN THE MIDDLE OF THE MENU ITEM ON SMALLER SCREENS */
-
-div.drop-down-menu ul.header-menu li a {
-    position: relative;
-}
-
-/* THE ICON THAT SHOWS THAT THERE IS A SUBMENU */
-
-.menu-item-has-children > a::before {
-    display: none;
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: var(--side-padding);
-    transform: translate(50%, -50%);
-    border: 10px solid transparent;
-    border-left-color: black; 
-}
-
-/* THE SUB MENU THAT OPENS WHEN YOU CLICK MAIN NAV ITEMS (ON SMALLER SCREENS) */
-div.drop-down-menu  ul.studio-header-menu ul.sub-menu {
-    display: none;
-    left: 0;
-    width: 100vw;
-    transform: translateX(0);
-    padding: 0;
-    background-color: var(--primary-background-color);
-    /* z-index: 1000; IS THIS NECESSARY */
-    /* background-color: red; */
-}
-
-/* REMOVES SOME KIND OF DEFAULT PADDING AROUND THE SUBMENU ITEMS */
-div.drop-down-menu  ul.studio-header-menu ul.sub-menu li {
-   padding: 0;
-}
-
-/* SHOWS THE SUBMENU (USED WITH EVENT LISTENERS) */
-div.drop-down-menu ul.studio-header-menu ul.sub-menu.open,
-div.drop-down-menu.open {
-    display: block;
-}
-
-
-div.drop-down-menu  ul.studio-header-menu > li.absolute {
-    position: absolute;
-    top: -1px;
-    /* z-index: 1000; TESTING IF THIS IS NEEDED*/
-}
-
-/* TO MAKE THE CLICKED NAV ITEM GO ON TOP OF THE PAGE*/
-div.drop-down-menu .studio-header-menu {
-    position: relative;
-} 
-
-
-div.drop-down-menu {
-    display: none;
-}
-
-/* MOVES THE MAIN DROP DOWN MENU OUT OF THE WAY WHEN SUB MENU IS DISPLAYED */
-div.drop-down-menu-hidden {
-    transform: translateX(-100%);
-}
-
-
-/* SHOWS THE MAIN NAV ITEM THAT WAS CLICKED ON TOP OF THE SUB MENU */
-.show-selected-menu-item {
-    transform: translateX(100%);
-    border-top: 1px solid black;
-}
-
-
-/* div.drop-down-menu li.studio-header-menu-link:first-of-type {
-    border-top: solid black 1px;
-} TESTING IF NECESSARY */
-
-/* DISPLAYS THE CLICKED NAV ITEM DIFFERENTLY ON TOP OF SUB MENU THEN OTHER ITEMS */
-div.drop-down-menu  ul.header-menu li.show-selected-menu-item > a {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--font-color-on-white);
-    color: transparent;
-}
-
-/* SHOWS THE "BACK ICON" ON TOP OF SUB MENU */
-.show-selected-menu-item.menu-item-has-children > a::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: auto;
-    transform: translate(50%, -50%) rotate(180deg);
-    border: 15px solid transparent;
-    border-left-color: black; 
-}
-
-
-
-/* MEDIA QUERIES */
-/* MEDIA QUERIES */
-/* MEDIA QUERIES */
-/* MEDIA QUERIES */
-
-
-@media (max-width: 1200px) {
-
-    header.studio-header {
-        background-color: var(--primary-background-color);
-        box-shadow: 0 2px 2px rgba(32,32,32,.2); 
+@media (max-width: 1000px) {
+    .studio-header__nav__ul__li__span--large-letter {
+        font-size: 120px;
     }
 
 
-    .menu-item-has-children>a::before {
-        display: block;
+    .studio-header__nav__ul__li__span--large-letter.left {
+        margin: 0 1rem 0 0;
     }
-    
-    /* div.studio-header-inner-container-responsive {
+    .studio-header__nav__ul__li__span--large-letter.center {
+        margin: 0 1rem;
+    }
+    .studio-header__nav__ul__li__span--large-letter.right {
+        margin: 0 0 0 1rem;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .studio-header_mobile-bar {
+        position: fixed;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-     */
-     
-    header h1.header-logo-title,
-    .toggle-header-nav { 
-        display: block;
+        background: var(--secondary-background-color);
+        z-index: 2000000;
     }
 
-    a.toggle-header-nav img {
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-        right: var(--side-padding);
-        transform: translateY(-50%);
-        width: 30px;
-        color: black;
+    .studio-header {
+        height: 60px;
     }
 
-    /* HIDE THE NAVIGATION SHOWN ON LARGER SCREENS */
-    nav.studio-header-large {
+    .studio-header__nav__ul {
+        flex-direction: column;
+    }
+
+    .studio-header__nav__ul__li--large-letter {
         display: none;
     }
 
-    ul.sub-menu {
-        border: none;
+    .studio-header__nav__ul__li--page-link,
+    .studio-header__nav__ul__li__a,
+    .studio-header__nav__ul__li__a a,
+    .studio-header__nav__ul__li__a:visited {
+        text-align: left;
+        color: var(--text-on-dark);
+        /* border-bottom: 1px solid var(--primary-background-color); */
+        margin: 0;
+        display: block;
+        width: 100%;
     }
-   
-   /* ul.sub-menu li {
-       border-bottom: none;
-   } */
 
-   /* MQ (MAX WITH 1200px) */
-} 
+    .studio-header__nav__ul__li__a {
+        padding: 1rem 0;
+        border-bottom: 1px solid #ffffff;
+    }
+
+
+    .studio-header-nav-item a:last-of-type {
+        border: none;
+        padding: 0;
+    }
+
+    .studio-header-nav-item__large-letter {
+        display: none;
+    }
+
+
+    /* header.studio-header {
+        height: 100vh;
+    } */
+
+    div.drop-down-menu {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100vW;
+        height: 100vH;
+        z-index: 0;
+        padding: 6rem var(--side-padding) 0;
+        opacity: 0;
+        display: block;
+        background-color: var(--secondary-background-color);
+        transition: opacity 0.1s ease;
+        display:none;
+    }
+
+    .studio-header-nav__full {
+        /* position: absolute; */
+        flex-direction: column;
+
+    }
+
+    .drop-down-menu.open {
+        opacity: 1;
+        display: block;
+    }
+}

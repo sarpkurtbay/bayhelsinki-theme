@@ -47,9 +47,8 @@ if ( ! function_exists( 'bayhelsinki_setup' ) ) :
 			array(
 				'studio-header-menu' => esc_html__( 'Studio Header Menu', 'bayhelsinki' ),
 				'store-header-menu' => esc_html__( 'Store Header Menu', 'bayhelsinki'),
-				'studio-footer-menu-column-1' => esc_html__( 'Studio Footer Menu Column 1', 'bayhelsinki'),
-				'studio-footer-menu-column-2' => esc_html__( 'Studio Footer Menu Column 2', 'bayhelsinki'),
-				'studio-footer-menu-column-3' => esc_html__( 'Studio Footer Menu Column 3', 'bayhelsinki')
+				'studio-footer-menu-column-discover' => esc_html__( 'Studio Footer Menu Column Discover', 'bayhelsinki'),
+				'studio-footer-menu-column-support' => esc_html__( 'Studio Footer Menu Column Support', 'bayhelsinki')
 			)
 		);
 

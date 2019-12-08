@@ -50,7 +50,7 @@ section.instructors {
 .instructor-thumbnails {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     margin-bottom: var(--gap-spacing);
 }
 
@@ -86,6 +86,7 @@ div.instructor-thumbnail:hover .instructor-thumbnail-on-hover {
 
 div.instructor-thumbnail-on-hover > img {
     max-width: 100%;
+    border: 1px solid #202020;
 }
 
 
@@ -98,6 +99,7 @@ div.instructor-thumbnail > img {
     height: 100%;
     min-height: 100%;
     min-width: 100%;
+    border: 1px solid #202020;
 }
 
 div.instructor-thumbnail a {
