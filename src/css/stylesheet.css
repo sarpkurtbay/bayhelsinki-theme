@@ -78,10 +78,6 @@ body { font-family: sans-serif; }
     --white: #fff;
 }
 
-.title-section {
-    text-align: center;
-}
-
 .container {
     width: 1000px;
     margin-left: auto;
@@ -120,7 +116,7 @@ body {
 .overlay-decoration {
     position: absolute;
     background-size: 50vw;
-    z-index: 50;
+    z-index: 30;
     overflow: hidden;
     margin-bottom: -100000px;
     width: 6rem;
@@ -169,12 +165,12 @@ body {
 /* CONTENT */
 /* CONTENT */
 
-.section-title {
+.title--section {
     display: inline-block;
-    margin: var(--main-spacing) 0 var(--title-bottom-spacing) 0;
+    /* margin: var(--main-spacing) 0 var(--title-bottom-spacing) 0; */
 }
 
-.section-title.title-with-description {
+.title--section.title-with-description {
     margin-bottom: 0;
 }
 
@@ -301,6 +297,7 @@ div.article-thumbnails {
     transition: var(--button-transition-time);
     height: auto;
     transition: 0.4s ease;
+    cursor: pointer;
 }
 
 .button--br50 {

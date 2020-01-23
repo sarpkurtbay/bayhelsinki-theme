@@ -18,7 +18,7 @@ get_header();
     <div class="overlay-decoration od-right-3A" style="background-image: url('<?php bloginfo('template_url'); ?>/dist/img/pattern-cell.svg')"></div>
     
     <div class="title-section container">
-        <h1 class="section-title">Schedule</h1>
+        <h1 class="title--section w-100 tc mt5 mb4">Schedule</h1>
     </div>
 
     <div class="large-container">
