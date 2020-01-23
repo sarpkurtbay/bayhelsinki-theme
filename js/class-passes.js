@@ -22,29 +22,29 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 
 
-    // faq previw window 
-    // faqPreviewButton = document.querySelector(".button--faq-preview") 
-    // faqPreviewSection = document.querySelector(".faq-preview")
 
-    // faqPreviewButton.addEventListener("click", function() {
+    faqPreviewButton = document.querySelector(".button--faq-preview") 
+    faqPreviewSection = document.querySelector(".faq-preview")
 
-    //     if (faqPreviewSection.classList.contains("open")) {
-    //         faqPreviewSection.classList.remove("open");
-    //         faqPreviewButton.innerHTML = "Show related questions";
-    //     } else {
-    //         faqPreviewSection.classList.add("open");
-    //         faqPreviewButton.innerHTML = "Hide related questions";
-    //     }
+    faqPreviewButton.addEventListener("click", function() {
 
-    //     // faqPreviewSection.classList.toggle("open")
-    //     // faqPreviewButton.innerHTML = "Hide "
-    //     // if (slideDownMenu.style.display === "none") {
-    //     //     slideDownMenu.style.display = "block";
+        if (faqPreviewSection.classList.contains("open")) {
+            faqPreviewSection.classList.remove("open");
+            faqPreviewButton.innerHTML = "Show related questions";
+        } else {
+            faqPreviewSection.classList.add("open");
+            faqPreviewButton.innerHTML = "Hide related questions";
+        }
 
-    //     //   } else {
-    //     //     slideDownMenu.style.display = "none";
-    //     //   }
-    // })
+        // faqPreviewSection.classList.toggle("open")
+        // faqPreviewButton.innerHTML = "Hide "
+        // if (slideDownMenu.style.display === "none") {
+        //     slideDownMenu.style.display = "block";
+
+        //   } else {
+        //     slideDownMenu.style.display = "none";
+        //   }
+    })
 
 
 
@@ -82,7 +82,8 @@ document.addEventListener("DOMContentLoaded", function() {
     newsletterContent = document.querySelector(".studio-footer-newsletter-content")
 
         newsletterCoverButton.addEventListener("click", function() {
-            newsletterCover.style.transform = "translateY(-100%)";
+            console.log("hellooo")
+            newsletterCover.style.transform = "translateY(-110%)";
         })
 
 
@@ -91,6 +92,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const reformerPilatesPricingSlide = document.querySelector(".pricing-options--reformer-pilates")
     const matClassesPricingSlide = document.querySelector(".pricing-options--mat-classes")
+
+    const reformerPilatesPricingView = document.querySelector(".pricing-options--reformer-pilates .flickity-viewport")
     
 
     // const classesTag = document.querySelector("a.classes")

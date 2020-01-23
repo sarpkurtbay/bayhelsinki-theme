@@ -9,8 +9,8 @@ get_header();
 ?>
 
 <section class="pricing">
-    <div class="center mv5 container--mw1300 ph5-ns w-100 tc">
-        <h1 class="w-100 tc mt6">Class Packages</h1>
+    <div class="center mv5 ph5-l w-100 tc">
+        <h1 class="w-100 tc mt5">Class Packages</h1>
     
         <div class="pricing-category-buttons dib center mb4 ">
             <button class="pricing-category-button pricing-category-button--reformer-pilates selected">
@@ -23,7 +23,7 @@ get_header();
 
         <div class="pricing-slideshow-window">
             <div class="pricing-slideshow-slides">
-                <div class="pricing-options pricing-options--reformer-pilates main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                <div class="pricing-options pricing-options--reformer-pilates main-carousel" data-flickity='{ "cellAlign": "center", "contain": true }'>
                     <div class="pricing-option carousel-cell">
                         <span class="pricing-option-classes">
                             20
@@ -82,7 +82,7 @@ get_header();
                     </div>
                 </div>
 
-                <div class="pricing-options pricing-options--mat-classes main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                <div class="pricing-options pricing-options--mat-classes main-carousel" data-flickity='{ "cellAlign": "center", "contain": true }'>
                     <div class="pricing-option carousel-cell">
                         <span class="pricing-option-classes">
                             20
@@ -143,7 +143,8 @@ get_header();
             </div>
         </div>
             
-        
+        <p class="small body pt4">Interested in using gift cards or sports vouchers to pay for a class package?<br>
+Fill out our form and we’ll gladly take it from there.  </p>
         
     </div>
 
