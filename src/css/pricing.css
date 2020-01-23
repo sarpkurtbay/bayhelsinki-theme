@@ -3,10 +3,9 @@
 /* INTRO OFFER SECTION */
 /* INTRO OFFER SECTION */
 /* INTRO OFFER SECTION */
-
+/* 
 div.intro-offers {
     position: relative;
-    /* background-color: pink;  */
     height: 330px;
     max-width: 650px;
     margin: 0 auto;
@@ -28,14 +27,14 @@ div.intro-offer {
     width: 220px;
     height: 290px;
     padding: var(--gap-spacing);
-}
+} */
 
 /* POSITIONING OF DIFFERENT INTRO OFFERS */
 /* POSITIONING OF DIFFERENT INTRO OFFERS */
 /* POSITIONING OF DIFFERENT INTRO OFFERS */
 /* POSITIONING OF DIFFERENT INTRO OFFERS */
 
-div.intro-offer-1 {
+/* div.intro-offer-1 {
     top: var(--gap-spacing);
     left: var(--gap-spacing);
     z-index: 1;
@@ -133,7 +132,7 @@ div.pricing-option-hover {
     cursor: pointer;
 }
 
-
+ */
 
 
 
@@ -142,7 +141,7 @@ div.pricing-option-hover {
 /* CLASS PASSES */
 /* CLASS PASSES */
 
-
+/* 
 
 section.class-passes {
     text-align: center;
@@ -154,7 +153,6 @@ section.class-passes {
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 1rem;
-    margin-bottom: var(--gap-spacing);
 }
 
 div.double-button {
@@ -185,31 +183,29 @@ div.double-button {
     letter-spacing: var(--h5-letter-spacing);
     text-transform: uppercase;
 }
+*/
 
-a.selected {
+button.selected {
   background-color: var(--secondary-background-color);
   color: var(--text-on-dark); 
   opacity: 0.85; 
 }
 
+/*
 
-
 /* * SLIDES */
 /* * SLIDES */
 /* * SLIDES */
 /* * SLIDES */
 
-div.class-pass-pricing-slide-window {
+/* div.class-pass-pricing-slide-window {
     width: 100vw;
     margin: 0 auto;
-    /* background-color: yellow; */
-    /* margin: 0 auto; */
     overflow: hidden;
-}
+} */
 
-div.class-pass-pricing-slide-container {
+/* div.class-pass-pricing-slide-container {
     position: relative;
-    /* background-color: yellow; */
     top: 0;
     left: 0;
     width: 200vw;
@@ -218,26 +214,25 @@ div.class-pass-pricing-slide-container {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-   transition: transform 0.8s ease-in-out;
+   transition: transform 0.8s ease-in-out; */
     /* 
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;  
     scroll-behavior: smooth;
     transition: transform 1s ease;*/
-}
+/* } */
 
-.class-pass-pricing-slide-container > div {
+/* .class-pass-pricing-slide-container > div {
     scroll-snap-align: start;
-}
+} */
 
-div.class-pass-pricing-slide {
-    /* padding: 0 var(--side-padding); */
-    /* width: auto; */
+/* div.class-pass-pricing-slide {
+
     width: 100vw;
     padding: 0 var(--side-padding);
     transition: 1s;
-}
-
+} */
+/* 
 .class-pass-pricing-grid {
     max-width: 1000px;
     margin: 0 auto;
@@ -249,8 +244,8 @@ div.class-type {
 
 h5 {
     margin-bottom: var(--gap-spacing);
-}
-
+} */
+/* 
 div.class-pass {
     position: relative;
     padding: 1.5rem;
@@ -265,13 +260,13 @@ p.class-pass, p.pricing-option-expiration {
     font-size: var(--h5-font-size);
     letter-spacing: var(--h5-letter-spacing);
     text-transform: uppercase;
-}
+} */
 
 
 /* p.small-body {
     font-size: var(--small-body-font-size);
 } */
-
+/* 
 p.small-body {
     font-size: var(--small-body-font-size);
     line-height: var(--small-body-line-height);
@@ -284,9 +279,9 @@ p.small-body {
 div.class-pass:last-of-type {
     margin-bottom: var(--gap-spacing);
 }
+ */
 
-
-
+/* 
 section.group-private-session {
     background-color: #F4F4F4;
 }
@@ -298,15 +293,17 @@ section.group-private-session .formButtonWrap {
 
 
 
-.faq-preview-content.grid {
+.faq-preview-content {
     background-color: #ffffff;
     grid-row-gap: 3rem;
     padding: 4rem 0;
-}
 
+    overflow: hidden;
+} */
+/* 
 .faq-preview-question-and-answer {
     display: grid;
-    grid-column: 2 / 12;
+    grid-column: 2 / 13;
     grid-template-columns: repeat(10, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 1rem;
@@ -317,8 +314,8 @@ section.group-private-session .formButtonWrap {
     grid-column: 1 / 6;
 }
 .faq-preview-answer {
-    grid-column: 7 / 11;
-}
+    grid-column: 8 / 11;
+} */
 
 
 
@@ -327,29 +324,31 @@ section.group-private-session .formButtonWrap {
 /* FAQ PREVIEW */
 /* FAQ PREVIEW */
 
-section.faq-preview {
+/* .faq-preview {
     background-color: #f4f4f4;
-    height: 0;
-    /* padding: 0; */
+    max-height: 0px;
+    padding-left: var(--main-spacing);
+    padding-right: var(--main-spacing);
     transition: 0.5s ease ;
+    overflow: hidden;
 }
 
-section.faq-preview.open {
-    padding: var(--main-spacing);
-    height: 700px;
+.faq-preview.open {
+    max-height: 1000px;
 }
 
+.faq-preview.open .faq-preview-content {
+    max-height: 1000px;
+} */
 
 
 
-
-@media (max-width: 840px) {
+/* @media (max-width: 840px) {
 
     .grid {
         grid-template-columns: repeat(6, 1fr);
         grid-column-gap: 1rem;
         grid-row-gap: 1rem;
-        margin-bottom: var(--gap-spacing);
     }
 
     div.class-type {
@@ -369,4 +368,91 @@ section.faq-preview.open {
     .cta-button {
         display: block;
     }
+} */
+
+
+.pricing-content {
+    min-height: 100px;
+}
+
+.pricing-category-buttons {
+    border: solid var(--black) 1px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    max-width: 560px;
+}
+
+.pricing-category-button {
+    display: inline-block;
+    padding: 0.9rem 2rem 0.8rem;
+    width: 50%;
+    font-family: var(--title-font-family);
+    font-size: var(--h4-font-size);
+    text-transform: uppercase;
+    letter-spacing: var(--h4-letter-spacing);
+}
+
+.pricing-category-button--reformer-pilates {
+
+}
+
+.pricing-slideshow-window {
+    padding-top: 10px;
+    height: 380px;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.pricing-options--mat-classes {
+    opacity: 0;
+}
+
+.pricing-options {
+    transition: none;
+}
+
+section.pricing {
+    overflow-y: hidden;
+}
+
+.pricing-option {
+    width: 271px;
+    display: block;
+    margin-right: 1rem;
+    padding: 45px;
+    font-family: var(--title-font-family);
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--primary-background-color);
+    border: 1px solid var(--black);
+    transition: 0.5s;
+}
+
+.pricing-option:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0px 0.25rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.pricing-option-classes {
+    font-size: 120px;
+    line-height: 1;
+    letter-spacing: 10px;
+    display: block;
+    margin-bottom: -10px;
+}
+
+.pricing-option-classes-text {
+    font-size: 25px;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.pricing-option-details {
+    display: block;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
 }

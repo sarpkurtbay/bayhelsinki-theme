@@ -18,14 +18,14 @@
 			<span class="marquee">BAY Helsinki Pilates Yoga & Barre | Kanavaranta 7 C 12 00160 Helsinki | +358445321017 |</span>
 		</div>
 
-		<div class="studio-footer">
-			<div class="studio-footer-content page-grid">
+		<div class="studio-footer mv5 container--mw1300 ph5-ns">
+			<div class="studio-footer-content grid--14">
 				<div class="studio-footer-newsletter">
 					<div class="studio-footer-newsletter-cover">
 					<h3 >READY FOR BETTER?<br>
 						WE HOPE SO.</h3>
 					<p class="studio-footer-newsletter-description">Be the first to know about what's going on at the studio and get our exclusive offers.</p>
-					<button class="button button--small button--inlineBlock button--white-outline">Stay in the know</button>
+					<button class="email-list-button button button--small button--inlineBlock button--white-outline button--br50">Stay in the know</button>
 					</div>
 						<!-- Begin BrandBot Signup Form -->
 						<!-- <link href="https://assets.brandbot.com/public/embed/form-1.4.css" rel="stylesheet" type="text/css"> -->
@@ -53,7 +53,7 @@
 
 								<div class="form-group">
 									<input type="hidden" name="bb_uuid" id="bb_uuid" value="9f80925b-6c2c-4867-bf8e-7bec2ded6968" />
-									<button type="submit" class="btn button button--small button--inlineBlock button--white-outline" id="bb_submit">Subscribe</button>
+									<button type="submit" class="btn button button--small button--inlineBlock button--white-outline button--br50" id="bb_submit">Subscribe</button>
 								</div>
 
 							</form>

@@ -47,12 +47,22 @@ section.instructors {
     margin-bottom: var(--gap-spacing)
 }
 
-.instructor-thumbnails {
+.instructor-thumbnails,
+.other-instructors {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1rem;
     margin-bottom: var(--gap-spacing);
 }
+
+.other-instructors article.instructor-thumbnail {
+    grid-column: span 3;
+}
+
+/* .other-instructors article.instructor-thumbnail:first-of-type {
+    grid-column: 2 / span 2;
+} */
+
 
 article.instructor-thumbnail {
     text-align: center;
@@ -121,6 +131,32 @@ article.instructor-thumbnail h4 {
 }
 
 
+div.article-thumbnail {
+    grid-column-end: span 4;
+    display: block;
+    border: 1px solid black;
+    height: 250px;
+    padding: var(--gap-spacing);
+    position: relative;
+}
+
+div.article-thumbnail-header {
+    border-bottom: black solid 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.article-thumbnail-footer {
+    position: absolute;
+    bottom: var(--gap-spacing);
+    left: var(--gap-spacing);
+}
+
+div.article-thumbnail h5 {
+    margin-top: var(--gap-spacing);
+    opacity: 1;
+}
+
 
 
 
@@ -153,6 +189,10 @@ article.instructor-thumbnail h4 {
         grid-column-gap: 1rem;
         grid-row-gap: 2rem;
     }
+
+    article.instructor-thumbnail {
+        grid-column-end: span 6;
+    }
 }
 
 
@@ -172,3 +212,4 @@ article.instructor-thumbnail h4 {
         grid-column-end: span 3;
     }
 }
+

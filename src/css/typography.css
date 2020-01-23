@@ -166,6 +166,8 @@ h1, h2, h3, h4, h5, h6,
   font-family: var(--title-font-family);
   font-weight: 400;
   text-transform: uppercase;
+  /* -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: pixel antialiased;  */
 }
 
 /* removee animation stuff later */
@@ -226,20 +228,28 @@ h6 {
   margin-bottom: 1rem;
 }
 
-p {
-  margin-bottom: 15px;
+p + p {
+  margin-top: 1rem;
 }
 
+p + h4 {
+  margin-top: 3rem;
+}
+
+p + a {
+  margin-top: 3rem;
+}
 html, body {
   font-family: var(--body-font-family);
   font-size: var(--body-font-size);
   line-height: var(--body-line-height);
   color: var(--font-color-on-white);
     -webkit-font-smoothing: antialiased; 
-    -moz-osx-font-smoothing: grayscale;
 }
 
-
+p::selection {
+  background: #F8FF34;
+}
 /* ul.studio-header-menu li a {
   font-family: var(--title-font-family);
   font-size: var(--h4-font-size);

@@ -8,6 +8,147 @@
 get_header();
 ?>
 
+<section class="pricing">
+    <div class="center mv5 container--mw1300 ph5-ns w-100 tc">
+        <h1 class="w-100 tc mt6">Class Packages</h1>
+    
+        <div class="pricing-category-buttons dib center mb4 ">
+            <button class="pricing-category-button pricing-category-button--reformer-pilates selected">
+                Reformer Classes
+            </button>
+            <button class="pricing-category-button pricing-category-button--mat-classes">
+                Mat Classes
+            </button>
+        </div>
+
+        <div class="pricing-slideshow-window">
+            <div class="pricing-slideshow-slides">
+                <div class="pricing-options pricing-options--reformer-pilates main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                    <div class="pricing-option carousel-cell">
+                        <span class="pricing-option-classes">
+                            20
+                        </span>
+                        <span class="pricing-option-classes-text">
+                            Classes
+                        </span>
+                        <span class="pricing-option-details">
+                            €440, valid for 120 days
+                        </span>
+                        <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
+                            €22 a class
+                        </a>
+                    </div>
+                    <div class="pricing-option carousel-cell">
+                        <span class="pricing-option-classes">
+                            10
+                        </span>
+                        <span class="pricing-option-classes-text">
+                            Classes
+                        </span>
+                        <span class="pricing-option-details">
+                            €240, valid for 90 days
+                        </span>
+                        <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
+                            €24 a class
+                        </a>
+                    </div>
+                    <div class="pricing-option carousel-cell">
+                        <span class="pricing-option-classes">
+                            5
+                        </span>
+                        <span class="pricing-option-classes-text">
+                            Classes
+                        </span>
+                        <span class="pricing-option-details">
+                            €130, valid for 60 days
+                        </span>
+                        <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
+                            €26 a class
+                        </a>
+                    </div>
+                    <div class="pricing-option carousel-cell">
+                        <span class="pricing-option-classes">
+                            1
+                        </span>
+                        <span class="pricing-option-classes-text">
+                            Classes
+                        </span>
+                        <span class="pricing-option-details">
+                            valid for 30 days
+                        </span>
+                        <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
+                            €28 a class
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pricing-options pricing-options--mat-classes main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                    <div class="pricing-option carousel-cell">
+                        <span class="pricing-option-classes">
+                            20
+                        </span>
+                        <span class="pricing-option-classes-text">
+                            Classes
+                        </span>
+                        <span class="pricing-option-details">
+                            €240, valid for 120 days
+                        </span>
+                        <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
+                            €12 a class
+                        </a>
+                    </div>
+                    <div class="pricing-option carousel-cell">
+                        <span class="pricing-option-classes">
+                            10
+                        </span>
+                        <span class="pricing-option-classes-text">
+                            Classes
+                        </span>
+                        <span class="pricing-option-details">
+                            €145, valid for 90 days
+                        </span>
+                        <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
+                            €14 a class
+                        </a>
+                    </div>
+                    <div class="pricing-option carousel-cell">
+                        <span class="pricing-option-classes">
+                            5
+                        </span>
+                        <span class="pricing-option-classes-text">
+                            Classes
+                        </span>
+                        <span class="pricing-option-details">
+                            €80, valid for 60 days
+                        </span>
+                        <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
+                            €16 a class
+                        </a>
+                    </div>
+                    <div class="pricing-option carousel-cell">
+                        <span class="pricing-option-classes">
+                            1
+                        </span>
+                        <span class="pricing-option-classes-text">
+                            Classes
+                        </span>
+                        <span class="pricing-option-details">
+                            valid for 30 days
+                        </span>
+                        <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
+                            €18 a class
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        
+        
+    </div>
+
+</section>
+
 <section class="intro-offers">
         <h2 class="section-title title-with-description">Intro offers</h2>
         <p class="title-description">For new clients</p>
@@ -423,20 +564,21 @@ get_header();
         </div>
     <!-- </div> -->
 
-    <div class="tc w-100">
-        <button class="button button--faq-preview button--small button--inlineBlock button--dark-outline">
-            Show Frequently Asked Questions
-        </button>
-
-        <span class="f1">hello</span>
-    </div>
 
 </section>
-<section class="faq-preview">
+<section>
 
+    <div class="tc w-100 mb5">
+        <button class="button button--faq-preview button--medium button--inlineBlock button--dark-outline button--br5">
+            Show related questions
+        </button>
+    </div>
+
+    <div class="faq-preview container--mw100vw">
+        
     <?php $page_id = '29'; ?>
                 <?php if( have_rows('question_and_answer', $page_id) ): ?>
-    <div class="faq-preview-content container grid">
+    <div class="faq-preview-content container mv5 grid--14">
 
         <?php while( have_rows('question_and_answer', $page_id) ): the_row(); ?>
             <div class="faq-preview-question-and-answer">                 
@@ -453,8 +595,10 @@ get_header();
             <p>Coming up soon..</p>
         <?php endif; ?>
 
+    </div>
+
 </section>
-<a href="/schedule" class="mobile-cta-button reg-button">Book Classes</a>
+<!-- <a href="/schedule" class="mobile-cta-button reg-button">Book Classes</a> -->
 
 
 

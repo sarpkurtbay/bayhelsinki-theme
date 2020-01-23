@@ -23,19 +23,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     // faq previw window 
-    faqPreviewButton = document.querySelector(".button--faq-preview") 
-    faqPreviewSection = document.querySelector("section.faq-preview")
+    // faqPreviewButton = document.querySelector(".button--faq-preview") 
+    // faqPreviewSection = document.querySelector(".faq-preview")
 
-    faqPreviewButton.addEventListener("click", function() {
+    // faqPreviewButton.addEventListener("click", function() {
 
-        faqPreviewSection.classList.toggle("open")
-        // if (slideDownMenu.style.display === "none") {
-        //     slideDownMenu.style.display = "block";
+    //     if (faqPreviewSection.classList.contains("open")) {
+    //         faqPreviewSection.classList.remove("open");
+    //         faqPreviewButton.innerHTML = "Show related questions";
+    //     } else {
+    //         faqPreviewSection.classList.add("open");
+    //         faqPreviewButton.innerHTML = "Hide related questions";
+    //     }
 
-        //   } else {
-        //     slideDownMenu.style.display = "none";
-        //   }
-    })
+    //     // faqPreviewSection.classList.toggle("open")
+    //     // faqPreviewButton.innerHTML = "Hide "
+    //     // if (slideDownMenu.style.display === "none") {
+    //     //     slideDownMenu.style.display = "block";
+
+    //     //   } else {
+    //     //     slideDownMenu.style.display = "none";
+    //     //   }
+    // })
 
 
 
@@ -65,109 +74,93 @@ document.addEventListener("DOMContentLoaded", function() {
         // })
     });
 
-    // FOOTER NEWSLETTER
 
-    newsletterCoverButton = document.querySelector(".studio-footer-newsletter-cover a")
-    newsletterCover = document.querySelector(".studio-footer-newsletter-cover")
-
-        emailListButton.addEventListener("click", function() {
-            newsletterCover.style.display = "none";
-        })
-
-
-
-
-});
-
-
-
-document.addEventListener("DOMContentLoaded", function() { 
+    // CLASS PASSES
 
     newsletterCoverButton = document.querySelector(".studio-footer-newsletter-cover button")
     newsletterCover = document.querySelector(".studio-footer-newsletter-cover")
     newsletterContent = document.querySelector(".studio-footer-newsletter-content")
 
-            newsletterCoverButton.addEventListener("click", function() {
+        newsletterCoverButton.addEventListener("click", function() {
             newsletterCover.style.transform = "translateY(-100%)";
         })
 
 
-});
+    const reformerPilatesPricingButton = document.querySelector(".pricing-category-button--reformer-pilates")
+    const matPilatesPricingButton = document.querySelector(".pricing-category-button--mat-classes")
 
+    const reformerPilatesPricingSlide = document.querySelector(".pricing-options--reformer-pilates")
+    const matClassesPricingSlide = document.querySelector(".pricing-options--mat-classes")
+    
 
+    // const classesTag = document.querySelector("a.classes")
+    // const privatesTag = document.querySelector("a.privates")
+    // const classesSlide = document.querySelector("#classes")
+    // const privatesSlide = document.querySelector("#privates")
 
+    // const slideContainer = document.querySelector("div.class-pass-pricing-slide-container")
 
-
-
-
-
-// CLASS PASSES
-
-document.addEventListener("DOMContentLoaded", function() { 
-
-    const classesTag = document.querySelector("a.classes")
-    const privatesTag = document.querySelector("a.privates")
-    const classesSlide = document.querySelector("#classes")
-    const privatesSlide = document.querySelector("#privates")
-
-    const slideContainer = document.querySelector("div.class-pass-pricing-slide-container")
-
-    privatesTag.addEventListener("click", function() {
+    reformerPilatesPricingButton.addEventListener("click", function() {
             this.classList.add("selected")
-            classesTag.classList.remove("selected")
-            slideContainer.style.transform = "translateX(-100vw)"
-            classesSlide.style.opacity = "0"
-            privatesSlide.style.opacity = "1"
+            matPilatesPricingButton.classList.remove("selected")
+            reformerPilatesPricingSlide.style.transform = "translateY(0%)"
+            matClassesPricingSlide.style.transform = "translateY(0%)"
+            reformerPilatesPricingSlide.style.opacity = "1"
+            reformerPilatesPricingSlide.style.transition = "transform 0.5s ease, opacity ease 1s 0.2s"
+            matClassesPricingSlide.style.opacity = "0"
+            matClassesPricingSlide.style.transition = "none"
 
     })
 
-    classesTag.addEventListener("click", function() {
+    matPilatesPricingButton.addEventListener("click", function() {
         this.classList.add("selected")
-        privatesTag.classList.remove("selected")
-        slideContainer.style.transform = "translateX(0px)"
-        classesSlide.style.opacity = "1"
-        privatesSlide.style.opacity = "0"
+        reformerPilatesPricingButton.classList.remove("selected")
+        matClassesPricingSlide.style.transform = "translateY(-100%)"
+        reformerPilatesPricingSlide.style.transform = "translateY(100%)"
+        matClassesPricingSlide.style.transition = "transform 0.5s ease, opacity ease 1s 0.2s"
+        matClassesPricingSlide.style.opacity = "1"
+        reformerPilatesPricingSlide.style.opacity = "0"
+        reformerPilatesPricingSlide.style.transition = "none"
     })
 
-});
-
-
-    document.addEventListener("DOMContentLoaded", function() { 
-
-    const classesTag = document.querySelector("a.classes")
-    const privatesTag = document.querySelector("a.privates")
-    const classesSlide = document.querySelector("#classes")
-    const privatesSlide = document.querySelector("#privates")
-
-    const slideContainer = document.querySelector("div.class-pass-pricing-slide-container")
-
-    privatesTag.addEventListener("click", function() {
-            this.classList.add("selected")
-            classesTag.classList.remove("selected")
-            slideContainer.style.transform = "translateX(-100vw)"
-            classesSlide.style.opacity = "0"
-            privatesSlide.style.opacity = "1"
-
-    })
-
-    classesTag.addEventListener("click", function() {
-        this.classList.add("selected")
-        privatesTag.classList.remove("selected")
-        slideContainer.style.transform = "translateX(0px)"
-        classesSlide.style.opacity = "1"
-        privatesSlide.style.opacity = "0"
-    })
-
-});
 
 
 
+    // document.addEventListener("DOMContentLoaded", function() { 
+
+    //     const classesTag = document.querySelector("a.classes")
+    //     const privatesTag = document.querySelector("a.privates")
+    //     const classesSlide = document.querySelector("#classes")
+    //     const privatesSlide = document.querySelector("#privates")
+
+    //     const slideContainer = document.querySelector("div.class-pass-pricing-slide-container")
+
+    //     privatesTag.addEventListener("click", function() {
+    //             this.classList.add("selected")
+    //             classesTag.classList.remove("selected")
+    //             slideContainer.style.transform = "translateX(-100vw)"
+    //             classesSlide.style.opacity = "0"
+    //             privatesSlide.style.opacity = "1"
+
+    //     })
+
+    //     classesTag.addEventListener("click", function() {
+    //         this.classList.add("selected")
+    //         privatesTag.classList.remove("selected")
+    //         slideContainer.style.transform = "translateX(0px)"
+    //         classesSlide.style.opacity = "1"
+    //         privatesSlide.style.opacity = "0"
+    //     })
+
+    // });
 
 
 
-// FAQ
 
-document.addEventListener("DOMContentLoaded", function() { 
+
+
+    // FAQ
+
     sectionTitles = document.querySelectorAll(".container--faqSectionTitle")
     sectionTitles.forEach(sectionTitle => {
         sectionTitle.addEventListener("click", function() {
@@ -203,14 +196,31 @@ document.addEventListener("DOMContentLoaded", function() {
     //     privatesSlide.style.opacity = "0"
     // })
 
+
+
+
+
+    // setInterval(function() {
+
+    //     jQuery('.holder').css('left', '-100vw')
+
+    // }, 1000)
+
+
+    // // FLICKITY INITIALIZATION
+
+    // var elem = document.querySelector('.main-carousel');
+    // var flkty = new Flickity( elem, {
+    //   // options
+    //   cellAlign: 'left',
+    //   contain: true
+    // });
+
+    // // element argument can be a selector string
+    // //   for an individual element
+    // var flkty = new Flickity( '.main-carousel', {
+    //   // options
+    // });
+
+
 });
-
-
-
-// setInterval(function() {
-
-//     jQuery('.holder').css('left', '-100vw')
-
-// }, 1000)
-
-
