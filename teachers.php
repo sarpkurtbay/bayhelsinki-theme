@@ -73,7 +73,7 @@ get_header();
         <?php endif; ?>
     </div>
 
-    <a class="button button--medium button--transparent">See Open Positions</a>
+    <a class="button button--transparent button button--medium button--inlineBlock button--dark">See Open Positions</a>
     <a href='#top'>Go Top</a> 
 </section>
 

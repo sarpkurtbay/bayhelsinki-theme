@@ -47,9 +47,8 @@ if ( ! function_exists( 'bayhelsinki_setup' ) ) :
 			array(
 				'studio-header-menu' => esc_html__( 'Studio Header Menu', 'bayhelsinki' ),
 				'store-header-menu' => esc_html__( 'Store Header Menu', 'bayhelsinki'),
-				'studio-footer-menu-column-1' => esc_html__( 'Studio Footer Menu Column 1', 'bayhelsinki'),
-				'studio-footer-menu-column-2' => esc_html__( 'Studio Footer Menu Column 2', 'bayhelsinki'),
-				'studio-footer-menu-column-3' => esc_html__( 'Studio Footer Menu Column 3', 'bayhelsinki')
+				'studio-footer-menu-column-discover' => esc_html__( 'Studio Footer Menu Column Discover', 'bayhelsinki'),
+				'studio-footer-menu-column-support' => esc_html__( 'Studio Footer Menu Column Support', 'bayhelsinki')
 			)
 		);
 
@@ -134,10 +133,14 @@ function bayhelsinki_scripts() {
 	wp_enqueue_style( 'bayhelsinki-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'bayhelsinki-stylesheet', get_template_directory_uri() . '/dist/stylesheet.css' );
 
+	
 	wp_enqueue_script( 'bayhelsinki-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-	wp_enqueue_script( 'bayhelsinki-class-passes', get_template_directory_uri() . '/js/class-passes.js', array(), true );
+	wp_enqueue_script( 'bayhelsinki-flickity', get_template_directory_uri() . '/js/flickity.pkgd.js', array(), true );
 	wp_enqueue_script( 'bayhelsinki-marquee', get_template_directory_uri() . '/js/marquee.js', array(), true );
 	wp_enqueue_script( 'bayhelsinki-slideshow', get_template_directory_uri() . '/js/slideshow.js', array(), true );
+	wp_enqueue_script( 'bayhelsinki-class-passes', get_template_directory_uri() . '/js/class-passes.js', array(), true );
+
+
 
 	// wp_enqueue_script('jQuery-script', get_template_directory_uri() .'/js/my-custom-script.js', array('jquery'), null, true);
 

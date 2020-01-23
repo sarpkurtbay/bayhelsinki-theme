@@ -59,29 +59,6 @@ body { font-family: sans-serif; }
     animation: homepage-logo-pulse 4s infinite;
 }
 
-.carousel {
-  background: #EEE;
-}
-
-.carousel-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8C8;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
-}
-
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
-
 
 :root {
     --primary-background-color: #ffffff;
@@ -97,6 +74,8 @@ body { font-family: sans-serif; }
     --primary-cta-color: #202020;
     --button-transition-time: 0.3s;
     --side-padding: 5rem;
+    --black: #202020;
+    --white: #fff;
 }
 
 .title-section {
@@ -241,35 +220,20 @@ div.article-thumbnails {
 }
 
 
+/* INSTRUCTOR */
 
 
+/* INSTRUCTOR PROFILE */
 
-div.article-thumbnail {
-    grid-column-end: span 4;
-    display: block;
-    border: 1px solid black;
-    height: 250px;
-    padding: var(--gap-spacing);
-    position: relative;
-    /* margin-bottom: var(--gap-spacing);
-    margin-right: var(--gap-spacing); */
+.page-container--w1170 {
+    width: 1170px
 }
 
-div.article-thumbnail-header {
-    border-bottom: black solid 1px;
-    display: flex;
-    justify-content: space-between;
+.margin-center {
+    margin: 0 auto;
 }
-
-div.article-thumbnail-footer {
-    position: absolute;
-    bottom: var(--gap-spacing);
-    left: var(--gap-spacing);
-}
-
-div.article-thumbnail h5 {
-    margin-top: var(--gap-spacing);
-    opacity: 1;
+.page-container--w100vw {
+    width: 100vw;
 }
 
 
@@ -281,115 +245,49 @@ div.article-thumbnail h5 {
 /* FAQ */
 /* FAQ */
 
-.container--center {
+/* .container--center {
     margin-top: 0;
     margin-right: auto;
     margin-left: auto;
+} */
+
+.faq {
+    grid-column: 3/13;
 }
 
-.container--mw900 {
-    max-width: 1100px;
+.grid--col14 {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-gap: 1rem;
+}
+
+.grid--col12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+}
+
+/* find elements with this tag and change them to one above */
+.grid--14 {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-gap: 1rem;
+}
+
+.container--mw1170 {
+    max-width: 1170px;
     width: 100%;
 }
 
-.container--faq {
-    padding: 0 var(--side-padding);
+.container--mw1300 {
+    max-width: 1250px;
+    width: 100%;
 }
 
-.container--faqSectionTitle {
-    padding: 1.75rem 4rem;
-    border-left: 1px solid #202020;
-    border-right: 1px solid #202020;
-    border-bottom: 1px solid #202020;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
+.container--mw1250 {
+    max-width: 1250px;
+    width: 100%;
 }
-
-.triangle-symbol {
-    width: 0;
-    height: 0;
-    border-top: 12px solid transparent;
-    border-left: 12px solid black;
-    border-bottom: 12px solid transparent;
-    transform: rotate(0deg);
-    transition: 0.25s;
-}
-
-/* .triangle-symbol:hover {
-    transform: rotate(90deg);
-} */
-
-.triangle-symbol-down {
-    transform: rotate(90deg);
-    -moz-transform:rotate(90deg);
-    -webkit-transform:rotate(90deg);
-    transform:rotate(90deg);
-}
-
-.container--faqSectionContent {
-    margin-top: -1px;
-    /* border-top: 1px solid #202020; */
-    border-left: 1px solid #202020;
-    border-right: 1px solid #202020;
-    border-bottom: 1px solid #202020;
-    display: block;
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-height 1.75s;
-}
-
-
-.faq-section:first-of-type {
-    border-top: 1px solid #202020;
-}
-.open {
-    max-height: 2000px;
-}
-
-.container--questionAndAnswer {
-    padding: 0 4rem 2.5rem;
-    display: flex;
-    justify-content: space-between;
-    /* margin-bottom: 1.5em; */
-}
-
-.container--questionAndAnswer:first-of-type {
-    padding-top: 2.5rem;
-}
-
-/* .container--questionAndAnswer:last-of-type {
-    padding-bottom: 3.5rem;
-} */
-
-
-
-
-
-.container--questionAndAnswer div {
-    width: 45%;
-}
-
-section.faq {
-    padding-bottom: 200px;
-}
-
-
-
-/* FAQ PREVIEW */
-/* FAQ PREVIEW */
-/* FAQ PREVIEW */
-/* FAQ PREVIEW */
-
-section.faq-preview {
-    background-color: #f4f4f4;
-    padding: var(--main-spacing);
-}
-
-div.faq-preview {
-    text-align: center;
-}
-
 
 
 
@@ -402,22 +300,41 @@ div.faq-preview {
     text-transform: uppercase;
     transition: var(--button-transition-time);
     height: auto;
+    transition: 0.4s ease;
+}
+
+.button--br50 {
+    border-radius: 50px;
+}
+
+.button--br15 {
+    border-radius: 15px;
+}
+
+.button--br5 {
+    border-radius: 5px;
 }
 
 /* BUTTON SIZES */
+
+
+
+.button:hover {
+    transform: translateY(0px);
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
 
 .button--small {
     padding: 0.6rem 1.25rem 0.4rem 1.25rem;
 }
 .button--medium {
-    padding: 1rem 1.25rem 0.8rem 1.25rem !important;
+    padding: 1rem 1.5rem 0.8rem 1.5rem !important;
 }
 .button--large {
     padding: 1rem 2rem 0.85rem 2rem;
 }
-.button--inlineBlock {
+.button--inline-block {
     display: inline-block;
-    margin-right: 1rem;
 }
 
 .button--blockAuto {
@@ -434,17 +351,33 @@ div.faq-preview {
 
 .button--transparent {
     background-color: transparent;
-    border-radius: 50px;
     border: 1px solid var(--secondary-background-color);
 }
-
-.button--dark {
-    background-color: var(--secondary-background-color);
+.button--white-outline,
+.button--white-outline:visited {
     color: var(--text-on-dark);
-    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid var(--primary-background-color);
+}
+
+.button--dark-outline {
+    background-color: transparent;
+    color: var(--text-on-light);
     border: 1px solid var(--secondary-background-color);
 }
 
+.button--dark-outline:hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), var(--black);
+    color: var(--text-on-dark);
+    border: 1px solid var(--secondary-background-color);
+}
+
+
+.button--white-outline:hover {
+    background-color: var(--primary-background-color);
+    color: var(--text-on-light);
+    border: 1px solid var(--primary-background-color);
+}
 
 .reg-button {
     font-family: var(--title-font-family);
@@ -539,30 +472,9 @@ div.faq-preview {
         --main-spacing: 6rem;
         --gap-spacing: 2rem;
         --small-gap-spacing: 1rem;
-        --header-height: 75px;
+        --header-height: 60px;
         --side-padding: 6rem;
     }
-
-
-    article.instructor-thumbnail {
-        grid-column-end: span 4;
-    }
-
-    .container--questionAndAnswer {
-        display: block;
-    }
-
-    .container--questionAndAnswer div {
-        display: block;
-        width: 100%;
-    }
-
-    .container--questionAndAnswer__question {
-        margin-bottom: 1rem;
-    }
-
-
-
 
 }
 
@@ -585,10 +497,6 @@ div.faq-preview {
         --side-padding: 2rem;
     }
 
-
-    article.instructor-thumbnail {
-        grid-column-end: span 6;
-    }
 }
 
 
@@ -605,11 +513,6 @@ div.faq-preview {
 /* FOOTER */
 /* FOOTER */
 /* FOOTER */
-
-footer {
-    width: 100vw;
-    overflow: hidden;
-}
 
 /* FOOTER - MARQUEE */
 
@@ -620,9 +523,8 @@ footer {
     overflow: hidden;
     transform: translateX(-50%);
     width: 200%;
-    border-top: 1px solid var(--text-on-light);
-    border-bottom: 1px solid var(--text-on-light);
-    background-color: var(--primary-background-color);
+    border-top: 1px solid;
+    border-bottom: 1px solid;
     padding: 1em;
  }
  
@@ -638,7 +540,7 @@ footer {
  .marquee {
     font-family: var(--title-font-family);
     font-size: var(--h4-font-size);
-    letter-spacing: var(--h1-letter-spacing);
+    letter-spacing: var(--h4-letter-spacing);
     text-transform: uppercase;
     display: block;
     animation: marquee 12s linear infinite;
@@ -653,18 +555,9 @@ footer {
 
 
 
- .text-center {
-     text-align: center;
- }
-
- .margin-center {
-     margin-left: auto;
-     margin-right: auto;
- }
-
 
  .courses {
-     display:block;
+     display: block;
      width: 100vw;
      min-height: calc(100vh - var(--header-height));
      z-index: 0;
@@ -725,9 +618,6 @@ footer {
      margin-bottom: 0;
  }
 
- .container.grid {
-     margin-bottom: 0;
- }
 
  h1.test {
     -webkit-text-stroke-width: 1.5px;
@@ -793,8 +683,3 @@ footer {
     text-decoration:none;
 }
 
-
-
-.mb-clear {
-    margin-bottom: 0;
-}

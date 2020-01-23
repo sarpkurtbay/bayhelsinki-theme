@@ -14,13 +14,17 @@ var imagemin = require('gulp-imagemin')
 
 gulp.task("css", function() {
     return gulp.src([
+        "src/css/tachyons.css",
         "src/css/typography.css",
         "src/css/stylesheet.css",
         "src/css/header.css",
         "src/css/footer.css",
         "src/css/teachers.css",
+        "src/css/single-post-teachers.css",
         "src/css/pricing.css",
         "src/css/timetable.css",
+        "src/css/faq.css",
+        "src/flickity.css"
     ])
         .pipe(sourcemaps.init())    // start creating the sourcemap for the changes otherwise minified css will be on one row
         .pipe(
