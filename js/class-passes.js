@@ -215,12 +215,12 @@ document.addEventListener("DOMContentLoaded", function() {
     var elem = document.querySelector('.main-carousel');
     var flkty = new Flickity( elem, {
       // options
-      cellAlign: 'center',
+      cellAlign: "center",
       contain: true,
       groupCells: "80%",
-      initialIndex: 2,
-      autoPlay: true,
-      contain: true
+      dragThreshold: 50,
+      initialIndex: 1,
+      autoPlay: true
     });
 
     // element argument can be a selector string
