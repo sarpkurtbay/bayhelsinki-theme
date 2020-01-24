@@ -216,10 +216,9 @@ document.addEventListener("DOMContentLoaded", function() {
     var flkty = new Flickity( elem, {
       // options
       cellAlign: "center",
-      contain: true,
-      groupCells: "80%",
+    //   contain: true,
       dragThreshold: 50,
-      initialIndex: 1,
+      initialIndex: 0,
       autoPlay: true
     });
 
@@ -227,6 +226,11 @@ document.addEventListener("DOMContentLoaded", function() {
     //   for an individual element
     var flkty = new Flickity( '.main-carousel', {
       // options
+      cellAlign: "center",
+    //   contain: true,
+      dragThreshold: 50,
+      initialIndex: 0,
+      autoPlay: true
     });
 
 

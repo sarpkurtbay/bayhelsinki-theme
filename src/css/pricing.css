@@ -438,10 +438,14 @@ section.pricing {
     transition: 0.5s;
 }
 
-.pricing-option:hover {
+.pricing-options .pricing-option:first-of-type {
+    margin-left: 1rem;
+}
+
+/* .pricing-option:hover {
     transform: translateY(-0.25rem);
     box-shadow: 0px 0.25rem 1rem rgba(0, 0, 0, 0.2);
-}
+} */
 
 .pricing-option-classes {
     font-size: 120px;
