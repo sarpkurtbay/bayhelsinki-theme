@@ -23,7 +23,7 @@ get_header();
 
         <div class="pricing-slideshow-window">
             <div class="pricing-slideshow-slides">
-                <div class="pricing-options pricing-options--reformer-pilates main-carousel" data-flickity='{ "cellAlign": "center", "contain": true }'>
+                <div class="pricing-options pricing-options--reformer-pilates main-carousel">
                     <div class="pricing-option carousel-cell">
                         <span class="pricing-option-classes">
                             20

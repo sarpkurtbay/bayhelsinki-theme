@@ -210,20 +210,24 @@ document.addEventListener("DOMContentLoaded", function() {
     // }, 1000)
 
 
-    // // FLICKITY INITIALIZATION
+    // FLICKITY INITIALIZATION
 
-    // var elem = document.querySelector('.main-carousel');
-    // var flkty = new Flickity( elem, {
-    //   // options
-    //   cellAlign: 'left',
-    //   contain: true
-    // });
+    var elem = document.querySelector('.main-carousel');
+    var flkty = new Flickity( elem, {
+      // options
+      cellAlign: 'center',
+      contain: true,
+      groupCells: "80%",
+      initialIndex: 2,
+      autoPlay: true,
+      contain: true
+    });
 
-    // // element argument can be a selector string
-    // //   for an individual element
-    // var flkty = new Flickity( '.main-carousel', {
-    //   // options
-    // });
+    // element argument can be a selector string
+    //   for an individual element
+    var flkty = new Flickity( '.main-carousel', {
+      // options
+    });
 
 
 });
