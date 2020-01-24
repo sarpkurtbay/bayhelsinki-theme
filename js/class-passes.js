@@ -90,6 +90,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const reformerPilatesPricingButton = document.querySelector(".pricing-category-button--reformer-pilates")
     const matPilatesPricingButton = document.querySelector(".pricing-category-button--mat-classes")
 
+    const pricingSlides = document.querySelector(".pricing-slideshow-slides")
+
     const reformerPilatesPricingSlide = document.querySelector(".pricing-options--reformer-pilates")
     const matClassesPricingSlide = document.querySelector(".pricing-options--mat-classes")
 
@@ -106,8 +108,10 @@ document.addEventListener("DOMContentLoaded", function() {
     reformerPilatesPricingButton.addEventListener("click", function() {
             this.classList.add("selected")
             matPilatesPricingButton.classList.remove("selected")
+
             reformerPilatesPricingSlide.style.transform = "translateY(0%)"
             matClassesPricingSlide.style.transform = "translateY(0%)"
+
             reformerPilatesPricingSlide.style.opacity = "1"
             reformerPilatesPricingSlide.style.transition = "transform 0.5s ease, opacity ease 1s 0.2s"
             matClassesPricingSlide.style.opacity = "0"
@@ -118,15 +122,15 @@ document.addEventListener("DOMContentLoaded", function() {
     matPilatesPricingButton.addEventListener("click", function() {
         this.classList.add("selected")
         reformerPilatesPricingButton.classList.remove("selected")
+
         matClassesPricingSlide.style.transform = "translateY(-100%)"
         reformerPilatesPricingSlide.style.transform = "translateY(100%)"
+
         matClassesPricingSlide.style.transition = "transform 0.5s ease, opacity ease 1s 0.2s"
         matClassesPricingSlide.style.opacity = "1"
         reformerPilatesPricingSlide.style.opacity = "0"
         reformerPilatesPricingSlide.style.transition = "none"
     })
-
-
 
 
     // document.addEventListener("DOMContentLoaded", function() { 
@@ -212,30 +216,82 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // FLICKITY INITIALIZATION
 
-    var elem = document.querySelector('.main-carousel');
-    var flkty = new Flickity( elem, {
-      // options
-      cellAlign: "center",
-    //   contain: true,
-      dragThreshold: 30,
-      initialIndex: 0,
-      autoPlay: true,
-      selectedAttraction: 0.4,
-      friction: 0.9
-    });
-
-    // element argument can be a selector string
-    //   for an individual element
-    var flkty = new Flickity( '.main-carousel', {
-      // options
+    // var elem = document.querySelector('.main-carousel');
+    // var flkty = new Flickity( elem, {
+    //   // options
     //   cellAlign: "center",
     // //   contain: true,
-    //   dragThreshold: 70,
+    //   dragThreshold: 30,
     //   initialIndex: 0,
     //   autoPlay: true,
-    //   selectedAttraction: 0.05,
-    //   friction: 0.8
+    //   selectedAttraction: 0.4,
+    //   friction: 0.9
+    // });
+
+    // // element argument can be a selector string
+    // //   for an individual element
+    // var flkty = new Flickity( '.main-carousel', {
+    //   // options
+    // //   cellAlign: "center",
+    // // //   contain: true,
+    // //   dragThreshold: 70,
+    // //   initialIndex: 0,
+    // //   autoPlay: true,
+    // //   selectedAttraction: 0.05,
+    // //   friction: 0.8
+    // });
+
+
+
+    var elem = document.querySelector('.main-carousel');
+
+    window.addEventListener("resize", function() {
+        if (window.matchMedia("(min-width: 450px)").matches) {
+            var flkty = new Flickity( elem, {
+                // options
+                cellAlign: "left",
+              //   contain: true,
+                dragThreshold: 40,
+                initialIndex: 0,
+                selectedAttraction: 0.3,
+                friction: 0.9
+              });
+          
+              // element argument can be a selector string
+              //   for an individual element
+              var flkty = new Flickity( '.main-carousel', {
+                                    // options
+                cellAlign: "center",
+                //   contain: true,
+                  dragThreshold: 40,
+                  initialIndex: 0,
+                  selectedAttraction: 0.3,
+                  friction: 0.9
+              });
+        } else {
+            var flkty = new Flickity( elem, {
+                // options
+                cellAlign: "center",
+              //   contain: true,
+                dragThreshold: 40,
+                initialIndex: 0,
+                selectedAttraction: 0.3,
+                friction: 0.9
+              });
+          
+              // element argument can be a selector string
+              //   for an individual element
+              var flkty = new Flickity( '.main-carousel', {
+                                    // options
+                cellAlign: "center",
+                //   contain: true,
+                  dragThreshold: 40,
+                  initialIndex: 0,
+                  selectedAttraction: 0.3,
+                  friction: 0.9
+              });
+        }
     });
 
-
+  
 });

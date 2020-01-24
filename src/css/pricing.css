@@ -406,7 +406,6 @@ section.pricing {
 }
 
 .pricing-slideshow-window {
-    padding-top: 10px;
     height: 380px;
     width: 100%;
     overflow-y: hidden;
@@ -417,6 +416,7 @@ section.pricing {
 }
 
 .pricing-options {
+    padding-top: 20px;
     transition: none;
     white-space: nowrap;
 }
@@ -438,9 +438,9 @@ section.pricing {
     transition: 0.5s;
 }
 
-.pricing-options .pricing-option:first-of-type {
+/* .pricing-options .pricing-option:first-of-type {
     margin-left: 1rem;
-}
+} */
 
 /* .pricing-option:hover {
     transform: translateY(-0.25rem);
@@ -469,3 +469,10 @@ section.pricing {
     letter-spacing: 1px;
     margin-bottom: 2rem;
 }
+
+.flickity-button svg {
+    fill: #202020;
+}
+
+
+
