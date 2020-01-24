@@ -24,7 +24,7 @@ gulp.task("css", function() {
         "src/css/pricing.css",
         "src/css/timetable.css",
         "src/css/faq.css",
-        "src/flickity.css"
+        "src/css/flickity.css"
     ])
         .pipe(sourcemaps.init())    // start creating the sourcemap for the changes otherwise minified css will be on one row
         .pipe(

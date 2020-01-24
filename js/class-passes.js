@@ -250,7 +250,7 @@ document.addEventListener("DOMContentLoaded", function() {
             var flkty = new Flickity( elem, {
                 // options
                 cellAlign: "left",
-              //   contain: true,
+                contain: true,
                 dragThreshold: 40,
                 initialIndex: 0,
                 selectedAttraction: 0.3,
@@ -260,13 +260,12 @@ document.addEventListener("DOMContentLoaded", function() {
               // element argument can be a selector string
               //   for an individual element
               var flkty = new Flickity( '.main-carousel', {
-                                    // options
-                cellAlign: "center",
-                //   contain: true,
-                  dragThreshold: 40,
-                  initialIndex: 0,
-                  selectedAttraction: 0.3,
-                  friction: 0.9
+                cellAlign: "left",
+                contain: true,
+                dragThreshold: 40,
+                initialIndex: 0,
+                selectedAttraction: 0.3,
+                friction: 0.9
               });
         } else {
             var flkty = new Flickity( elem, {
@@ -282,13 +281,13 @@ document.addEventListener("DOMContentLoaded", function() {
               // element argument can be a selector string
               //   for an individual element
               var flkty = new Flickity( '.main-carousel', {
-                                    // options
-                cellAlign: "center",
-                //   contain: true,
-                  dragThreshold: 40,
-                  initialIndex: 0,
-                  selectedAttraction: 0.3,
-                  friction: 0.9
+           // options
+           cellAlign: "center",
+           //   contain: true,
+             dragThreshold: 40,
+             initialIndex: 0,
+             selectedAttraction: 0.3,
+             friction: 0.9
               });
         }
     });
