@@ -87,7 +87,9 @@ get_header();
                     "contain": true,
                     "dragThreshold": 50,
                     "initialIndex": 1,
-                    "autoPlay": true 
+                    "autoPlay": true,
+                    "selectedAttraction": 0.4,
+                    "friction": 0.9
                     }'>
 
                     <div class="pricing-option carousel-cell">

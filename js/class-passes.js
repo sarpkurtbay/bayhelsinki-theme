@@ -217,11 +217,11 @@ document.addEventListener("DOMContentLoaded", function() {
       // options
       cellAlign: "center",
     //   contain: true,
-      dragThreshold: 70,
+      dragThreshold: 30,
       initialIndex: 0,
       autoPlay: true,
-      selectedAttraction: 0.25,
-      friction: 0.8
+      selectedAttraction: 0.4,
+      friction: 0.9
     });
 
     // element argument can be a selector string
