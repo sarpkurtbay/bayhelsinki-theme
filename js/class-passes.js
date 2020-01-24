@@ -217,20 +217,24 @@ document.addEventListener("DOMContentLoaded", function() {
       // options
       cellAlign: "center",
     //   contain: true,
-      dragThreshold: 50,
+      dragThreshold: 70,
       initialIndex: 0,
-      autoPlay: true
+      autoPlay: true,
+      selectedAttraction: 0.25,
+      friction: 0.8
     });
 
     // element argument can be a selector string
     //   for an individual element
     var flkty = new Flickity( '.main-carousel', {
       // options
-      cellAlign: "center",
-    //   contain: true,
-      dragThreshold: 50,
-      initialIndex: 0,
-      autoPlay: true
+    //   cellAlign: "center",
+    // //   contain: true,
+    //   dragThreshold: 70,
+    //   initialIndex: 0,
+    //   autoPlay: true,
+    //   selectedAttraction: 0.05,
+    //   friction: 0.8
     });
 
 
