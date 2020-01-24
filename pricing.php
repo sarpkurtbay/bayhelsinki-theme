@@ -23,7 +23,14 @@ get_header();
 
         <div class="pricing-slideshow-window">
             <div class="pricing-slideshow-slides">
-                <div class="pricing-options pricing-options--reformer-pilates main-carousel">
+                <div class="pricing-options pricing-options--reformer-pilates main-carousel " data-flickity='{ 
+                    "cellAlign": "center",
+                    "contain": true,
+                    "dragThreshold": 50,
+                    "initialIndex": 1,
+                    "selectedAttraction": 0.4,
+                    "friction": 0.9
+                    }'>
                     <div class="pricing-option carousel-cell">
                         <span class="pricing-option-classes">
                             20
@@ -37,7 +44,9 @@ get_header();
                         <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
                             €22 a class
                         </a>
+                    
                     </div>
+
                     <div class="pricing-option carousel-cell">
                         <span class="pricing-option-classes">
                             10
@@ -87,7 +96,6 @@ get_header();
                     "contain": true,
                     "dragThreshold": 50,
                     "initialIndex": 1,
-                    "autoPlay": true,
                     "selectedAttraction": 0.4,
                     "friction": 0.9
                     }'>

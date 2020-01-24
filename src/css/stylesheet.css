@@ -35,7 +35,6 @@
 */
 
 
-/* external css: flickity.css */
 
 * { box-sizing: border-box; }
 
@@ -679,4 +678,3 @@ div.article-thumbnails {
     padding:6px 24px;
     text-decoration:none;
 }
-
