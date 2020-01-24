@@ -215,18 +215,22 @@ document.addEventListener("DOMContentLoaded", function() {
     var elem = document.querySelector('.main-carousel');
     var flkty = new Flickity( elem, {
       // options
-      cellAlign: 'center',
-      contain: true,
-      groupCells: "80%",
-      initialIndex: 2,
-      autoPlay: true,
-      contain: true
+      cellAlign: "center",
+    //   contain: true,
+      dragThreshold: 50,
+      initialIndex: 0,
+      autoPlay: true
     });
 
     // element argument can be a selector string
     //   for an individual element
     var flkty = new Flickity( '.main-carousel', {
       // options
+      cellAlign: "center",
+    //   contain: true,
+      dragThreshold: 50,
+      initialIndex: 0,
+      autoPlay: true
     });
 
 
