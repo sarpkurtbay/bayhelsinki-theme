@@ -37,7 +37,7 @@ get_header();
                         <span class="pricing-option-details">
                             €440, exp. 120 days
                         </span>
-                        <a class="button button--medium button--blockAuto button--wide  button--br50 button--neumorphism">
+                        <a class="button button--medium button--blockAuto button--wide button--br50 button--white ">
                             €22 a class
                         </a>
                     
@@ -53,7 +53,7 @@ get_header();
                         <span class="pricing-option-details">
                             €240, exp. 90 days
                         </span>
-                        <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
+                        <a class="button button--medium button--blockAuto button--wide button--white  button--br50">
                             €24 a class
                         </a>
                     </div>
@@ -67,7 +67,7 @@ get_header();
                         <span class="pricing-option-details">
                             €130, exp. 60 days
                         </span>
-                        <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
+                        <a class="button button--medium button--blockAuto button--wide button--white  button--br50">
                             €26 a class
                         </a>
                     </div>
@@ -81,7 +81,7 @@ get_header();
                         <span class="pricing-option-details">
                             exp. 30 days
                         </span>
-                        <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
+                        <a class="button button--medium button--blockAuto button--wide button--white  button--br50">
                             €28 a class
                         </a>
                     </div>
@@ -99,7 +99,7 @@ get_header();
                         <span class="pricing-option-details">
                             €240, exp. 120 days
                         </span>
-                        <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
+                        <a class="button button--medium button--blockAuto button--wide button--white  button--br50">
                             €12 a class
                         </a>
                     </div>

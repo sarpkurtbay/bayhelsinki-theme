@@ -325,8 +325,7 @@ div.article-thumbnails {
 
 
 .button:hover {
-    transform: translateY(0px);
-    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+
 }
 
 .button--small {
@@ -334,7 +333,7 @@ div.article-thumbnails {
 }
 .button--medium {
     /* padding: 1rem 1.5rem 0.8rem 1.5rem !important; */
-    padding: 1rem 1.25rem .8rem 1.25rem!important;
+    padding: 1.25rem 1.25rem 1rem 1.25rem!important;
 }
 .button--large {
     padding: 1rem 2rem 0.85rem 2rem;
@@ -385,6 +384,15 @@ div.article-thumbnails {
     border: 1px solid var(--primary-background-color);
 }
 
+.button--white {
+    border: 1px solid rgba(163, 177, 198, 0.2);
+    box-shadow: 9px 9px 12px rgba(163, 177, 198, 0.25), -9px -9px 12px rgba(237, 237, 237, 0.25);
+}
+
+.button--white:hover {
+    border: 1px solid rgba(163, 177, 198, 0.6);
+    box-shadow: 9px 9px 12px rgba(163, 177, 198, 0.5), -9px -9px 12px rgba(237, 237, 237, 0.5);
+}
 .reg-button {
     font-family: var(--title-font-family);
     font-size: var(--h5-font-size);
