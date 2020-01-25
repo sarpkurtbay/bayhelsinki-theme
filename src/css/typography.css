@@ -259,14 +259,6 @@ p::selection {
 } */
 
 
-.studio-header__nav__ul__li__span--large-letter {
-  font-family: var(--title-font-family);
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 160px;
-  line-height: 1;
-} 
-
 /* .store-header-inner-container h1.large-letter a {
   color: white;
   text-decoration: none;
@@ -304,7 +296,7 @@ p::selection {
     --h3-line-height: 1;
     --h3-letter-spacing: 2px;
   
-    --h4-font-size: 21px;
+    --h4-font-size: 18px;
     --h4-line-height: 1.3;
     --h4-letter-spacing: 1px;
   

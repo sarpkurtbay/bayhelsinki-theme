@@ -9,21 +9,24 @@ get_header();
 ?>
 
 <section class="pricing">
-    <div class="center mv5 ph5-l w-100 tc">
+    <div class="mh4 mh4-ns">
+    <div class=" mv5 container--mw1170 center tc">
         <h1 class="w-100 tc mt5">Class Packages</h1>
     
-        <div class="pricing-category-buttons dib center mb4 ">
-            <button class="pricing-category-button pricing-category-button--reformer-pilates selected">
-                Reformer Classes
-            </button>
-            <button class="pricing-category-button pricing-category-button--mat-classes">
-                Mat Classes
-            </button>
+        <div class="grid--col12">
+            <div class="pricing-category-buttons dib mb4 ">
+                <button class="pricing-category-button pricing-category-button--reformer-pilates selected">
+                    Reformer Classes
+                </button>
+                <button class="pricing-category-button pricing-category-button--mat-classes">
+                    Mat Classes
+                </button>
+            </div>
         </div>
-
+        
         <div class="pricing-slideshow-window">
             <div class="pricing-slideshow-slides">
-                <div class="pricing-options pricing-options--reformer-pilates">
+                <div class="pricing-options pricing-options--reformer-pilates grid--col12">
                     <div class="pricing-option">
                         <span class="pricing-option-classes">
                             20
@@ -32,7 +35,7 @@ get_header();
                             Classes
                         </span>
                         <span class="pricing-option-details">
-                            €440, valid for 120 days
+                            €440, exp. 120 days
                         </span>
                         <a class="button button--medium button--blockAuto button--wide  button--br50 button--neumorphism">
                             €22 a class
@@ -48,7 +51,7 @@ get_header();
                             Classes
                         </span>
                         <span class="pricing-option-details">
-                            €240, valid for 90 days
+                            €240, exp. 90 days
                         </span>
                         <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
                             €24 a class
@@ -62,7 +65,7 @@ get_header();
                             Classes
                         </span>
                         <span class="pricing-option-details">
-                            €130, valid for 60 days
+                            €130, exp. 60 days
                         </span>
                         <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
                             €26 a class
@@ -76,7 +79,7 @@ get_header();
                             Classes
                         </span>
                         <span class="pricing-option-details">
-                            valid for 30 days
+                            exp. 30 days
                         </span>
                         <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
                             €28 a class
@@ -84,7 +87,7 @@ get_header();
                     </div>
                 </div>
 
-                <div class="pricing-options pricing-options--mat-classes">
+                <div class="pricing-options pricing-options--mat-classes grid--col12">
 
                     <div class="pricing-option">
                         <span class="pricing-option-classes">
@@ -94,7 +97,7 @@ get_header();
                             Classes
                         </span>
                         <span class="pricing-option-details">
-                            €240, valid for 120 days
+                            €240, exp. 120 days
                         </span>
                         <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
                             €12 a class
@@ -108,7 +111,7 @@ get_header();
                             Classes
                         </span>
                         <span class="pricing-option-details">
-                            €145, valid for 90 days
+                            €145, exp. 90 days
                         </span>
                         <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
                             €14 a class
@@ -122,7 +125,7 @@ get_header();
                             Classes
                         </span>
                         <span class="pricing-option-details">
-                            €80, valid for 60 days
+                            €80, exp. 60 days
                         </span>
                         <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
                             €16 a class
@@ -136,7 +139,7 @@ get_header();
                             Classes
                         </span>
                         <span class="pricing-option-details">
-                            valid for 30 days
+                            exp. 30 days
                         </span>
                         <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
                             €18 a class
@@ -149,8 +152,8 @@ get_header();
         <p class="small body pt4">Interested in using gift cards or sports vouchers to pay for a class package?<br>
 Fill out our form and we’ll gladly take it from there.  </p>
         
+        </div>
     </div>
-
 </section>
 
 <section class="intro-offers">
