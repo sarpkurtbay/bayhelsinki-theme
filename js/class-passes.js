@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const reformerPilatesPricingSlide = document.querySelector(".pricing-options--reformer-pilates")
     const matClassesPricingSlide = document.querySelector(".pricing-options--mat-classes")
 
-    const reformerPilatesPricingView = document.querySelector(".pricing-options--reformer-pilates .flickity-viewport")
+    // const reformerPilatesPricingView = document.querySelector(".pricing-options--reformer-pilates .flickity-viewport")
     
 
     // const classesTag = document.querySelector("a.classes")
@@ -179,6 +179,8 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     })
 
+
+}); 
     // const classesTag = document.querySelector("a.classes")
     // const privatesTag = document.querySelector("a.privates")
     // const classesSlide = document.querySelector("#classes")
@@ -242,55 +244,54 @@ document.addEventListener("DOMContentLoaded", function() {
     // });
 
 
+// LATEST VERSION, WORKED FINE BUT PROBLEM WAS HAVING TWO CAROUSELS ON TOP OF EACH OTHER AND ON SAME PAGE
+//     var elem = document.querySelector('.main-carousel');
 
-    var elem = document.querySelector('.main-carousel');
-
-    window.addEventListener("resize", function() {
-        if (window.matchMedia("(min-width: 450px)").matches) {
-            var flkty = new Flickity( elem, {
-                // options
-                cellAlign: "left",
-                contain: true,
-                dragThreshold: 40,
-                initialIndex: 0,
-                selectedAttraction: 0.3,
-                friction: 0.9
-              });
+//     window.addEventListener("resize", function() {
+//         if (window.matchMedia("(min-width: 450px)").matches) {
+//             var flkty = new Flickity( elem, {
+//                 // options
+//                 cellAlign: "left",
+//                 contain: true,
+//                 dragThreshold: 40,
+//                 initialIndex: 0,
+//                 selectedAttraction: 0.3,
+//                 friction: 0.9
+//               });
           
-              // element argument can be a selector string
-              //   for an individual element
-              var flkty = new Flickity( '.main-carousel', {
-                cellAlign: "left",
-                contain: true,
-                dragThreshold: 40,
-                initialIndex: 0,
-                selectedAttraction: 0.3,
-                friction: 0.9
-              });
-        } else {
-            var flkty = new Flickity( elem, {
-                // options
-                cellAlign: "center",
-              //   contain: true,
-                dragThreshold: 40,
-                initialIndex: 0,
-                selectedAttraction: 0.3,
-                friction: 0.9
-              });
+//               // element argument can be a selector string
+//               //   for an individual element
+//             //   var flkty = new Flickity( '.main-carousel', {
+//             //     cellAlign: "left",
+//             //     contain: true,
+//             //     dragThreshold: 40,
+//             //     initialIndex: 0,
+//             //     selectedAttraction: 0.3,
+//             //     friction: 0.9
+//             //   });
+//         } else {
+//             var flkty = new Flickity( elem, {
+//                 // options
+//                 cellAlign: "center",
+//               //   contain: true,
+//                 dragThreshold: 40,
+//                 initialIndex: 0,
+//                 selectedAttraction: 0.3,
+//                 friction: 0.9
+//               });
           
-              // element argument can be a selector string
-              //   for an individual element
-              var flkty = new Flickity( '.main-carousel', {
-           // options
-           cellAlign: "center",
-           //   contain: true,
-             dragThreshold: 40,
-             initialIndex: 0,
-             selectedAttraction: 0.3,
-             friction: 0.9
-              });
-        }
-    });
+//               // element argument can be a selector string
+//               //   for an individual element
+//         //       var flkty = new Flickity( '.main-carousel', {
+//         //    // options
+//         //    cellAlign: "center",
+//         //    //   contain: true,
+//         //      dragThreshold: 40,
+//         //      initialIndex: 0,
+//         //      selectedAttraction: 0.3,
+//         //      friction: 0.9
+//         //       });
+//         }
+//     });
 
   
-});

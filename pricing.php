@@ -23,8 +23,8 @@ get_header();
 
         <div class="pricing-slideshow-window">
             <div class="pricing-slideshow-slides">
-                <div class="pricing-options pricing-options--reformer-pilates main-carousel ">
-                    <div class="pricing-option carousel-cell">
+                <div class="pricing-options pricing-options--reformer-pilates">
+                    <div class="pricing-option">
                         <span class="pricing-option-classes">
                             20
                         </span>
@@ -34,13 +34,13 @@ get_header();
                         <span class="pricing-option-details">
                             €440, valid for 120 days
                         </span>
-                        <a class="button button--medium button--blockAuto button--wide button--dark-outline button--br50">
+                        <a class="button button--medium button--blockAuto button--wide  button--br50 button--neumorphism">
                             €22 a class
                         </a>
                     
                     </div>
 
-                    <div class="pricing-option carousel-cell">
+                    <div class="pricing-option">
                         <span class="pricing-option-classes">
                             10
                         </span>
@@ -54,7 +54,7 @@ get_header();
                             €24 a class
                         </a>
                     </div>
-                    <div class="pricing-option carousel-cell">
+                    <div class="pricing-option">
                         <span class="pricing-option-classes">
                             5
                         </span>
@@ -68,7 +68,7 @@ get_header();
                             €26 a class
                         </a>
                     </div>
-                    <div class="pricing-option carousel-cell">
+                    <div class="pricing-option">
                         <span class="pricing-option-classes">
                             1
                         </span>
@@ -84,9 +84,9 @@ get_header();
                     </div>
                 </div>
 
-                <div class="pricing-options pricing-options--mat-classes main-carousel">
+                <div class="pricing-options pricing-options--mat-classes">
 
-                    <div class="pricing-option carousel-cell">
+                    <div class="pricing-option">
                         <span class="pricing-option-classes">
                             20
                         </span>
@@ -100,7 +100,7 @@ get_header();
                             €12 a class
                         </a>
                     </div>
-                    <div class="pricing-option carousel-cell">
+                    <div class="pricing-option">
                         <span class="pricing-option-classes">
                             10
                         </span>
@@ -114,7 +114,7 @@ get_header();
                             €14 a class
                         </a>
                     </div>
-                    <div class="pricing-option carousel-cell">
+                    <div class="pricing-option">
                         <span class="pricing-option-classes">
                             5
                         </span>
@@ -128,7 +128,7 @@ get_header();
                             €16 a class
                         </a>
                     </div>
-                    <div class="pricing-option carousel-cell">
+                    <div class="pricing-option">
                         <span class="pricing-option-classes">
                             1
                         </span>
