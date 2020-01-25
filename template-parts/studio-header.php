@@ -1,5 +1,6 @@
 <script src="https://widgets.healcode.com/javascripts/healcode.js" type="text/javascript"></script>
 <header class="studio-header">
+    <div class="mh3 mh4-ns">
     <!-- <div class="studio-header__inner-container page-container--mw1250 center"> -->
         <div class="studio-header_mobile-bar">
             <a class="toggle-header-nav">
@@ -19,7 +20,7 @@
             <a class="studio-header_cta-button">Book</a>
         </div>
         
-        <div class="drop-down-menu center grid--14 container--mw1300">
+        <div class="drop-down-menu center container--mw1300">
             <nav class="studio-header__nav">
                 <ul class="studio-header__nav__ul">
                     <li class="studio-header__nav__ul__li--large-letter">
@@ -53,7 +54,7 @@
             </nav>
         </div>
     <!-- </div> -->
-
+    </div>
 </header>
 
 <!-- <div class="overlay-fade">
