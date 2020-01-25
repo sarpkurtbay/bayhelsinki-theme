@@ -186,10 +186,13 @@ div.double-button {
 */
 
 button.selected {
-  background-color: var(--secondary-background-color);
-  color: var(--text-on-dark); 
-  opacity: 0.85; 
+  /* background-color: var(--secondary-background-color); */
+  /* opacity: 0.85;  */
+    background: #D5DBE5;
+    box-shadow: inset 4px 4px 10px rgba(32, 32, 32, 0.1);
 }
+
+
 
 /*
 
@@ -384,12 +387,15 @@ section.pricing {
 }
 
 .pricing-category-buttons {
-    border: solid var(--black) 1px;
-    border-radius: 5px;
     display: flex;
     flex-direction: row;
     max-width: 560px;
     grid-column: 4 / 10;
+    border: 1px solid rgba(163, 177, 198, 0.2);
+    box-shadow: 9px 9px 12px rgba(163, 177, 198, 0.25), -9px -9px 12px rgba(237, 237, 237, 0.25);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.25s;
 }
 
 .pricing-category-button {
@@ -400,6 +406,12 @@ section.pricing {
     font-size: var(--h5-font-size);
     text-transform: uppercase;
     letter-spacing: var(--h4-letter-spacing);
+
+}
+
+.pricing-category-buttons:hover {
+    box-shadow: 9px 9px 12px rgba(163, 177, 198, 0.35), -9px -9px 12px rgba(237, 237, 237, 0.35);
+    /* border: 1px solid rgba(163, 177, 198, 0.5); */
 }
 
 .pricing-category-button--reformer-pilates {
@@ -445,7 +457,8 @@ section.pricing {
 } */
 
 .pricing-option:hover {
-    transform: translateY(-0.25rem);
+    border: 1px solid rgba(163, 177, 198, 0.6);
+    transform: translateY(-3px);
     box-shadow: -9px -9px 12px rgba(255, 255, 255, 0.2), 9px 9px 12px rgba(163, 177, 198, 0.4);
 }
 
@@ -475,11 +488,6 @@ section.pricing {
     fill: #202020;
 }
 
-
-.button--neumorphism {
-    background-color:#E0E5EC;
-    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
-}
 
 
 @media (max-width: 1000px) {
