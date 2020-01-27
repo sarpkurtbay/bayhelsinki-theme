@@ -9,10 +9,12 @@ document.addEventListener("DOMContentLoaded", function() {
     menuToggle = document.querySelector("a.toggle-header-nav")
 
     dropDownMenu = document.querySelector("div.drop-down-menu")
+    header = document.querySelector("header")
 
     menuToggle.addEventListener("click", function() {
 
         dropDownMenu.classList.toggle("open")
+        header.classList.toggle("open")
         // if (slideDownMenu.style.display === "none") {
         //     slideDownMenu.style.display = "block";
 

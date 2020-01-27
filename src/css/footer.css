@@ -7,8 +7,8 @@ footer {
     position: absolute;
     width: 100vw;
     height: auto;
-    z-index: 10000;
-    background-color: var(--primary-background-color);
+    z-index: 100;
+    background-color: #FAFBFC;
     overflow: hidden;
 }
 
@@ -68,7 +68,7 @@ footer .marquee {
 
 
 .studio-footer-newsletter-cover {
-  background-color: var(--primary-background-color);
+  background-color: #FAFBFC;
   /* display: none; */
   position: absolute;
   top: 0;

@@ -1,6 +1,8 @@
 :root {
   --schedule-side-padding: 2rem;
   --schedule-vertical-padding: 1.5rem;
+  --box-shadow-default: -4px -4px 16px rgba(255, 255, 255, 1), 4px 4px 12px rgba(163, 177, 198, 0.2) !important;
+  --border-default: 1px solid rgba(163, 177, 198, 0.2) !important;
 }
 
 
@@ -41,7 +43,7 @@ div.upcoming-events-container {
   height: 400px;
   position: relative;
   margin-bottom: var(--gap-spacing);
-  border: 1px solid #202020;
+  /* border: 1px solid #202020; */
 }
 
 div.upcoming-events-container span {
@@ -65,10 +67,11 @@ button.cta {
   text-transform: uppercase;
   display: inline-block;
   box-sizing: border-box;
-  padding: 10px 16px 7px 16px;
+  /* padding: 10px 16px 7px 16px; */
+  padding: 1.25rem 1.25rem 1rem 1.25rem !important;
   color: var(--primary-cta-color);
   background-color: var(--primary-background-color);
-  border: 1px solid var(--primary-cta-color);
+  /* border: 1px solid var(--primary-cta-color); */
   border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -86,7 +89,7 @@ div.upcoming-events-container button.cta {
 }
 
 button.cta:hover {
-  background-color: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%), var(--primary-color);
+  /* background-color: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%), var(--black); */
   color: var(--font-color-on-dark);
 }
 
@@ -120,12 +123,17 @@ a.faded-link:hover {
 
 /* Mindbody Tags */
 
-.bw-widget,
+.bw-widget {
+  background-color: transparent !important;
+}
+
+/* .bw-widget, */
 .bw-widget__header,
 .bw-header__title,
 .bw-header__account-link,
 .bw-filters__selects select,
 .bw-fullcal-button,
+.bw-calendar-container,
 .bw-calendar__heading,
 .bw-calendar__day,
 .bw-widget__date,
@@ -173,13 +181,17 @@ font-weight: 400 !important;
 }
 
 .bw-widget__header {
-  border: #202020 solid 1px !important;
+  /* border: #202020 solid 1px !important; */
   border-bottom: none !important;
 }
 
 .bw-calendar-container {
-  border-top: #202020 solid 1px !important;
-  border: #202020 solid 1px !important;
+  /* border-top: #202020 solid 1px !important;
+  border: #202020 solid 1px !important; */
+
+
+  border: var(--border-default);
+  box-shadow: var(--box-shadow-default);
 }
 
 .bw-fullcal-button {
@@ -188,13 +200,15 @@ font-weight: 400 !important;
 
 .bw-widget__day {
   margin-top: 60px !important;
+  border: var(--border-default);
+  box-shadow: var(--box-shadow-default);
 }
 
 .bw-widget__date {
   color: #202020 !important;
   padding: var(--schedule-vertical-padding) var(--schedule-side-padding) !important;
   border-top: none !important;
-  border-bottom: 1px solid #202020 !important;
+  /* border-bottom: 1px solid #202020 !important; */
   font-size: var(--h3-font-size) !important;
 }
 
@@ -204,10 +218,10 @@ font-weight: 400 !important;
 }
 
 .bw-filters__selects select {
-  border-right: 1px solid #202020;
+  /* border-right: 1px solid #202020;
   border-left: 1px solid #202020;
   border-top: 1px solid #202020;
-  border-bottom: none;
+  border-bottom: none; */
 }
 
 .bw-filters__selects select:focus {
@@ -221,10 +235,11 @@ font-weight: 400 !important;
 
 .bw-session,
 .bw-widget--medium .bw-session {
-  border-bottom: 1px solid #202020 !important;
+  /* border-bottom: 1px solid #202020 !important; */
   padding: 0 !important;
-  border-right: 1px solid #202020 !important;
-  border-left: 1px solid #202020 !important;
+  /* border-right: 1px solid #202020 !important;
+  border-left: 1px solid #202020 !important; */
+
 }
 
 /* .bw-widget--medium .bw-session {
@@ -263,6 +278,10 @@ font-weight: 400 !important;
   color: #202020 !important;
 }
 
+
+/* CTA BUTTON IMPORTANT */
+
+
 .bw-widget__cart_button button {
   text-transform: uppercase !important;
   letter-spacing: 1px !important;
@@ -274,16 +293,21 @@ font-weight: 400 !important;
   /* border: 1px solid #202020 !important; */
   /* color: #202020 !important; */
   transition: 0.2s ease all !important;
-  color: #393DC4 !important;
-  border-color: #393DC4 !important;
+  /* color: #393DC4 !important; */
+  /* border-color: #393DC4 !important; */
+  /* border: 1px solid var(--black) !important; */
+  border: 1px solid rgba(163, 177, 198, 0.4) !important;
+  box-shadow: 2px 2px 6px rgba(163, 177, 198, 0.2), -2px -2px 6px rgba(237, 237, 237, 0.20) !important;
 }
 
 .bw-widget__cart_button button:hover {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%), #393DC4 !important;
-  color: #fff !important;
-  transform: translateY(-1px) !important; 
-  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
-  border-color: #393DC4 !important;
+  /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%), #393DC4 !important; */
+  color: var(--black) !important;
+  /* transform: translateY(-1px) !important;  */
+  /* box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08); */
+  /* border-color: #393DC4 !important; */
+  border: 1px solid rgba(163, 177, 198, 1) !important;
+  box-shadow: 0px 4px 12px rgba(163, 177, 198, 0.5), -9px -9px 12px rgba(237, 237, 237, 0.5) !important;
 }
 
 
@@ -316,9 +340,9 @@ font-weight: 400 !important;
 
 
 .hc-pignose-calendar-wrapper {
-  border-right: 1px solid #202020 !important;
+  /* border-right: 1px solid #202020 !important;
   border-left: 1px solid #202020 !important;
-  border-bottom: 1px solid #202020 !important;
+  border-bottom: 1px solid #202020 !important; */
   /* border-radius: 15px !important; */
 }
 
@@ -566,7 +590,7 @@ font-weight: 400 !important;
   }
 
   .bw-widget__cart_button button {
-    padding: 14px 16px 11px !important;
+    padding: 1rem 1.25rem 0.8rem 1.25rem !important;
     border-radius: 50px !important;
     font-size: var(--body-font-size) !important;
   }
