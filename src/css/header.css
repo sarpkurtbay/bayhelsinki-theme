@@ -260,8 +260,18 @@ h1.header-logo-title {
 }
 
 @media (max-width: 450px) {
+
+    .drop-down-menu {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 6rem 1rem;
+    }
+
     .studio-header_mobile-bar {
-        padding: 0rem 1.5rem 0;
+        padding: 0rem 1rem 0;
     }
 
     header.studio-header {
@@ -269,6 +279,22 @@ h1.header-logo-title {
     }
     .studio-header_mobile-bar {
         height: 3.5rem;
+    }
+
+    .studio-header__nav__ul__li--page-link {
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .studio-header__nav__ul__li__a {
+        font-size: var(--h4-font-size);
+        letter-spacing: var(--h4-letter-spacing);
+        width: 100%;
+        text-align: left;
+        padding: 1rem 0;
+        display: block;
+        border-bottom: 1px solid #676767;
     }
 }
 
