@@ -42,7 +42,7 @@
                         <a class="studio-header__nav__ul__li__a" href="/booking">Booking</a>
                     </li>
                     <li class="studio-header__nav__ul__li--page-link">
-                        <a class="studio-header__nav__ul__li__a" href="/store">Store</a>
+                        <a class="studio-header__nav__ul__li__a" href="/faq">FAQ</a>
                     </li>
                     <li class="studio-header__nav__ul__li--page-link">
                         <a class="studio-header__nav__ul__li__a"><healcode-widget data-version="0.2" data-link-class="loginRegister" data-site-id="43816" data-mb-site-id="757160" data-type="account-link" data-inner-html="Login"  /></a>

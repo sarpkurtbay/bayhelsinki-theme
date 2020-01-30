@@ -1,12 +1,33 @@
+section.instructor-profile-post {
+    padding-top: 6rem;
+    min-height: 100vh;
+}
+
+
+.instructor-profile__background-container {
+    top: 6rem;
+    left: 0;
+    width: 100vw;
+    min-height: calc(100vh - 90px);
+    z-index: -1;
+}
+
+.instructor-profile__background-container > div {
+    min-height: calc(100vh - 90px);
+    width: 49.8vw;
+}
+
+
+
+
 
 .instructor-profile__image {
-    grid-column: 2 / 7;
-    width: 100%;
-    position: sticky;
-    position: -webkit-sticky; /* Safari */
+    /* grid-column: 1 / 8; */
+    /* width: 100%; */
+
     background-size: cover;
     background-position: center;
-    top: 10rem;
+    /* top: 6rem; */
 }
 
 h1.instructor-profile__image__title {
@@ -22,8 +43,10 @@ h1.instructor-profile__image__title {
 
 }
 
+
+
 .instructor-profile__introduction {
-    grid-column: 9 / 14;
+    grid-column: 8 / 12;
     width: 100%;
 }
 

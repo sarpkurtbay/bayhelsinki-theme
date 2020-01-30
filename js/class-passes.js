@@ -2,6 +2,22 @@
 
 document.addEventListener("DOMContentLoaded", function() { 
 
+
+    var elem = document.querySelector('.main-carousel');
+    var flkty = new Flickity( elem, {
+      cellAlign: 'left',
+      contain: true,
+      autoPlay: true
+    });
+    
+    // element argument can be a selector string
+    //   for an individual element
+    var flkty = new Flickity( '.main-carousel', {
+        // cellAlign: 'left',
+        // contain: true
+    });
+
+
     document.addEventListener("touchstart", function(){}, true);
 
     // MENU TOGGLE 
@@ -163,24 +179,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // });
 
-
-
-
-
-
     // FAQ
 
-    sectionTitles = document.querySelectorAll(".container--faqSectionTitle")
-    sectionTitles.forEach(sectionTitle => {
-        sectionTitle.addEventListener("click", function() {
-            let sectionContent = this.nextElementSibling;
-            // HOW IS THIS WORKING?
-            let triangleSymbol = this.childNodes[3];
-            sectionContent.classList.toggle("open");
-            triangleSymbol.classList.toggle("triangle-symbol-down")
-        })
-    })
-
+    // sectionTitles = document.querySelectorAll(".container--faqSectionTitle")
+    // sectionTitles.forEach(sectionTitle => {
+    //     sectionTitle.addEventListener("click", function() {
+    //         let sectionContent = this.nextElementSibling;
+    //         // HOW IS THIS WORKING?
+    //         let triangleSymbol = this.childNodes[3];
+    //         sectionContent.classList.toggle("open");
+    //         triangleSymbol.classList.toggle("triangle-symbol-down")
+    //     })
+    // })
 
 }); 
     // const classesTag = document.querySelector("a.classes")
@@ -247,53 +257,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // LATEST VERSION, WORKED FINE BUT PROBLEM WAS HAVING TWO CAROUSELS ON TOP OF EACH OTHER AND ON SAME PAGE
-//     var elem = document.querySelector('.main-carousel');
+    // var elem = document.querySelector('.main-carousel');
 
-//     window.addEventListener("resize", function() {
-//         if (window.matchMedia("(min-width: 450px)").matches) {
-//             var flkty = new Flickity( elem, {
-//                 // options
-//                 cellAlign: "left",
-//                 contain: true,
-//                 dragThreshold: 40,
-//                 initialIndex: 0,
-//                 selectedAttraction: 0.3,
-//                 friction: 0.9
-//               });
+    // window.addEventListener("resize", function() {
+    //         var flkty = new Flickity( elem, {
+    //             // options
+    //             cellAlign: "left",
+    //             contain: true,
+    //             dragThreshold: 40,
+    //             initialIndex: 0,
+    //             selectedAttraction: 0.3,
+    //             friction: 0.9
+    //           });
           
-//               // element argument can be a selector string
-//               //   for an individual element
-//             //   var flkty = new Flickity( '.main-carousel', {
-//             //     cellAlign: "left",
-//             //     contain: true,
-//             //     dragThreshold: 40,
-//             //     initialIndex: 0,
-//             //     selectedAttraction: 0.3,
-//             //     friction: 0.9
-//             //   });
-//         } else {
-//             var flkty = new Flickity( elem, {
-//                 // options
-//                 cellAlign: "center",
-//               //   contain: true,
-//                 dragThreshold: 40,
-//                 initialIndex: 0,
-//                 selectedAttraction: 0.3,
-//                 friction: 0.9
-//               });
-          
-//               // element argument can be a selector string
-//               //   for an individual element
-//         //       var flkty = new Flickity( '.main-carousel', {
-//         //    // options
-//         //    cellAlign: "center",
-//         //    //   contain: true,
-//         //      dragThreshold: 40,
-//         //      initialIndex: 0,
-//         //      selectedAttraction: 0.3,
-//         //      friction: 0.9
-//         //       });
-//         }
-//     });
-
-  
+    //           // element argument can be a selector string
+    //           //   for an individual element
+    //         //   var flkty = new Flickity( '.main-carousel', {
+    //         //     cellAlign: "left",
+    //         //     contain: true,
+    //         //     dragThreshold: 40,
+    //         //     initialIndex: 0,
+    //         //     selectedAttraction: 0.3,
+    //         //     friction: 0.9
+    //         //   });
+    // });

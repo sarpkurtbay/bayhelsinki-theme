@@ -19,6 +19,7 @@ gulp.task("css", function() {
         "src/css/stylesheet.css",
         "src/css/header.css",
         "src/css/footer.css",
+        "src/css/classes.css",
         "src/css/teachers.css",
         "src/css/single-post-teachers.css",
         "src/css/pricing.css",

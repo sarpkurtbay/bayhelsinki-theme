@@ -5,17 +5,17 @@
   --border-default: 1px solid rgba(163, 177, 198, 0.2) !important;
 }
 
-
 /* // General Page Styling */
 
 section.booking-classes {
-  padding: 0 var(--side-padding);
+  padding-top: 9rem;
+  background-color: #fff;
 }
 
 section.booking-classes div.large-container {
   display: flex;
   justify-content: space-between;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -97,8 +97,6 @@ button:focus {
   outline: none;
 }
 
-
-
 a.page-link {
   display: block;
   text-decoration: none;
@@ -166,10 +164,6 @@ a.page-links,
 font-weight: 400 !important;
 }
 
-
-
-
-
 .bw-session__details,
 .bw-session__description,
 .bw-session__description p {
@@ -181,17 +175,17 @@ font-weight: 400 !important;
 }
 
 .bw-widget__header {
-  /* border: #202020 solid 1px !important; */
+  border: #202020 solid 1px !important;
   border-bottom: none !important;
 }
 
 .bw-calendar-container {
-  /* border-top: #202020 solid 1px !important;
-  border: #202020 solid 1px !important; */
+  border-top: #202020 solid 1px !important;
+  border: #202020 solid 1px !important;
 
 
   border: var(--border-default);
-  box-shadow: var(--box-shadow-default);
+  /* box-shadow: var(--box-shadow-default); */
 }
 
 .bw-fullcal-button {
@@ -200,15 +194,17 @@ font-weight: 400 !important;
 
 .bw-widget__day {
   margin-top: 60px !important;
-  border: var(--border-default);
-  box-shadow: var(--box-shadow-default);
+  border: 1px solid var(--black);
+  border-bottom: none;
+  /* border: var(--border-default); */
+  /* box-shadow: var(--box-shadow-default); */
 }
 
 .bw-widget__date {
   color: #202020 !important;
   padding: var(--schedule-vertical-padding) var(--schedule-side-padding) !important;
   border-top: none !important;
-  /* border-bottom: 1px solid #202020 !important; */
+  border-bottom: 1px solid #202020 !important;
   font-size: var(--h3-font-size) !important;
 }
 
@@ -218,24 +214,23 @@ font-weight: 400 !important;
 }
 
 .bw-filters__selects select {
-  /* border-right: 1px solid #202020;
+  border-right: 1px solid #202020;
   border-left: 1px solid #202020;
   border-top: 1px solid #202020;
-  border-bottom: none; */
+  border-bottom: none;
 }
 
 .bw-filters__selects select:focus {
   outline: none;
 }
 
-
-/* .bw-filters__selects select:last-child {
+.bw-filters__selects select:last-child {
   border-right: 1px solid #202020 !important;
-} */
+}
 
 .bw-session,
 .bw-widget--medium .bw-session {
-  /* border-bottom: 1px solid #202020 !important; */
+  border-bottom: 1px solid #202020 !important;
   padding: 0 !important;
   /* border-right: 1px solid #202020 !important;
   border-left: 1px solid #202020 !important; */
@@ -249,8 +244,6 @@ font-weight: 400 !important;
 /* .bw-widget--small .bw-session {
   padding: 6px var(--schedule-side-padding) 16px ;
 } */
-
-
 
 .bw-session__basics {
   padding: var(--schedule-vertical-padding) var(--schedule-side-padding) !important;
@@ -278,9 +271,7 @@ font-weight: 400 !important;
   color: #202020 !important;
 }
 
-
 /* CTA BUTTON IMPORTANT */
-
 
 .bw-widget__cart_button button {
   text-transform: uppercase !important;
@@ -290,27 +281,29 @@ font-weight: 400 !important;
   /* padding: 13px 18px 9px !important; */
   padding: 1rem 1.25rem 0.8rem 1.25rem !important;
   border-radius: 50px !important;
-  /* border: 1px solid #202020 !important; */
-  /* color: #202020 !important; */
+  border: 1px solid #202020 !important;
+  color: #202020 !important;
   transition: 0.2s ease all !important;
   /* color: #393DC4 !important; */
   /* border-color: #393DC4 !important; */
   /* border: 1px solid var(--black) !important; */
-  border: 1px solid rgba(163, 177, 198, 0.4) !important;
-  box-shadow: 2px 2px 6px rgba(163, 177, 198, 0.2), -2px -2px 6px rgba(237, 237, 237, 0.20) !important;
+  /* border: 1px solid rgba(163, 177, 198, 0.4) !important; */
+  /* box-shadow: 2px 2px 6px rgba(163, 177, 198, 0.2), -2px -2px 6px rgba(237, 237, 237, 0.20) !important; */
+  /* transition: ease 0.3s !important; */
 }
 
 .bw-widget__cart_button button:hover {
   /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%), #393DC4 !important; */
-  color: var(--black) !important;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), var(--black) !important;
+  /* transform: translateY(-1px); */
   /* transform: translateY(-1px) !important;  */
   /* box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08); */
   /* border-color: #393DC4 !important; */
-  border: 1px solid rgba(163, 177, 198, 1) !important;
-  box-shadow: 0px 4px 12px rgba(163, 177, 198, 0.5), -9px -9px 12px rgba(237, 237, 237, 0.5) !important;
+  /* border: 1px solid rgba(163, 177, 198, 1) !important; */
+  /* box-shadow: 0px 4px 12px rgba(163, 177, 198, 0.5), -9px -9px 12px rgba(237, 237, 237, 0.5) !important; */
+  /* background-color: #f3f3f3 !important; */
+  color: #fff !important;
 }
-
-
 
 .bw-session__basics > .bw-widget__cart_button {
   position: absolute;
@@ -319,12 +312,9 @@ font-weight: 400 !important;
   right: var(--schedule-side-padding);
 }
 
-
 .bw-session__group1 .bw-session__meta .bw-session__level{
   font-size: var(--small-body-font-size) !important;
 }
-
-
 
 .bw-session__detail-link {
   margin-top: 0;
@@ -337,7 +327,6 @@ font-weight: 400 !important;
   z-index: 0 !important;
   /* background-color: blue !important; */
 }
-
 
 .hc-pignose-calendar-wrapper {
   /* border-right: 1px solid #202020 !important;
@@ -362,8 +351,6 @@ font-weight: 400 !important;
   transform: translateY(-50%);
 }
 
-
-
 .bw-calendar__day.bw-calendar__day--current span {
   width: 25px;
   height: 25px;
@@ -382,15 +369,10 @@ font-weight: 400 !important;
   display: none !important;
 }
 
-/* .bw-session__full-title {
-  display: none !important;
-} */
-
 .bw-session__description p + p,
 .bw-session__description p + p{
   margin-top: 15px;
 }
-
 
 /* REMOVES SIDEBAR */
 
@@ -422,7 +404,6 @@ font-weight: 400 !important;
   width: 100% !important; 
   }
 
-
   .bw-session__basics > .bw-session__info {
     max-width: 70vw !important;
   }
@@ -434,8 +415,6 @@ font-weight: 400 !important;
     width: 81% !important;
   }
 }
-
-
 
 @media (max-width: 783px) {
 
@@ -538,7 +517,6 @@ font-weight: 400 !important;
   }
 }
 
-
 @media (max-width: 465px) {
 
   .bw-session__detail-link {
@@ -546,10 +524,7 @@ font-weight: 400 !important;
   }
 }
 
-
 @media (max-width: 450px) {
-
-
   /* body font size */
 
   .bw-widget,
@@ -598,8 +573,6 @@ font-weight: 400 !important;
   .bw-widget__cart_button button:hover {
     transform: translateY(2px) !important;
   }
-
-
   
   /* .bw-session__name >.bw-session__type {
     display: none !important;
