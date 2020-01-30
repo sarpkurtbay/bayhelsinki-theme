@@ -21,9 +21,9 @@ header {
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
     filter: blur(5px); */
-    background-color: rgba(255, 255, 255, 0.90);
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.03);
-    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.85);
+    /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.03); */
+    backdrop-filter: blur(15px);
 }
 
 .studio-header__nav {
@@ -69,7 +69,7 @@ header {
 
 header.studio-header.open {
     height: 100vh;
-    background-color: #202020;
+    background-color: #2C2C2C;
 }
 
 .drop-down-menu.open {
@@ -194,6 +194,11 @@ h1.header-logo-title {
         transition: opacity 3s ease;
     }
 
+
+    /* .studio-header__nav__ul__li__a {
+        transition: 
+    } */
+
     .studio-header__nav__ul__li__span--large-letter {
         display: none;
     } 
@@ -267,7 +272,7 @@ h1.header-logo-title {
         position: absolute;
         top: 0;
         left: 0;
-        padding: 6rem 1rem;
+        padding: 5rem 1rem;
     }
 
     .studio-header_mobile-bar {
@@ -292,7 +297,7 @@ h1.header-logo-title {
         letter-spacing: var(--h4-letter-spacing);
         width: 100%;
         text-align: left;
-        padding: 1rem 0;
+        padding: 0.75rem 0 0.5rem;
         display: block;
         border-bottom: 1px solid #676767;
     }

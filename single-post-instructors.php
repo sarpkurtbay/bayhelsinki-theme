@@ -6,25 +6,40 @@
   
  get_header();  ?>
 
-<section class="instructor-profile-post ph5-l">
-    <div class="instructor-profile grid--col14 center container--mw1300 pt5-l mb6 ph0-m">
-            <div class="instructor-profile__image vh-75-l vh-50-m" style="background-image: url(<?php the_field('featured_thumbnail_image_on_hover'); ?>)">
-                <h1 class="instructor-profile__image__title"><?php the_title(); ?></h1>
-            </div>
-            <div class="instructor-profile__introduction pa5-ns pv0-l">
-                <div class="instructor-profile__introduction__header mb5">
-                    <h1 class="mt0 ph0"><?php the_title(); ?></h1>
-                    <h2 class="f3 mb4"><span class="f5 db mb2">Instructor of</span>Pilates, Yoga & Barre</h2>
-                    <span class="f5 db mb2">BAYB Since</span>
-                    <span class="f3 db mb4">06 / 2019</span>
-                </div>
 
-                <?php echo get_post_field('post_content'); ?>
-                <a href="/schedule" class="button button--faq-preview button--medium button--inline-block button--dark-outline button--br15">Book Classes</a>
+
+
+<section class="instructor-profile-post relative">
+    <div class="mh3 mh4-ns">
+        <div class="container--mw1170 center tc">
+            <div class="grid--col12">
+
+                <div class="instructor-profile__introduction pt5-ns pv4-l tl">
+                    <div class="instructor-profile__introduction__header mb5">
+                        <h1 class="mt0 ph0"><?php the_title(); ?></h1>
+                        <h2 class="f3 mb4"><span class="f5 db mb2">Instructor of</span>Pilates, Yoga & Barre</h2>
+                        <span class="f5 db mb2">BAYB Since</span>
+                        <span class="f3 db mb4">06 / 2019</span>
+                    </div>
+
+                    <?php echo get_post_field('post_content'); ?>
+                    <a href="/schedule" class="button button--faq-preview button--medium button--inline-block button--dark-outline button--br15">Book Classes</a>
+                </div>
+                    
             </div>
+        </div>
     </div>
+
+    <div class="instructor-profile__background-container fixed">
+        <div class="w-50 dib instructor-profile__image relative" style="background-image: url(<?php the_field('featured_thumbnail_image_on_hover'); ?>)">
+            <h1 class="instructor-profile__image__title"><?php the_title(); ?></h1>
+        </div>
+        <div class="w-50 dib bg-white">
+        </div>
+    </div>
+
 </section>
-<section class="pb6 ph5-l">
+<section class="pv5 ph5-l bg-white">
 
     <div class="container--full-width-center pb4">
         <h3>Other instructors</h3>
