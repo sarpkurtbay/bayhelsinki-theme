@@ -16,9 +16,9 @@ get_header();
     <div class="overlay-decoration od-right-2A" style="background-image: url('<?php bloginfo('template_url'); ?>/dist/img/pattern-dots.svg')"></div>
     <div class="overlay-decoration od-left-3A" style="background-image: url('<?php bloginfo('template_url'); ?>/dist/img/pattern-cell-life.svg')"></div>
     <div class="overlay-decoration od-right-3A" style="background-image: url('<?php bloginfo('template_url'); ?>/dist/img/pattern-cell.svg')"></div>
-    
+
     <div class="title-section container">
-        <h1 class="title--section w-100 tc mt5 mb4">Schedule</h1>
+        <h1 class="title--section w-100 tc mt5 mb4">Booking</h1>
     </div>
 
     <div class="large-container">
@@ -35,8 +35,8 @@ get_header();
 
                 <span class=>New</span>
                 <button class="cta">Enroll</button>
-            </div> 
-            <button class="button button--small button--transparent button--wide">Paying with Vouchers</button>  
+            </div>
+            <button class="button button--small button--transparent button--wide">Paying with Vouchers</button>
             <!-- <button class="reg-button">Getting started</button> -->
         </div>
     </div>

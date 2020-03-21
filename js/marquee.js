@@ -16,9 +16,16 @@ window.onload = () => {
        })
      })
    }
- }
- 
 
+    newsletterCoverButton = document.querySelector(".studio-footer-newsletter-cover button.email-list-button")
+   newsletterCover = document.querySelector(".studio-footer-newsletter-cover")
+   newsletterContent = document.querySelector(".studio-footer-newsletter-content")
+   newsletterCoverButton.addEventListener("click", function() {
+        console.log("hellooo")
+        newsletterCover.style.transform = "translateY(-110%)";
+   })
+
+ }
 
 
 

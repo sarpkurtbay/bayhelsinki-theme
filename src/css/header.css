@@ -44,7 +44,7 @@ header {
 .studio-header__nav__ul__li--page-link {
     margin-top: 2rem;
     height: 2rem;
-    width: 70px;
+    width: 90px;
     text-align: center;
 }
 
@@ -75,7 +75,7 @@ header.studio-header.open {
 .drop-down-menu.open {
     opacity: 1;
     transform: translateY(0%)
-}  
+}
 
 .studio-header__nav__ul__li__a {
     font-family: var(--title-font-family);
@@ -95,9 +95,14 @@ header.studio-header.open {
     font-family: var(--title-font-family);
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 160px;
+    font-size: 200px;
     line-height: 1;
-  } 
+  }
+
+
+ .studio-header__nav__ul__li__span--large-letter.left {
+    margin-left: -10px;
+}
 
 .studio-header_cta-button {
     font-family: var(--title-font-family);
@@ -145,7 +150,7 @@ h1.header-logo-title {
         text-decoration: none;
         font-size: 120px;
         line-height: 1;
-    } 
+    }
 
     .studio-header__nav__ul__li__a {
         /* font-family: var(--title-font-family); */
@@ -176,7 +181,7 @@ h1.header-logo-title {
 
     .studio-header__nav__ul__li__span--large-letter {
         font-size: 100px;
-    } 
+    }
 
 }
 
@@ -196,12 +201,12 @@ h1.header-logo-title {
 
 
     /* .studio-header__nav__ul__li__a {
-        transition: 
+        transition:
     } */
 
     .studio-header__nav__ul__li__span--large-letter {
         display: none;
-    } 
+    }
 
     .drop-down-menu {
         width: 100vw;
@@ -322,7 +327,7 @@ h1.header-logo-title {
     } */
 
     /* header h1.header-logo-title,
-    .toggle-header-nav { 
+    .toggle-header-nav {
         display: inline-block;
     }
 
@@ -336,7 +341,7 @@ h1.header-logo-title {
         right: var(--side-padding);
         width: 30px;
         fill: #fff;
-    } 
+    }
 
 } */
 
@@ -364,7 +369,7 @@ h1.header-logo-title {
         margin: 0 0 0 1rem;
     }
 } */
-/* 
+/*
 @media (max-width: 850px) {
 
     .studio-header__nav__ul__li__a {
@@ -377,7 +382,7 @@ h1.header-logo-title {
         background: #2B2B2B;
         z-index: 2000000;
     } */
-/* 
+/*
     .studio-header {
         height: 60px;
     }
@@ -443,8 +448,6 @@ h1.header-logo-title {
     .drop-down-menu.open {
         opacity: 1;
         display: block;
-    }  
+    }
 }
 */
-
-

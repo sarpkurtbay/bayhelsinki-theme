@@ -1,34 +1,32 @@
 
 
-document.addEventListener("DOMContentLoaded", function() { 
 
+document.addEventListener("scroll", function() {
+    console.log(window.pageYOffset)
+})
 
-    var elem = document.querySelector('.main-carousel');
-    var flkty = new Flickity( elem, {
-      cellAlign: 'left',
-      contain: true,
-      autoPlay: true
-    });
-    
-    // element argument can be a selector string
-    //   for an individual element
-    var flkty = new Flickity( '.main-carousel', {
-        // cellAlign: 'left',
-        // contain: true
-    });
+document.addEventListener("DOMContentLoaded", function() {
+    sectionlinks =  document.querySelectorAll(".faq .sidebar li a")
+    sectionlinks.forEach( function(sectionlink) {
+        sectionlink.addEventListener("click", function() {
+            sectionlinks.forEach(function(link) {
+                link.classList.remove("selected-link");
+            })
+            sectionlink.classList.add("selected-link");
+        })
+    })
+    sectionlinks[0].classList.add("selected-link")
+})
 
+document.addEventListener("DOMContentLoaded", function() {
 
     document.addEventListener("touchstart", function(){}, true);
 
-    // MENU TOGGLE 
-
     menuToggle = document.querySelector("a.toggle-header-nav")
-
     dropDownMenu = document.querySelector("div.drop-down-menu")
     header = document.querySelector("header")
 
     menuToggle.addEventListener("click", function() {
-
         dropDownMenu.classList.toggle("open")
         header.classList.toggle("open")
         // if (slideDownMenu.style.display === "none") {
@@ -39,9 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         //   }
     })
 
-
-
-    faqPreviewButton = document.querySelector(".button--faq-preview") 
+    faqPreviewButton = document.querySelector(".button--faq-preview")
     faqPreviewSection = document.querySelector(".faq-preview")
 
     faqPreviewButton.addEventListener("click", function() {
@@ -58,100 +54,61 @@ document.addEventListener("DOMContentLoaded", function() {
         // faqPreviewButton.innerHTML = "Hide "
         // if (slideDownMenu.style.display === "none") {
         //     slideDownMenu.style.display = "block";
-
         //   } else {
         //     slideDownMenu.style.display = "none";
         //   }
     })
 
-
-
-
-
     menuItemsResponsive = document.querySelectorAll("div.drop-down-menu  ul.studio-header-menu > li")
     menuItemsResponsive.forEach(menuItemResponsive => {
         menuItemResponsive.addEventListener("click", function() {
             subMenuResponsive = this.querySelector(".sub-menu")
-
             subMenuResponsive.classList.toggle("open")
-
             dropDownMenu.classList.toggle("drop-down-menu-hidden")
-
             menuItemResponsive.classList.toggle("absolute")
             menuItemResponsive.classList.toggle("show-selected-menu-item")
-
         })
-
         // menuItemResponsive.addEventListener("click", function () {
         //     // unactiveMenuItems = document.querySelectorAll("div.drop-down-menu  ul.studio-header-menu > li :not()")
         //     subMenuResponsive = this.querySelector(".sub-menu")
-
         //     // unactiveMenuItems.style.display = "none";
         //     this.style.position = "absolute";
         //     subMenuResponsive.style.display = "block";
         // })
     });
 
-
     // CLASS PASSES
-
-    newsletterCoverButton = document.querySelector(".studio-footer-newsletter-cover button")
-    newsletterCover = document.querySelector(".studio-footer-newsletter-cover")
-    newsletterContent = document.querySelector(".studio-footer-newsletter-content")
-
-        newsletterCoverButton.addEventListener("click", function() {
-            console.log("hellooo")
-            newsletterCover.style.transform = "translateY(-110%)";
-        })
-
 
     const reformerPilatesPricingButton = document.querySelector(".pricing-category-button--reformer-pilates")
     const matPilatesPricingButton = document.querySelector(".pricing-category-button--mat-classes")
-
     const pricingSlides = document.querySelector(".pricing-slideshow-slides")
-
     const reformerPilatesPricingSlide = document.querySelector(".pricing-options--reformer-pilates")
     const matClassesPricingSlide = document.querySelector(".pricing-options--mat-classes")
-
-    // const reformerPilatesPricingView = document.querySelector(".pricing-options--reformer-pilates .flickity-viewport")
-    
-
-    // const classesTag = document.querySelector("a.classes")
-    // const privatesTag = document.querySelector("a.privates")
-    // const classesSlide = document.querySelector("#classes")
-    // const privatesSlide = document.querySelector("#privates")
-
-    // const slideContainer = document.querySelector("div.class-pass-pricing-slide-container")
 
     reformerPilatesPricingButton.addEventListener("click", function() {
             this.classList.add("selected")
             matPilatesPricingButton.classList.remove("selected")
-
             reformerPilatesPricingSlide.style.transform = "translateY(0%)"
             matClassesPricingSlide.style.transform = "translateY(0%)"
-
             reformerPilatesPricingSlide.style.opacity = "1"
             reformerPilatesPricingSlide.style.transition = "transform 0.5s ease, opacity ease 1s 0.2s"
             matClassesPricingSlide.style.opacity = "0"
             matClassesPricingSlide.style.transition = "none"
-
     })
 
     matPilatesPricingButton.addEventListener("click", function() {
         this.classList.add("selected")
         reformerPilatesPricingButton.classList.remove("selected")
-
         matClassesPricingSlide.style.transform = "translateY(-100%)"
         reformerPilatesPricingSlide.style.transform = "translateY(100%)"
-
         matClassesPricingSlide.style.transition = "transform 0.5s ease, opacity ease 1s 0.2s"
         matClassesPricingSlide.style.opacity = "1"
         reformerPilatesPricingSlide.style.opacity = "0"
         reformerPilatesPricingSlide.style.transition = "none"
     })
+})
 
-
-    // document.addEventListener("DOMContentLoaded", function() { 
+    // document.addEventListener("DOMContentLoaded", function() {
 
     //     const classesTag = document.querySelector("a.classes")
     //     const privatesTag = document.querySelector("a.privates")
@@ -192,7 +149,6 @@ document.addEventListener("DOMContentLoaded", function() {
     //     })
     // })
 
-}); 
     // const classesTag = document.querySelector("a.classes")
     // const privatesTag = document.querySelector("a.privates")
     // const classesSlide = document.querySelector("#classes")
@@ -269,7 +225,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //             selectedAttraction: 0.3,
     //             friction: 0.9
     //           });
-          
+
     //           // element argument can be a selector string
     //           //   for an individual element
     //         //   var flkty = new Flickity( '.main-carousel', {

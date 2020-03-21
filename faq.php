@@ -7,8 +7,105 @@
  */
 get_header();
 ?>
-
 <section class="faq">
+    <div class="hero tc">
+        <h1 class="pv6">We have answers.</h1>    
+    </div>
+    <div class="mh3 mh4-ns">
+        <div class=" mv5 container--mw1170 center tc">
+            <div class="grid--col12">
+                <div class="sidebar">
+
+                    <?php $page_id = get_queried_object_id(); ?>
+                    <?php if( have_rows('section', $page_id) ): ?>
+                    <nav class="tl"> 
+                        <?php while( have_rows('section', $page_id) ): the_row(); ?>
+                        <li class="mb2 ">
+                            <a id="<?php the_sub_field('section_link_id');?>" href="#<?php the_sub_field('section_id');?>"><?php the_sub_field('section_title');?></a>
+                        </li>
+
+                        <?php endwhile; ?>
+                    </nav>
+
+                    <?php else : ?>
+                    <p>Coming up soon..</p>
+
+                    <?php endif; ?>
+                </div>
+                <div class="content tl">
+
+                    <?php $page_id = get_queried_object_id(); ?>
+        
+                    <?php if( have_rows('section', $page_id) ): ?>
+
+                        <?php while( have_rows('section', $page_id) ): the_row(); ?>
+
+                                <h2><?php the_sub_field('section_title');?></h2>
+
+                                <div id="<?php the_sub_field('section_id');?>" class="section">
+
+                                    <?php if( have_rows('question_and_answer') ): ?>
+                                    <?php while( have_rows('question_and_answer') ): the_row(); ?>   
+                                        <h4><?php the_sub_field('question');?></h4>
+                                        <p><?php the_sub_field('answer', false, false);?></p>
+                                    <?php endwhile; ?> 
+                                    <div class="section-divider"></div>
+                                </div>
+ 
+                                <?php endif; ?>
+                        <?php endwhile; ?>
+
+                    <?php else : ?>
+                    <p>Coming up soon..</p>
+
+                    <?php endif; ?>
+
+                    <!-- <div id="section1" class="section">
+                        <h4>Reservations</h4>
+                        <p>Could not find an answer to your question? Let us help by dropping us a message in the live chat.</p>
+                        <h4>How can I pay with sport vouchers?</h4>
+                        <p>Could not find an answer to your question? Let us help by dropping us a message in the live chat.</p>
+             
+                        <h4>XXXX</h4>
+                        <p>Could not find an answer to your question? Let us help by dropping us a message in the live chat.</p>
+                        <h4>How can I pay with sport vouchers?</h4>
+                        <p>Could not find an answer to your question? Let us help by dropping us a message in the live chat.</p>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div id="section2" class="section">
+                        <h4>Payments</h4>
+                        <p>Could not find an answer to your question? Let us help by dropping us a message in the live chat.</p>
+                        <h4>How can I pay with sport vouchers?</h4>
+                        <p>Could not find an answer to your question? Let us help by dropping us a message in the live chat.</p>
+       
+                        <h4>Payments</h4>
+                        <p>Could not find an answer to your question? Let us help by dropping us a message in the live chat.</p>
+                        <h4>How can I pay with sport vouchers?</h4>
+                        <p>Could not find an answer to your question? Let us help by dropping us a message in the live chat.</p>
+                    </div>
+                    <div id="section3" class="section">
+                        <h4>Studio</h4>
+                        <p>Could not find an answer to your question? Let us help by dropping us a message in the live chat.</p>
+                        <h4>How can I pay with sport vouchers?</h4>
+                        <p>Could not find an answer to your question? Let us help by dropping us a message in the live chat.</p>
+                    </div>
+                    <div id="section4" class="section">
+                        <h4>Privates</h4>
+                        <p>Could not find an answer to your question? Let us help by dropping us a message in the live chat.</p>
+                        <h4>How can I pay with sport vouchers?</h4>
+                        <p>Could not find an answer to your question? Let us help by dropping us a message in the live chat.</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="faq1">
     <div class="container--mw1300 center">
         <div class="title-section">
             <h1 class="section-title">FAQ</h1>
@@ -58,3 +155,5 @@ get_header();
         <p class="small-body">Could not find an answer to your question? Let us help by dropping us a message in the live chat.</p>
     </div>
 </section>
+
+<?php get_footer(); ?>

@@ -1,4 +1,4 @@
-/* 
+/*
 @custom-media --mq-medium (max-width: 800px); */
 
 /* CONTENT
@@ -13,7 +13,7 @@
         CTA Button  (for example. Submit / Book / Enroll)
         Reg Button  (for example. page link)
 
-    1.4. 
+    1.4.
 
     2. Pages (V1)
         2.1. Instructors
@@ -26,28 +26,28 @@
         2.8. Privacy Policy
         2.9.
 
-        2.9 
+        2.9
 
         Pages  (V2)
             Vision
             Friends
-            
+
 */
 
 
 
 * { box-sizing: border-box; }
 
-body { 
-    font-family: sans-serif; 
-    background-color: #FAFBFC;
+body {
+    font-family: sans-serif;
+    background-color: #fff;
 }
 
 
 .homepage-hero {
     display: block;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
 }
@@ -160,6 +160,28 @@ body {
 }
 
 
+
+
+
+input {
+   border: 1px solid var(--black);
+   padding: 0.75rem;
+   border-radius: 2px;
+}
+
+.wpforms-container input.wpforms-field-medium, .wpforms-container select.wpforms-field-medium, .wpforms-container .wpforms-field-row.wpforms-field-medium {
+   max-width: 100%;
+}
+
+button.wpforms-submit {
+
+}
+
+p + div.wpforms-container {
+   margin-top: 2rem;
+}
+
+
 /* CONTENT */
 /* CONTENT */
 /* CONTENT */
@@ -198,17 +220,17 @@ p a:hover {
 /* PRESS */
 /* PRESS */
 
-section.press {
+/* section.press {
     padding: 0 var(--side-padding);
-}
+} */
 
-div.article-thumbnails {
+/* div.article-thumbnails {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 2rem;
     margin: 0 auto;
     max-width: 1000px;
-}
+} */
 
 
 .reg-button.mobile-cta-button {
@@ -267,6 +289,13 @@ div.article-thumbnails {
 .grid--col12 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-gap: 2rem;
+}
+
+.grid--col10 {
+    display: grid;
+    grid-column: 2/12;
+    grid-template-columns: repeat(10, 1fr);
     grid-gap: 2rem;
 }
 
@@ -545,8 +574,9 @@ div.article-thumbnails {
     border-top: 1px solid;
     border-bottom: 1px solid;
     padding: 1em;
+    background-color: var(--secondary-background-color);
  }
- 
+
  @keyframes marquee {
    0% {
      transform: translateX(0);
@@ -555,7 +585,7 @@ div.article-thumbnails {
      transform: translateX(-100%);
    }
  }
- 
+
  .marquee {
     font-family: var(--title-font-family);
     font-size: var(--h4-font-size);
@@ -566,6 +596,7 @@ div.article-thumbnails {
     line-height: 1;
     padding: 6px 10px 0px 10px;
     white-space: nowrap;
+    color: #fff;
  }
 
 
@@ -657,7 +688,6 @@ div.article-thumbnails {
 
 
 
- 
 
 
 
@@ -665,18 +695,19 @@ div.article-thumbnails {
 
 
 
- .content-block { 
-    border:1px solid #eee; 
+
+ .content-block {
+    border:1px solid #eee;
     padding:3px;
     background:#ccc;
     max-width:250px;
-    float:right; 
+    float:right;
     text-align:center;
 }
-.content-block:after { 
+.content-block:after {
     clear:both;
-} 
-.blue-button { 
+}
+.blue-button {
     background-color:#33bdef;
     -moz-border-radius:6px;
     -webkit-border-radius:6px;
@@ -688,7 +719,7 @@ div.article-thumbnails {
     padding:6px 24px;
     text-decoration:none;
 }
- 
+
 .red-button {
     background-color:#bc3315;
     -moz-border-radius:6px;
@@ -719,7 +750,7 @@ div.article-thumbnails {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 10; 
+    z-index: 10;
     animation: rotation 6s infinite linear;
 }
 

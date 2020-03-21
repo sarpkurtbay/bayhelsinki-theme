@@ -437,7 +437,7 @@ section.pricing {
 .pricing-option {
     position: relative;
     grid-column: span 3;
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
     display: inline-block;
     font-family: var(--title-font-family);
     text-transform: uppercase;
@@ -473,6 +473,7 @@ section.pricing {
     letter-spacing: 2px;
     display: block;
     margin-bottom: 1rem;
+    line-height: 1;
 }
 
 .pricing-option-details {

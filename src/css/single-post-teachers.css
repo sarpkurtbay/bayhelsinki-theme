@@ -1,33 +1,36 @@
 section.instructor-profile-post {
     padding-top: 6rem;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: scroll;
+    position: relative;
 }
 
 
-.instructor-profile__background-container {
-    top: 6rem;
+/* .instructor-profile__background-container {
+    top: 0;
     left: 0;
     width: 100vw;
     min-height: calc(100vh - 90px);
     z-index: -1;
-}
+    position: sticky;
+} */
 
-.instructor-profile__background-container > div {
+/* .instructor-profile__background-container > div {
     min-height: calc(100vh - 90px);
     width: 49.8vw;
-}
-
-
-
+} */
 
 
 .instructor-profile__image {
     /* grid-column: 1 / 8; */
     /* width: 100%; */
-
+    position: sticky;
+    top: 0;
     background-size: cover;
     background-position: center;
     /* top: 6rem; */
+    grid-column: span 6;
+    height: calc(100vh - 180px);
 }
 
 h1.instructor-profile__image__title {
@@ -46,7 +49,8 @@ h1.instructor-profile__image__title {
 
 
 .instructor-profile__introduction {
-    grid-column: 8 / 12;
+    grid-column: 7 / 12;
+    padding-left: 3rem;
     width: 100%;
 }
 
@@ -59,7 +63,7 @@ h1.instructor-profile__image__title {
 }
 
 .container--other-instructors {
-    grid-column: 2/14;
+    grid-column: span 12;
 }
 
 .container--other-instructors__article {
@@ -69,7 +73,7 @@ h1.instructor-profile__image__title {
 
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
-    div.instructor-profile.grid--col14 {
+    div.instructor-profile.grid--col12 {
         display: block;
     }
 

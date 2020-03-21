@@ -25,7 +25,7 @@
 						<h3 >READY FOR BETTER?<br>
 							WE HOPE SO.</h3>
 						<p class="studio-footer-newsletter-description">Be the first to know about what's going on at the studio and get our exclusive offers.</p>
-						<button class="email-list-button button button--small button--inlineBlock button--dark-outline button--br50">Stay in the know</button>
+						<button class="email-list-button button button--small button--inlineBlock button--white-outline button--br50">Stay in the know</button>
 						</div>
 							<!-- Begin BrandBot Signup Form -->
 							<!-- <link href="https://assets.brandbot.com/public/embed/form-1.4.css" rel="stylesheet" type="text/css"> -->
