@@ -15,25 +15,25 @@ get_header();
     <div class="overlay-decoration od-right-3A" style="background-image: url('<?php bloginfo('template_url'); ?>/dist/img/pattern-cell.svg')"></div>
 
 <section class="classes">
-    
+
 
 <div class="overlay-decoration od-left-1A" style="background-image: url('<?php bloginfo('template_url'); ?>/dist/img/pattern-dots.svg')"></div>
-    
+
 
     <div class="w-100 relative" >
         <div class="mh3 mh4-ns">
             <div class="container--mw1170 center tc bg-transparent">
                 <div class="grid--col12">
                     <div class="container--classes bg-white tl">
-                        <h1 class=mt0><?php the_title(); ?></h1>   
+                        <h1 class=mt0><?php the_title(); ?></h1>
                         <?php the_content(); ?>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <div class="container--classes-slideshow carousel--classes main-carousel absolute top-0">
-            <?php 
+            <?php
             $images = get_field('slideshow_images');
             if( $images ): ?>
 

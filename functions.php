@@ -189,8 +189,7 @@ if ( class_exists( 'WooCommerce' ) ) {
 // ADDED - removes extra paragraph tags wrappng acf outputs
 remove_filter ('acf_the_content', 'wpautop');
 
-add_filter('jpeg_quality', function($arg){return 100;});
-
+add_filter( 'jpeg_quality', create_function( '', 'return 100;' ) );
 // // BUTTON STYLES TO VISUAL EDITOR
 // // source: https://www.wpbeginner.com/wp-tutorials/how-to-add-custom-styles-to-wordpress-visual-editor/
 
