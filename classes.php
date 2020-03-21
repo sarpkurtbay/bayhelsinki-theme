@@ -39,7 +39,10 @@ get_header();
 
                     <?php foreach( $images as $image ): ?>
 
-                        <div class="carousel-cell--classes carousel-cell" style="background-image: url(<?php echo esc_url($image['sizes']['large']); ?>)"></div>
+                        <div
+                        class="carousel-cell--classes carousel-cell" style="background-image: url('<?php echo esc_url($image['sizes']['large']); ?>')">
+
+                        </div>
 
                     <?php endforeach; ?>
 
