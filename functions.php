@@ -43,7 +43,7 @@ if ( ! function_exists( 'bayhelsinki_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 
 		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( 
+		register_nav_menus(
 			array(
 				'studio-header-menu' => esc_html__( 'Studio Header Menu', 'bayhelsinki' ),
 				'store-header-menu' => esc_html__( 'Store Header Menu', 'bayhelsinki'),
@@ -133,7 +133,7 @@ function bayhelsinki_scripts() {
 	wp_enqueue_style( 'bayhelsinki-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'bayhelsinki-stylesheet', get_template_directory_uri() . '/dist/stylesheet.css' );
 
-	
+
 	wp_enqueue_script( 'bayhelsinki-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'bayhelsinki-flickity', get_template_directory_uri() . '/js/flickity.pkgd.js', array(), true );
 	wp_enqueue_script( 'bayhelsinki-marquee', get_template_directory_uri() . '/js/marquee.js', array(), true );
@@ -189,6 +189,7 @@ if ( class_exists( 'WooCommerce' ) ) {
 // ADDED - removes extra paragraph tags wrappng acf outputs
 remove_filter ('acf_the_content', 'wpautop');
 
+add_filter('jpeg_quality', function($arg){return 100;});
 
 // // BUTTON STYLES TO VISUAL EDITOR
 // // source: https://www.wpbeginner.com/wp-tutorials/how-to-add-custom-styles-to-wordpress-visual-editor/
@@ -204,12 +205,12 @@ remove_filter ('acf_the_content', 'wpautop');
 // /*
 // * Callback function to filter the MCE settings
 // */
- 
-// function my_mce_before_init_insert_formats( $init_array ) {  
- 
+
+// function my_mce_before_init_insert_formats( $init_array ) {
+
 // 	// Define the style_formats array
-	 
-// 		$style_formats = array(  
+
+// 		$style_formats = array(
 // 	/*
 // 	* Each array child is a format with it's own settings
 // 	* Notice that each array has title, block, classes, and wrapper arguments
@@ -218,33 +219,33 @@ remove_filter ('acf_the_content', 'wpautop');
 // 	* Classes allows you to define CSS classes
 // 	* Wrapper whether or not to add a new block-level element around any selected elements
 // 	*/
-// 			array(  
-// 				'title' => 'Content Block',  
-// 				'block' => 'span',  
+// 			array(
+// 				'title' => 'Content Block',
+// 				'block' => 'span',
 // 				'classes' => 'content-block',
 // 				'wrapper' => true,
-				 
-// 			),  
-// 			array(  
-// 				'title' => 'Blue Button',  
-// 				'block' => 'span',  
+
+// 			),
+// 			array(
+// 				'title' => 'Blue Button',
+// 				'block' => 'span',
 // 				'classes' => 'blue-button',
 // 				'wrapper' => true,
 // 			),
-// 			array(  
-// 				'title' => 'Red Button',  
-// 				'block' => 'span',  
+// 			array(
+// 				'title' => 'Red Button',
+// 				'block' => 'span',
 // 				'classes' => 'red-button',
 // 				'wrapper' => true,
 // 			),
-// 		);  
+// 		);
 // 		// Insert the array, JSON ENCODED, into 'style_formats'
-// 		$init_array['style_formats'] = json_encode( $style_formats );  
-		 
-// 		return $init_array;  
-	   
-// 	} 
-// 	// Attach callback to 'tiny_mce_before_init' 
-// 	add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' ); 
+// 		$init_array['style_formats'] = json_encode( $style_formats );
+
+// 		return $init_array;
+
+// 	}
+// 	// Attach callback to 'tiny_mce_before_init'
+// 	add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
 
 // THIS DIDNT WORK FOR SOME REASON
