@@ -85,7 +85,7 @@ get_header();
               </div>
           </div>
 
-          <p class="small body pt4">Interested in using <strong>gift cards</strong> or <strong>sports vouchers</strong> to pay for a class package?<br>Reach out to us via live chat and we'll gladly help you get started!</p>
+          <p class="small body pt4"><strong>All class packages are activated after first use.</strong><br><br>Interested in using <strong>gift cards</strong> or <strong>sports vouchers</strong> to pay for a class package?<br>Reach out to us via live chat!</p>
 
           </div>
       </div>
@@ -678,8 +678,8 @@ Fill out <a>a form</a> and we’ll gladly take it from there.</p>
 
     <div class="page-container--w1170 center grid--col12 bg-white mv5">
 
-    <?php $page_id = '29'; ?>
-                <?php if( have_rows('question_and_answer', $page_id) ): ?>
+    <?php $page_id = get_queried_object_id(); ?>
+         <?php if( have_rows('question_and_answer', $page_id) ): ?>
     <div class="faq-preview-content center">
 
         <?php while( have_rows('question_and_answer', $page_id) ): the_row(); ?>
