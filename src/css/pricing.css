@@ -3,7 +3,7 @@
 /* INTRO OFFER SECTION */
 /* INTRO OFFER SECTION */
 /* INTRO OFFER SECTION */
-/* 
+/*
 div.intro-offers {
     position: relative;
     height: 330px;
@@ -112,7 +112,7 @@ div.pricing-option-hover {
     height: auto;
 }
 
-.pricing-option:hover div.pricing-option-hover, 
+.pricing-option:hover div.pricing-option-hover,
 .pricing-option:focus div.pricing-option-hover,
 .pricing-option:active div.pricing-option-hover {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -141,7 +141,7 @@ div.pricing-option-hover {
 /* CLASS PASSES */
 /* CLASS PASSES */
 
-/* 
+/*
 
 section.class-passes {
     text-align: center;
@@ -220,9 +220,9 @@ button.selected {
     justify-content: space-between;
     flex-direction: row;
    transition: transform 0.8s ease-in-out; */
-    /* 
+    /*
     -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;  
+    scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     transition: transform 1s ease;*/
 /* } */
@@ -237,7 +237,7 @@ button.selected {
     padding: 0 var(--side-padding);
     transition: 1s;
 } */
-/* 
+/*
 .class-pass-pricing-grid {
     max-width: 1000px;
     margin: 0 auto;
@@ -250,7 +250,7 @@ div.class-type {
 h5 {
     margin-bottom: var(--gap-spacing);
 } */
-/* 
+/*
 div.class-pass {
     position: relative;
     padding: 1.5rem;
@@ -271,7 +271,7 @@ p.class-pass, p.pricing-option-expiration {
 /* p.small-body {
     font-size: var(--small-body-font-size);
 } */
-/* 
+/*
 p.small-body {
     font-size: var(--small-body-font-size);
     line-height: var(--small-body-line-height);
@@ -286,25 +286,41 @@ div.class-pass:last-of-type {
 }
  */
 
-/* 
+/*
 section.group-private-session {
     background-color: #F4F4F4;
 }
 
-section.group-private-session .formWrap, 
+section.group-private-session .formWrap,
 section.group-private-session .formButtonWrap {
     background-color: #F4F4F4 !important;
 }
 
 */
 
+.healcode-pricing-option-text-link {
+   padding: 0.8rem 2rem;
+   border: 1px solid var(--black);
+   border-radius: 50px;
+   font-size: var(--h5-font-size);
+   letter-spacing: var(--h5-letter-spacing);
+   display: inline-block;
+   transition: 0.4s ease;
+}
+
+.healcode-pricing-option-text-link:hover {
+   background-color: var(--black);
+   color: var(--white);
+}
+
+
 .faq-preview-content {
+   grid-column: 2/12;
     background-color: #ffffff;
     grid-row-gap: 3rem;
-    padding: 4rem 0;
-
+    padding-top: 4rem;
     overflow: hidden;
-} 
+}
 
 .faq-preview-question-and-answer {
     display: grid;
@@ -312,16 +328,21 @@ section.group-private-session .formButtonWrap {
     grid-template-columns: repeat(10, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 1rem;
-    margin-bottom: var(--gap-spacing);
+}
+.faq-preview-question-and-answer:last-of-type {
+   margin-bottom: 0;
 }
 
 .faq-preview-question {
     grid-column: 1 / 6;
 }
 .faq-preview-answer {
-    grid-column: 8 / 11;
+    grid-column: 7 / 11;
 }
 
+.faq-preview--footer {
+   grid-column: span 12;
+}
 
 
 /* FAQ PREVIEW */
@@ -330,12 +351,12 @@ section.group-private-session .formButtonWrap {
 /* FAQ PREVIEW */
 
 .faq-preview {
-    background-color: #f4f4f4;
     max-height: 0px;
     padding-left: var(--main-spacing);
     padding-right: var(--main-spacing);
     transition: 0.5s ease ;
     overflow: hidden;
+        background-color: #f4f4f4;
 }
 
 .faq-preview.open {
@@ -362,7 +383,7 @@ section.class-passes {
     div.class-type {
         grid-column: span 6;
     }
-    
+
     div.double-button {
         grid-column: 2 / span 4;
     }
@@ -444,6 +465,7 @@ section.pricing {
     text-align: center;
     transition: 0.25s;
     border: 1px solid var(--black);
+    height: 328px;
     /* border: 3px solid rgba(163, 177, 198, 0.1);
     box-shadow: -9px -9px 12px rgba(255, 255, 255, 0.2), 9px 4px 12px rgba(163, 177, 198, 0.4);
     border-radius: 5px; */
@@ -513,7 +535,7 @@ section.pricing {
 
 @media (max-width: 900px) {
 
-    
+
 
     .pricing-slideshow-window {
         height: 1270px;
@@ -522,7 +544,7 @@ section.pricing {
     .pricing-category-buttons {
         grid-column: 4 / span 6;
     }
-    
+
     .pricing-option {
         padding: 3rem 4rem;
         grid-column: 4 / span 6;
@@ -571,7 +593,7 @@ section.pricing {
     .pricing-category-buttons {
         grid-column: 2 / span 10;
     }
-    
+
     .pricing-category-button {
         padding: 0.9rem 1rem 0.8rem;
         width: 50%;

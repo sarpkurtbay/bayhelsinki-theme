@@ -40,16 +40,39 @@ section.hero-teachers > img {
 
 section.instructors {
     /* padding: 0 var(--side-padding); */
-    margin-bottom: var(--gap-spacing)
+    /* margin-bottom: var(--gap-spacing) */
+    background-color: #f2f2f2;
 }
 
-.instructor-thumbnails,
+div.instructors {
+   background-color: #ffffff;
+   margin-top: -120px;
+   z-index: 10;
+   position: relative;
+}
+
+.instructors--footer {
+   grid-column: span 10;
+}
+
+.instructors-grid {
+   grid-column: 2/12;
+}
+
+.instructors-grid > h2 {
+grid-column: span 10;
+}
+
+.instructor-thumbnails {
+   grid-column: span 10;
+}
+/* .instructor-thumbnails,
 .other-instructors {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1rem;
-    margin-bottom: var(--gap-spacing);
-}
+
+}*/
 
 .other-instructors article.instructor-thumbnail {
     grid-column: span 3;
@@ -61,7 +84,7 @@ section.instructors {
 
 article.instructor-thumbnail {
     text-align: center;
-    grid-column-end: span 3;
+    grid-column-end: span 2;
     display: block;
     width: 100%;
     max-height: 100%;
@@ -202,4 +225,3 @@ div.article-thumbnail h5 {
         grid-column-end: span 3;
     }
 }
-

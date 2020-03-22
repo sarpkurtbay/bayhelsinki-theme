@@ -116,6 +116,7 @@ nav.studio-footer-navigation li,
   text-transform: uppercase;
 }
 
+footer nav li a,
 footer nav li a:visited {
   color: var(--text-on-dark);
 }

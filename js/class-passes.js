@@ -15,10 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
             sectionlink.classList.add("selected-link");
         })
     })
-    sectionlinks[0].classList.add("selected-link")
-})
-
-document.addEventListener("DOMContentLoaded", function() {
+    sectionlinks[0].classList.add("selected-link");
 
     document.addEventListener("touchstart", function(){}, true);
 
@@ -29,13 +26,11 @@ document.addEventListener("DOMContentLoaded", function() {
     menuToggle.addEventListener("click", function() {
         dropDownMenu.classList.toggle("open")
         header.classList.toggle("open")
-        // if (slideDownMenu.style.display === "none") {
-        //     slideDownMenu.style.display = "block";
-
-        //   } else {
-        //     slideDownMenu.style.display = "none";
-        //   }
     })
+
+})
+
+document.addEventListener("DOMContentLoaded", function() {
 
     faqPreviewButton = document.querySelector(".button--faq-preview")
     faqPreviewSection = document.querySelector(".faq-preview")
@@ -49,15 +44,9 @@ document.addEventListener("DOMContentLoaded", function() {
             faqPreviewSection.classList.add("open");
             faqPreviewButton.innerHTML = "Hide related questions";
         }
-
-        // faqPreviewSection.classList.toggle("open")
-        // faqPreviewButton.innerHTML = "Hide "
-        // if (slideDownMenu.style.display === "none") {
-        //     slideDownMenu.style.display = "block";
-        //   } else {
-        //     slideDownMenu.style.display = "none";
-        //   }
     })
+})
+
 
     menuItemsResponsive = document.querySelectorAll("div.drop-down-menu  ul.studio-header-menu > li")
     menuItemsResponsive.forEach(menuItemResponsive => {
@@ -68,16 +57,11 @@ document.addEventListener("DOMContentLoaded", function() {
             menuItemResponsive.classList.toggle("absolute")
             menuItemResponsive.classList.toggle("show-selected-menu-item")
         })
-        // menuItemResponsive.addEventListener("click", function () {
-        //     // unactiveMenuItems = document.querySelectorAll("div.drop-down-menu  ul.studio-header-menu > li :not()")
-        //     subMenuResponsive = this.querySelector(".sub-menu")
-        //     // unactiveMenuItems.style.display = "none";
-        //     this.style.position = "absolute";
-        //     subMenuResponsive.style.display = "block";
-        // })
     });
 
+
     // CLASS PASSES
+document.addEventListener("DOMContentLoaded", function() {
 
     const reformerPilatesPricingButton = document.querySelector(".pricing-category-button--reformer-pilates")
     const matPilatesPricingButton = document.querySelector(".pricing-category-button--mat-classes")
@@ -107,133 +91,18 @@ document.addEventListener("DOMContentLoaded", function() {
         reformerPilatesPricingSlide.style.transition = "none"
     })
 })
-
-    // document.addEventListener("DOMContentLoaded", function() {
-
-    //     const classesTag = document.querySelector("a.classes")
-    //     const privatesTag = document.querySelector("a.privates")
-    //     const classesSlide = document.querySelector("#classes")
-    //     const privatesSlide = document.querySelector("#privates")
-
-    //     const slideContainer = document.querySelector("div.class-pass-pricing-slide-container")
-
-    //     privatesTag.addEventListener("click", function() {
-    //             this.classList.add("selected")
-    //             classesTag.classList.remove("selected")
-    //             slideContainer.style.transform = "translateX(-100vw)"
-    //             classesSlide.style.opacity = "0"
-    //             privatesSlide.style.opacity = "1"
-
-    //     })
-
-    //     classesTag.addEventListener("click", function() {
-    //         this.classList.add("selected")
-    //         privatesTag.classList.remove("selected")
-    //         slideContainer.style.transform = "translateX(0px)"
-    //         classesSlide.style.opacity = "1"
-    //         privatesSlide.style.opacity = "0"
-    //     })
-
-    // });
-
-    // FAQ
-
-    // sectionTitles = document.querySelectorAll(".container--faqSectionTitle")
-    // sectionTitles.forEach(sectionTitle => {
-    //     sectionTitle.addEventListener("click", function() {
-    //         let sectionContent = this.nextElementSibling;
-    //         // HOW IS THIS WORKING?
-    //         let triangleSymbol = this.childNodes[3];
-    //         sectionContent.classList.toggle("open");
-    //         triangleSymbol.classList.toggle("triangle-symbol-down")
-    //     })
-    // })
-
-    // const classesTag = document.querySelector("a.classes")
-    // const privatesTag = document.querySelector("a.privates")
-    // const classesSlide = document.querySelector("#classes")
-    // const privatesSlide = document.querySelector("#privates")
-
-    // const slideContainer = document.querySelector("div.class-pass-pricing-slide-container")
-
-    // privatesTag.addEventListener("click", function() {
-    //         this.classList.add("selected")
-    //         classesTag.classList.remove("selected")
-    //         slideContainer.style.transform = "translateX(-100vw)"
-    //         classesSlide.style.opacity = "0"
-    //         privatesSlide.style.opacity = "1"
-
-    // })
-
-    // classesTag.addEventListener("click", function() {
-    //     this.classList.add("selected")
-    //     privatesTag.classList.remove("selected")
-    //     slideContainer.style.transform = "translateX(0px)"
-    //     classesSlide.style.opacity = "1"
-    //     privatesSlide.style.opacity = "0"
-    // })
-
-
-
-
-
-    // setInterval(function() {
-
-    //     jQuery('.holder').css('left', '-100vw')
-
-    // }, 1000)
-
-
-    // FLICKITY INITIALIZATION
-
-    // var elem = document.querySelector('.main-carousel');
-    // var flkty = new Flickity( elem, {
-    //   // options
-    //   cellAlign: "center",
-    // //   contain: true,
-    //   dragThreshold: 30,
-    //   initialIndex: 0,
-    //   autoPlay: true,
-    //   selectedAttraction: 0.4,
-    //   friction: 0.9
-    // });
-
-    // // element argument can be a selector string
-    // //   for an individual element
-    // var flkty = new Flickity( '.main-carousel', {
-    //   // options
-    // //   cellAlign: "center",
-    // // //   contain: true,
-    // //   dragThreshold: 70,
-    // //   initialIndex: 0,
-    // //   autoPlay: true,
-    // //   selectedAttraction: 0.05,
-    // //   friction: 0.8
-    // });
-
-
-// LATEST VERSION, WORKED FINE BUT PROBLEM WAS HAVING TWO CAROUSELS ON TOP OF EACH OTHER AND ON SAME PAGE
-    // var elem = document.querySelector('.main-carousel');
-
-    // window.addEventListener("resize", function() {
-    //         var flkty = new Flickity( elem, {
-    //             // options
-    //             cellAlign: "left",
-    //             contain: true,
-    //             dragThreshold: 40,
-    //             initialIndex: 0,
-    //             selectedAttraction: 0.3,
-    //             friction: 0.9
-    //           });
-
-    //           // element argument can be a selector string
-    //           //   for an individual element
-    //         //   var flkty = new Flickity( '.main-carousel', {
-    //         //     cellAlign: "left",
-    //         //     contain: true,
-    //         //     dragThreshold: 40,
-    //         //     initialIndex: 0,
-    //         //     selectedAttraction: 0.3,
-    //         //     friction: 0.9
-    //         //   });
-    // });
+   //
+   //
+   // var elem = document.querySelector('.main-carousel');
+   // var flkty = new Flickity( elem, {
+   //   // options
+   //   cellAlign: 'left',
+   //   contain: true,
+   //   autoPlay: 1000
+   // });
+   //
+   // // element argument can be a selector string
+   // //   for an individual element
+   // var flkty = new Flickity( '.main-carousel', {
+   //   // options
+   // });

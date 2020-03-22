@@ -3,7 +3,7 @@
  * Template Name: Instructor Post
  * Template Post Type: post
  */
-  
+
  get_header();  ?>
 
 <div class="overlay-decoration od-right-1A" style="background-image: url('<?php bloginfo('template_url'); ?>/dist/img/pattern-cell-life.svg')"></div>
@@ -30,12 +30,26 @@
                         <span class="f3 db mb4">06 / 2019</span>
                     </div>
 
-                    <?php echo get_post_field('post_content'); ?>
+                    <?php $content = get_post()->post_content;
+                     if(empty($content)):?>
+
+                      <p>Our introduction of <?php the_title(); ?> is on it's way.</p>
+                      <p>Watch this space!</p>
+
+                     <?php else:?>
+
+                          <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+                         <?php the_content(); ?>
+
+                          <?php endwhile; else: endif; ?>
+
+                     <?php endif;?>
                     <a class="button button--medium button--inline-block button--wide button--br50 button--white" href="/schedule">
                         Book classes
                     </a>
                 </div>
-                    
+
             </div>
         </div>
     </div>
@@ -47,7 +61,7 @@
      <!-- <div class="marquee-container">
 			<span class="marquee">BAY Helsinki Pilates Yoga & Barre | Kanavaranta 7 C 12 00160 Helsinki | +358445321017 |</span>
     </div> -->
-    
+
     <div class="mh3 mh4-ns">
         <div class="container--mw1170 center tc">
             <div class="w-100 tc pb4">
@@ -55,7 +69,7 @@
             </div>
             <div class="grid--col12">
                 <!-- <div class="grid--col10"> -->
-                <?php 
+                <?php
                 $args = array(
                     'post_type' => 'post',
                     'post_status' => 'publish',
@@ -73,13 +87,13 @@
                         ?>
 
                         <article class="instructor-thumbnail container--other-instructors__article" id="post-<?php the_ID(); ?>" <?php post_class('instructor-thumbnail'); ?>>
-                            
-                            <?php if ( has_post_thumbnail() ) : ?> 
-                            
+
+                            <?php if ( has_post_thumbnail() ) : ?>
+
                             <div class="instructor-thumbnail">
                                 <?php the_post_thumbnail();?>
                                 <?php if( get_field('featured_thumbnail_image_on_hover') ): ?>
-                                         
+
                                 <div class="instructor-thumbnail-on-hover" style="background-image: url('<?php the_field('featured_thumbnail_image_on_hover'); ?>')">
                                     <a href="<?php the_permalink(); ?>"></a>
                                 </div>
@@ -88,7 +102,7 @@
                             <h5 class="entry-title"><?php the_title(); ?></h5>
 
                             <?php endif; ?>
-                            
+
                         </article>
 
                     <?php endwhile; ?>
@@ -104,7 +118,7 @@
             See all Instructors
         </button>
     </div>
-  
+
 
 
 </section>

@@ -32,7 +32,7 @@ get_header();
             </div>
         </div>
 
-        <div class="container--classes-slideshow carousel--classes main-carousel absolute top-0">
+        <div class="container--classes-slideshow carousel--classes main-carousel absolute top-0 ">
             <?php
             $images = get_field('slideshow_images');
             if( $images ): ?>
